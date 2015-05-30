@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B629368C1B1A0B4000987E36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B629368B1B1A0B4000987E36 /* AppDelegate.swift */; };
+		B629368F1B1A0B4000987E36 /* Contraception_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B629368D1B1A0B4000987E36 /* Contraception_App.xcdatamodeld */; };
+		B62936911B1A0B4000987E36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62936901B1A0B4000987E36 /* ViewController.swift */; };
+		B62936941B1A0B4000987E36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62936921B1A0B4000987E36 /* Main.storyboard */; };
+		B62936961B1A0B4000987E36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62936951B1A0B4000987E36 /* Images.xcassets */; };
+		B62936991B1A0B4000987E36 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B62936971B1A0B4000987E36 /* LaunchScreen.xib */; };
+		B62936A51B1A0B4000987E36 /* Contraception_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62936A41B1A0B4000987E36 /* Contraception_AppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B629369F1B1A0B4000987E36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B629367E1B1A0B4000987E36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B62936851B1A0B4000987E36;
+			remoteInfo = "Contraception App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B62936861B1A0B4000987E36 /* Contraception App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contraception App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B629368A1B1A0B4000987E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B629368B1B1A0B4000987E36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B629368E1B1A0B4000987E36 /* Contraception_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Contraception_App.xcdatamodel; sourceTree = "<group>"; };
+		B62936901B1A0B4000987E36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B62936931B1A0B4000987E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B62936951B1A0B4000987E36 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B62936981B1A0B4000987E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B629369E1B1A0B4000987E36 /* Contraception AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contraception AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62936A31B1A0B4000987E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B62936A41B1A0B4000987E36 /* Contraception_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contraception_AppTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B62936831B1A0B4000987E36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B629369B1B1A0B4000987E36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B629367D1B1A0B4000987E36 = {
+			isa = PBXGroup;
+			children = (
+				B62936881B1A0B4000987E36 /* Contraception App */,
+				B62936A11B1A0B4000987E36 /* Contraception AppTests */,
+				B62936871B1A0B4000987E36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B62936871B1A0B4000987E36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B62936861B1A0B4000987E36 /* Contraception App.app */,
+				B629369E1B1A0B4000987E36 /* Contraception AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B62936881B1A0B4000987E36 /* Contraception App */ = {
+			isa = PBXGroup;
+			children = (
+				B629368B1B1A0B4000987E36 /* AppDelegate.swift */,
+				B62936901B1A0B4000987E36 /* ViewController.swift */,
+				B62936921B1A0B4000987E36 /* Main.storyboard */,
+				B62936951B1A0B4000987E36 /* Images.xcassets */,
+				B62936971B1A0B4000987E36 /* LaunchScreen.xib */,
+				B629368D1B1A0B4000987E36 /* Contraception_App.xcdatamodeld */,
+				B62936891B1A0B4000987E36 /* Supporting Files */,
+			);
+			path = "Contraception App";
+			sourceTree = "<group>";
+		};
+		B62936891B1A0B4000987E36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B629368A1B1A0B4000987E36 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B62936A11B1A0B4000987E36 /* Contraception AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B62936A41B1A0B4000987E36 /* Contraception_AppTests.swift */,
+				B62936A21B1A0B4000987E36 /* Supporting Files */,
+			);
+			path = "Contraception AppTests";
+			sourceTree = "<group>";
+		};
+		B62936A21B1A0B4000987E36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B62936A31B1A0B4000987E36 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B62936851B1A0B4000987E36 /* Contraception App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B62936A81B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "Contraception App" */;
+			buildPhases = (
+				B62936821B1A0B4000987E36 /* Sources */,
+				B62936831B1A0B4000987E36 /* Frameworks */,
+				B62936841B1A0B4000987E36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Contraception App";
+			productName = "Contraception App";
+			productReference = B62936861B1A0B4000987E36 /* Contraception App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B629369D1B1A0B4000987E36 /* Contraception AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B62936AB1B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "Contraception AppTests" */;
+			buildPhases = (
+				B629369A1B1A0B4000987E36 /* Sources */,
+				B629369B1B1A0B4000987E36 /* Frameworks */,
+				B629369C1B1A0B4000987E36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B62936A01B1A0B4000987E36 /* PBXTargetDependency */,
+			);
+			name = "Contraception AppTests";
+			productName = "Contraception AppTests";
+			productReference = B629369E1B1A0B4000987E36 /* Contraception AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B629367E1B1A0B4000987E36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Dominic Vitucci";
+				TargetAttributes = {
+					B62936851B1A0B4000987E36 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					B629369D1B1A0B4000987E36 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = B62936851B1A0B4000987E36;
+					};
+				};
+			};
+			buildConfigurationList = B62936811B1A0B4000987E36 /* Build configuration list for PBXProject "Contraception App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B629367D1B1A0B4000987E36;
+			productRefGroup = B62936871B1A0B4000987E36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B62936851B1A0B4000987E36 /* Contraception App */,
+				B629369D1B1A0B4000987E36 /* Contraception AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B62936841B1A0B4000987E36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62936941B1A0B4000987E36 /* Main.storyboard in Resources */,
+				B62936991B1A0B4000987E36 /* LaunchScreen.xib in Resources */,
+				B62936961B1A0B4000987E36 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B629369C1B1A0B4000987E36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B62936821B1A0B4000987E36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62936911B1A0B4000987E36 /* ViewController.swift in Sources */,
+				B629368C1B1A0B4000987E36 /* AppDelegate.swift in Sources */,
+				B629368F1B1A0B4000987E36 /* Contraception_App.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B629369A1B1A0B4000987E36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62936A51B1A0B4000987E36 /* Contraception_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B62936A01B1A0B4000987E36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B62936851B1A0B4000987E36 /* Contraception App */;
+			targetProxy = B629369F1B1A0B4000987E36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B62936921B1A0B4000987E36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B62936931B1A0B4000987E36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B62936971B1A0B4000987E36 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B62936981B1A0B4000987E36 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B62936A61B1A0B4000987E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B62936A71B1A0B4000987E36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B62936A91B1A0B4000987E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Contraception App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B62936AA1B1A0B4000987E36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Contraception App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B62936AC1B1A0B4000987E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Contraception AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contraception App.app/Contraception App";
+			};
+			name = Debug;
+		};
+		B62936AD1B1A0B4000987E36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Contraception AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contraception App.app/Contraception App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B62936811B1A0B4000987E36 /* Build configuration list for PBXProject "Contraception App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62936A61B1A0B4000987E36 /* Debug */,
+				B62936A71B1A0B4000987E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B62936A81B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "Contraception App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62936A91B1A0B4000987E36 /* Debug */,
+				B62936AA1B1A0B4000987E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B62936AB1B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "Contraception AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62936AC1B1A0B4000987E36 /* Debug */,
+				B62936AD1B1A0B4000987E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B629368D1B1A0B4000987E36 /* Contraception_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B629368E1B1A0B4000987E36 /* Contraception_App.xcdatamodel */,
+			);
+			currentVersion = B629368E1B1A0B4000987E36 /* Contraception_App.xcdatamodel */;
+			path = Contraception_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B629367E1B1A0B4000987E36 /* Project object */;
+}
