@@ -18,6 +18,12 @@ class QuestionViewController: UIViewController {
 
     @IBOutlet weak var threeMonthButton: CheckBox!
     
+    @IBOutlet weak var threeFiveYearButton: CheckBox!
+    
+    @IBOutlet weak var tenYearButton: CheckBox!
+    
+    
+    
     @IBOutlet weak var doneButton: UIButton!
     
     var durations: NSMutableArray = []
@@ -29,6 +35,10 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
         
         durations = []
+        
+        
+//        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: navigationController, action: nil)
+//        navigationItem.leftBarButtonItem = backButton
         
        
     }
@@ -57,9 +67,14 @@ class QuestionViewController: UIViewController {
             durations.addObject("Three Month")
         }
         
+        if threeFiveYearButton.selected == true {
         durations.addObject("3 Year")
         durations.addObject("5 Year")
+        }
+        
+        if tenYearButton.selected == true {
         durations.addObject("Ten Year")
+        }
         
         
     }
@@ -72,12 +87,16 @@ class QuestionViewController: UIViewController {
         
         if segue.identifier == "donePressed" {
             
-            if let destination = segue.destinationViewController as? DetailViewController {
+//            if let destination = segue.destinationViewController as? DetailViewController {
+//                
+//              destination.selected = durations
+            
+        if let destination = segue.destinationViewController as? PillsViewController {
+                    
+                destination.tempSelect = durations
                 
-              destination.selected = durations
                 
-                
-                
+            
                 
             }
             

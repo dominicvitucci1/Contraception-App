@@ -51,6 +51,7 @@ class PillsViewController: UIViewController {
     
     @IBOutlet weak var nextFourButton: UIButton!
     
+    @IBOutlet weak var medField: UITextView!
     
     var tempSelect: NSMutableArray = []
     
@@ -67,6 +68,11 @@ class PillsViewController: UIViewController {
         nextFourButton.hidden = true
         yesButton.hidden = true
         noButton.hidden = true
+        medField.hidden = true
+        
+        
+//        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: navigationController, action: nil)
+//        navigationItem.leftBarButtonItem = backButton
         
         
 
@@ -83,12 +89,18 @@ class PillsViewController: UIViewController {
         if check1.selected == true || check2.selected == true || check3.selected == true || check4.selected == true || check5.selected == true || check6.selected == true {
             
             tempSelect.removeObject("Daily")
+            tempSelect.removeObject("Weekly")
+            tempSelect.removeObject("Monthly")
+            tempSelect.removeObject("Three Month")
+            tempSelect.removeObject("3 Year")
+            tempSelect.removeObject("5 Year")
+            
             
             let detailController = self.storyboard!.instantiateViewControllerWithIdentifier("detailController") as! DetailViewController
             
             detailController.selected = tempSelect
             
-            self.presentViewController(detailController, animated: true, completion: nil)
+            self.navigationController?.pushViewController(detailController, animated: true)
  
         }
         
@@ -118,12 +130,17 @@ class PillsViewController: UIViewController {
         if check1.selected == true || check2.selected == true || check3.selected == true || check4.selected == true || check5.selected == true || check6.selected == true {
             
             tempSelect.removeObject("Daily")
+            tempSelect.removeObject("Weekly")
+            tempSelect.removeObject("Monthly")
+            tempSelect.removeObject("Three Month")
+            tempSelect.removeObject("3 Year")
+            tempSelect.removeObject("5 Year")
             
             let detailController = self.storyboard!.instantiateViewControllerWithIdentifier("detailController") as! DetailViewController
             
             detailController.selected = tempSelect
             
-            self.presentViewController(detailController, animated: true, completion: nil)
+            self.navigationController?.pushViewController(detailController, animated: true)
         
     }
         
@@ -166,13 +183,14 @@ class PillsViewController: UIViewController {
             tempSelect.removeObject("Monthly")
             tempSelect.removeObject("Three Month")
             tempSelect.removeObject("3 Year")
+            tempSelect.removeObject("5 Year")
             
             
             let detailController = self.storyboard!.instantiateViewControllerWithIdentifier("detailController") as! DetailViewController
             
             detailController.selected = tempSelect
             
-            self.presentViewController(detailController, animated: true, completion: nil)
+            self.navigationController?.pushViewController(detailController, animated: true)
             
         }
             
@@ -212,13 +230,14 @@ class PillsViewController: UIViewController {
             tempSelect.removeObject("Monthly")
             tempSelect.removeObject("Three Month")
             tempSelect.removeObject("3 Year")
+            tempSelect.removeObject("5 Year")
             
             
             let detailController = self.storyboard!.instantiateViewControllerWithIdentifier("detailController") as! DetailViewController
             
             detailController.selected = tempSelect
             
-            self.presentViewController(detailController, animated: true, completion: nil)
+            self.navigationController?.pushViewController(detailController, animated: true)
             
         }
             
@@ -244,7 +263,18 @@ class PillsViewController: UIViewController {
             yesButton.hidden = false
             noButton.hidden = false
             
-            initialLabel.text = "Are you taking any of these medications that are used for tuberculosis (TB) or seizures? Rifampin, Rifabutin, Phenobarbitol/barbituates (Lumina, Barbital, Solfoton), Primidone (Mysoline), Phenytoin (Dilantin), Lamotrigine (Lamictal) Carbamazepine (Tegretol) Topiramate (Topamax)"
+            medField.hidden = false
+            medField.font = UIFont.systemFontOfSize(22)
+            medField.textColor = UIColor.whiteColor()
+            medField.editable = false
+            medField.selectable = false
+            
+            medField.text = "\u{2022} Rifampin \n\u{2022} Rifabutin \n\u{2022} Phenobarbitol/barbituates (Lumina, Barbital, Solfoton) \n\u{2022} Primidone (Mysoline) \n\u{2022} Phenytoin (Dilantin) \n\u{2022} Lamotrigine (Lamictal) \n\u{2022} Carbamazepine (Tegretol) \n\u{2022} Topiramate (Topamax)"
+            
+            
+            initialLabel.text = "Are you taking any of these medications that are used for tuberculosis (TB) or seizures?"
+            
+//            Rifampin, Rifabutin, Phenobarbitol/barbituates (Lumina, Barbital, Solfoton), Primidone (Mysoline),Phenytoin (Dilantin), Lamotrigine (Lamictal) Carbamazepine (Tegretol) Topiramate (Topamax)
             
             initialLabel.font = UIFont(name: initialLabel.font.fontName, size: 20)
             
@@ -261,19 +291,20 @@ class PillsViewController: UIViewController {
         
         detailController.selected = tempSelect
         
-        self.presentViewController(detailController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(detailController, animated: true)
         
     }
     
     @IBAction func noPressed(sender: AnyObject) {
-        tempSelect.removeObject("Daily")
+        //tempSelect.removeObject("Daily")
         
         let detailController = self.storyboard!.instantiateViewControllerWithIdentifier("detailController") as! DetailViewController
         
         detailController.selected = tempSelect
-        detailController.finalResults.addObject("Pills")
+        //detailController.finalResults.addObject("Pill")
+        //detailController.finalResults.addObject("Mini-Pill")
         
-        self.presentViewController(detailController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(detailController, animated: true)
         
     }
 

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 class OptionsViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -23,9 +25,11 @@ class OptionsViewController: UITableViewController, UITableViewDataSource, UITab
         
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "Options Background"))
         
-        options = ["Hormone-Based Pills", "Patch", "IUD", "Injection", "Ring"]
+        options = ["Intrauterine Device", "Implant", "Birth Control Shot", "Vaginal Ring", "Patch", "Pill", "Mini-Pill", "Condom – Male and Female", "Spermicide", "Sponge with Spermicide", "Emergency Contraception"]
+        
         
         self.tableView.reloadData()
+    
 
     }
 
@@ -62,6 +66,8 @@ class OptionsViewController: UITableViewController, UITableViewDataSource, UITab
         
         cell.textLabel?.textColor = UIColor.whiteColor()
         cell.detailTextLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.font = UIFont.systemFontOfSize(20)
+        //cell.accessoryView = UIButton.buttonWithType()
         
         // Feeds dictionary.
         var dict : NSDictionary! = options.objectAtIndex(indexPath.row) as? NSDictionary
@@ -91,21 +97,6 @@ class OptionsViewController: UITableViewController, UITableViewDataSource, UITab
                 if let destination = segue.destinationViewController as? FeedPageViewController {
                     if let index = tableView.indexPathForSelectedRow()?.row {
                         destination.selectedFeedTitle = options[index] as! String
-                        switch destination.selectedFeedTitle {
-                            case "Hormone-Based Pills":
-                                destination.selectedFeedFeedContent = "THIS IS A TEST"
-                                //destination.optionImage = UIImage(named: "Get Started")
-                                //destination.feedImage?.image = UIImage(named: "Options Background")
-                            
-                            case "Patch":
-                                destination.selectedFeedFeedContent = "TEST NUMBER 2"
-                            
-                            
-                        default:
-                            destination.selectedFeedFeedContent = "AN ERROR HAS OCCURED"
-                            
-                            
-                        }
                         
                     }
                 }

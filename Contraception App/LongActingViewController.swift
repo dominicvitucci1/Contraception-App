@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 class LongActingViewController: UIViewController {
     
@@ -23,7 +25,10 @@ class LongActingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelText = "Do you know there are long acting reversible contraceptives"
+//        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: navigationController, action: nil)
+//        navigationItem.leftBarButtonItem = backButton
+        
+        labelText = "Do you know there are long acting reversible contraceptives?"
         
         questionLabel.text = "\(labelText)"
 
@@ -39,22 +44,62 @@ class LongActingViewController: UIViewController {
         if let text = questionLabel.text {
             
             switch text {
-                case "Do you know there are long acting reversible contraceptives":
+                case "Do you know there are long acting reversible contraceptives?":
+                    
+                    var query = PFQuery(className:"LARCResponce")
+                    query.getObjectInBackgroundWithId("QzH58LeDhM") {
+                        (gameScore: PFObject?, error: NSError?) -> Void in
+                        if error != nil {
+                            println(error)
+                        }
+                            
+                        else {
+                            gameScore!.incrementKey("yesAnswers", byAmount: 1)
+                            gameScore!.saveInBackgroundWithBlock {
+                                (success: Bool, error: NSError?) -> Void in
+                                if (success) {
+                                    // The score key has been incremented
+                                } else {
+                                    // There was a problem, check error.description
+                                }
+                            }
+                        }
+                    }
+                    
                     questionLabel.text = "Do you want to know more about them?"
+
                 
                 case "Do you want to know more about them?":
+                    
+                    var query = PFQuery(className:"LARCResponce")
+                    query.getObjectInBackgroundWithId("rE5FGB5cTF") {
+                        (gameScore: PFObject?, error: NSError?) -> Void in
+                        if error != nil {
+                            println(error)
+                        }
+                            
+                        else {
+                            gameScore!.incrementKey("yesAnswers", byAmount: 1)
+                            gameScore!.saveInBackgroundWithBlock {
+                                (success: Bool, error: NSError?) -> Void in
+                                if (success) {
+                                    // The score key has been incremented
+                                } else {
+                                    // There was a problem, check error.description
+                                }
+                            }
+                        }
+                    }
+                    
                     let feedController = self.storyboard!.instantiateViewControllerWithIdentifier("FeedController") as! FeedPageViewController
-//                    feedController.moreLabel2.hidden = false
-//                    feedController.yesButton2.hidden = false
-//                    feedController.noButton2.hidden = false
-                    feedController.selectedFeedTitle = "IUD"
-                    feedController.selectedFeedFeedContent = "TEST 3"
+
+                    feedController.selectedFeedTitle = "Long-Acting Reversible Contraceptives (LARC)"
+                    feedController.selectedFeedFeedContent = "Long-acting reversible contraceptives (LARC) or long-acting reversible birth control are methods of birth control that provide prevent pregnancy for a long period of time - up to 10 years for some methods! LARC include implants and intrauterine devices (IUD). What are the advantages of using LARCs? The advantages of using LARCs is that they are safe, reliable. and reversible. Using LARCs is better at preventing pregnancy because you would use the birth control method consistently and correctly without having to think about it. It does not require taking a pill every day or doing something every time before having sex. Most important, almost all women can use implants and IUDs even teenagers."
+ 
                 
-                //self.presentViewController(feedController, animated: true, completion: nil)
 
                 self.navigationController!.pushViewController(feedController, animated: true)
                 
-                    //questionLabel.text = "What are Long-acting reversible contraceptives? Long-acting reversible contraceptives (LARC) or long-acting reversible birth control are methods of birth control that provide prevent pregnancy for a long period of time - up to 10 years for some methods! LARC include implants and intrauterine devices (IUD). What are the advantages of using LARCs? The advantages of using LARCs is that they are safe, reliable. and reversible. Using LARCs is better at preventing pregnancy because you would use the birth control method consistently and correctly without having to think about it. It does not require taking a pill every day or doing something every time before having sex. Most important, almost all women can use implants and IUDs even teenagers."
                 
             default:
                 questionLabel.text = "error"
@@ -71,10 +116,52 @@ class LongActingViewController: UIViewController {
         if let text = questionLabel.text {
             
             switch text {
-            case "Do you know there are long acting reversible contraceptives":
+            case "Do you know there are long acting reversible contraceptives?":
+                
+                var query = PFQuery(className:"LARCResponce")
+                query.getObjectInBackgroundWithId("QzH58LeDhM") {
+                    (gameScore: PFObject?, error: NSError?) -> Void in
+                    if error != nil {
+                        println(error)
+                    }
+                        
+                    else {
+                        gameScore!.incrementKey("noAnswers", byAmount: 1)
+                        gameScore!.saveInBackgroundWithBlock {
+                            (success: Bool, error: NSError?) -> Void in
+                            if (success) {
+                                // The score key has been incremented
+                            } else {
+                                // There was a problem, check error.description
+                            }
+                        }
+                    }
+                }
+                
                 questionLabel.text = "Do you want to know more about them?"
                 
             case "Do you want to know more about them?":
+                
+                var query = PFQuery(className:"LARCResponce")
+                query.getObjectInBackgroundWithId("rE5FGB5cTF") {
+                    (gameScore: PFObject?, error: NSError?) -> Void in
+                    if error != nil {
+                        println(error)
+                    }
+                        
+                    else {
+                        gameScore!.incrementKey("noAnswers", byAmount: 1)
+                        gameScore!.saveInBackgroundWithBlock {
+                            (success: Bool, error: NSError?) -> Void in
+                            if (success) {
+                                // The score key has been incremented
+                            } else {
+                                // There was a problem, check error.description
+                            }
+                        }
+                    }
+                }
+                
                 let yesController = self.storyboard!.instantiateViewControllerWithIdentifier("YesController") as! QuestionViewController
                 
                 self.navigationController!.pushViewController(yesController, animated: true)
