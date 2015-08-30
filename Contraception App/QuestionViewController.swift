@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 class QuestionViewController: UIViewController {
     
@@ -36,6 +38,30 @@ class QuestionViewController: UIViewController {
         
         durations = []
         
+        if PFUser.currentUser() == nil {
+        PFAnonymousUtils.logInWithBlock {
+            (user: PFUser?, error: NSError?) -> Void in
+            if error != nil || user == nil {
+                println("Anonymous login failed.")
+            } else {
+                println("Anonymous user logged in.")
+                
+                var data = PFObject(className:"data")
+                data["userNumber"] = PFUser.currentUser()
+                data["age"] = "Not Provided"
+                data["ethnicity"] = "Not Provided"
+                data["race"] = "Not Provided"
+                data["medicalAssistance"] = "Not Provided"
+                data.saveInBackgroundWithBlock {
+                    (success: Bool, error: NSError?) -> Void in
+                    if (success) {
+                        println("objectSaved")
+                    }
+                }
+            }
+        }
+    }
+    
         
 //        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: navigationController, action: nil)
 //        navigationItem.leftBarButtonItem = backButton

@@ -286,6 +286,8 @@ class PillsViewController: UIViewController {
     
     @IBAction func yesPressed(sender: AnyObject) {
         tempSelect.removeObject("Daily")
+        tempSelect.removeObject("Weekly")
+        tempSelect.removeObject("Monthly")
         
         let detailController = self.storyboard!.instantiateViewControllerWithIdentifier("detailController") as! DetailViewController
         

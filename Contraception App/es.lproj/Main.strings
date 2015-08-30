@@ -1,0 +1,207 @@
+
+/* Class = "UILabel"; text = "Your best forms of birth control are:"; ObjectID = "1Og-qk-7xX"; */
+"1Og-qk-7xX.text" = "Your best forms of birth control are:";
+
+/* Class = "UILabel"; text = "to"; ObjectID = "1cq-xk-yHs"; */
+"1cq-xk-yHs.text" = "to";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3Ij-9z-RUd"; */
+"3Ij-9z-RUd.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "5eM-7I-ERY"; */
+"5eM-7I-ERY.normalTitle" = "No";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "6P4-q6-DKb"; */
+"6P4-q6-DKb.normalTitle" = "No";
+
+/* Class = "UILabel"; text = "Do you have or do you qualify for State Medical Assistance?"; ObjectID = "79v-V8-IhX"; */
+"79v-V8-IhX.text" = "Do you have or do you qualify for State Medical Assistance?";
+
+/* Class = "UILabel"; text = "Monthly"; ObjectID = "7Dd-GS-vxa"; */
+"7Dd-GS-vxa.text" = "Monthly";
+
+/* Class = "UILabel"; text = "Have you had recent surgery where you needed to stay in bed for a long time or could not move around very well?"; ObjectID = "8B5-wZ-Pyq"; */
+"8B5-wZ-Pyq.text" = "Have you had recent surgery where you needed to stay in bed for a long time or could not move around very well?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8fr-0q-0Zg"; */
+"8fr-0q-0Zg.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "9n8-lg-bhC"; */
+"9n8-lg-bhC.normalTitle" = "Yes";
+
+/* Class = "UILabel"; text = "Did you have a baby less than 1 month ago and you are breastfeeding the baby?"; ObjectID = "9s9-Kl-O6k"; */
+"9s9-Kl-O6k.text" = "Did you have a baby less than 1 month ago and you are breastfeeding the baby?";
+
+/* Class = "UILabel"; text = "Please select your race:"; ObjectID = "Aal-r3-uOo"; */
+"Aal-r3-uOo.text" = "Please select your race:";
+
+/* Class = "UITextField"; placeholder = "Tap here to select if you qualify for State Medical Assitance"; ObjectID = "Bn4-EZ-u2V"; */
+"Bn4-EZ-u2V.placeholder" = "Tap here to select if you qualify for State Medical Assitance";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "CGi-5T-13v"; */
+"CGi-5T-13v.normalTitle" = "Done";
+
+/* Class = "UILabel"; text = "10 Years"; ObjectID = "DGN-XA-ax5"; */
+"DGN-XA-ax5.text" = "10 Years";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "EfV-rm-IIh"; */
+"EfV-rm-IIh.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "F7q-tc-EsD"; */
+"F7q-tc-EsD.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Disclaimer"; ObjectID = "FPM-JV-daK"; */
+"FPM-JV-daK.text" = "Disclaimer";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "FyT-qN-ZPd"; */
+"FyT-qN-ZPd.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "GLh-hk-e2p"; */
+"GLh-hk-e2p.normalTitle" = "Yes";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "GUg-4w-rWk"; */
+"GUg-4w-rWk.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Gdb-iE-INY"; */
+"Gdb-iE-INY.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "What ethnicity best describes you?"; ObjectID = "Gyc-nn-vFd"; */
+"Gyc-nn-vFd.text" = "What ethnicity best describes you?";
+
+/* Class = "UITextField"; placeholder = "Enter your email address"; ObjectID = "H1n-PK-JOn"; */
+"H1n-PK-JOn.placeholder" = "Enter your email address";
+
+/* Class = "UILabel"; text = "Every Three Months"; ObjectID = "I0k-pV-FiU"; */
+"I0k-pV-FiU.text" = "Every Three Months";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "I3f-gi-9F2"; */
+"I3f-gi-9F2.text" = "Welcome";
+
+/* Class = "UILabel"; text = "Enter your information to send your results"; ObjectID = "OBO-7y-LjE"; */
+"OBO-7y-LjE.text" = "Enter your information to send your results";
+
+/* Class = "UILabel"; text = "Did you have a baby less than 3 weeks ago?"; ObjectID = "Ocv-Zj-46z"; */
+"Ocv-Zj-46z.text" = "Did you have a baby less than 3 weeks ago?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "P3l-2O-y3a"; */
+"P3l-2O-y3a.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Do you know there are long acting reversible contraceptives?"; ObjectID = "SRk-vp-ATd"; */
+"SRk-vp-ATd.text" = "Do you know there are long acting reversible contraceptives?";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "Sv1-fR-tcF"; */
+"Sv1-fR-tcF.normalTitle" = "Yes";
+
+/* Class = "UILabel"; text = "Please enter the following infomation:"; ObjectID = "TxH-gO-JG4"; */
+"TxH-gO-JG4.text" = "Please enter the following infomation:";
+
+/* Class = "UILabel"; text = "Please select your age range:"; ObjectID = "Uyn-O8-ZMR"; */
+"Uyn-O8-ZMR.text" = "Please select your age range:";
+
+/* Class = "UILabel"; text = "Daily"; ObjectID = "WaX-RQ-eXc"; */
+"WaX-RQ-eXc.text" = "Daily";
+
+/* Class = "UILabel"; text = "Would you like your results via email?"; ObjectID = "XBx-DK-uOZ"; */
+"XBx-DK-uOZ.text" = "Would you like your results via email?";
+
+/* Class = "UITextView"; text = "This application (app) does not provide specific medical advice and does not endorse any medical or professional service obtained through information provided on this app or any links provided. It is intended for general informational purposes only. \nUse of this app does not replace medical consultation with a qualified health or medical professional to meet the health and medical needs of you or others. Never ignore professional medical advice in seeking treatment because of something that you have read on this app. If you think you may have a medical emergency, please dial 911\nWhile the content of this app is periodically updated, medical information changes rapidly and therefore, some information may be out of date, and/or contain inaccuracies or typographical errors."; ObjectID = "cpU-Xo-E2U"; */
+"cpU-Xo-E2U.text" = "This application (app) does not provide specific medical advice and does not endorse any medical or professional service obtained through information provided on this app or any links provided. It is intended for general informational purposes only. \nUse of this app does not replace medical consultation with a qualified health or medical professional to meet the health and medical needs of you or others. Never ignore professional medical advice in seeking treatment because of something that you have read on this app. If you think you may have a medical emergency, please dial 911\nWhile the content of this app is periodically updated, medical information changes rapidly and therefore, some information may be out of date, and/or contain inaccuracies or typographical errors.";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "daD-gx-Ygy"; */
+"daD-gx-Ygy.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "eEX-TQ-at2"; */
+"eEX-TQ-at2.normalTitle" = "Yes";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f4y-ot-oMR"; */
+"f4y-ot-oMR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fng-X2-huR"; */
+"fng-X2-huR.text" = "Label";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "g3m-vM-3mS"; */
+"g3m-vM-3mS.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Please check all that apply. If none of these apply to you, press \"Next\"."; ObjectID = "gUw-sX-vl5"; */
+"gUw-sX-vl5.text" = "Please check all that apply. If none of these apply to you, press \"Next\".";
+
+/* Class = "UILabel"; text = "￼Are you planning to get pregnant within the next 1-3 years?"; ObjectID = "hAV-Fw-ADT"; */
+"hAV-Fw-ADT.text" = "￼Are you planning to get pregnant within the next 1-3 years?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hIm-4d-xnb"; */
+"hIm-4d-xnb.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Weekly"; ObjectID = "hO3-OE-H87"; */
+"hO3-OE-H87.text" = "Weekly";
+
+/* Class = "UITextField"; placeholder = "Tap here to selct your race"; ObjectID = "ha9-iy-XVI"; */
+"ha9-iy-XVI.placeholder" = "Tap here to selct your race";
+
+/* Class = "UITextField"; placeholder = "Tap here to select your age range"; ObjectID = "lZX-dx-SKa"; */
+"lZX-dx-SKa.placeholder" = "Tap here to select your age range";
+
+/* Class = "UILabel"; text = "3-5 Years"; ObjectID = "ln4-5m-Shp"; */
+"ln4-5m-Shp.text" = "3-5 Years";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "mID-g2-ko6"; */
+"mID-g2-ko6.normalTitle" = "No";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "mQt-fK-abl"; */
+"mQt-fK-abl.normalTitle" = "Yes";
+
+/* Class = "UILabel"; text = "Are you older than 35 years old and also have migraine headaches?"; ObjectID = "n0T-Yg-ddO"; */
+"n0T-Yg-ddO.text" = "Are you older than 35 years old and also have migraine headaches?";
+
+/* Class = "UILabel"; text = "Do you have a history of a blood clot in the lungs or legs?"; ObjectID = "nus-93-Kl7"; */
+"nus-93-Kl7.text" = "Do you have a history of a blood clot in the lungs or legs?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oPV-eV-K2c"; */
+"oPV-eV-K2c.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oWu-QL-qQJ"; */
+"oWu-QL-qQJ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "ohV-Fn-QuQ"; */
+"ohV-Fn-QuQ.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Are you older than 35 and smoke?"; ObjectID = "pce-0n-4Yt"; */
+"pce-0n-4Yt.text" = "Are you older than 35 and smoke?";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "rnM-ky-efj"; */
+"rnM-ky-efj.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Press \"Get Started\" to begin."; ObjectID = "syx-ge-5aM"; */
+"syx-ge-5aM.text" = "Press \"Get Started\" to begin.";
+
+/* Class = "UITextField"; placeholder = "Tap here to select your ethnicity"; ObjectID = "ta3-2x-hav"; */
+"ta3-2x-hav.placeholder" = "Tap here to select your ethnicity";
+
+/* Class = "UILabel"; text = "How often would you like to take/receive your birth control (select all that apply)?"; ObjectID = "tgB-Js-1pg"; */
+"tgB-Js-1pg.text" = "How often would you like to take/receive your birth control (select all that apply)?";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "uYj-Bg-M3t"; */
+"uYj-Bg-M3t.normalTitle" = "Send";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "vbi-Hn-41U"; */
+"vbi-Hn-41U.normalTitle" = "No";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vhq-n4-Gc6"; */
+"vhq-n4-Gc6.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "wQJ-1C-G1c"; */
+"wQJ-1C-G1c.normalTitle" = "No";
+
+/* Class = "UIButton"; normalTitle = "View Your Results"; ObjectID = "wbY-y8-Cic"; */
+"wbY-y8-Cic.normalTitle" = "View Your Results";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "xa9-wp-cx6"; */
+"xa9-wp-cx6.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xme-fo-K6u"; */
+"xme-fo-K6u.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "I'm in High School, what should I know about birth control"; ObjectID = "z8w-d4-eXn"; */
+"z8w-d4-eXn.text" = "I'm in High School, what should I know about birth control";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zp8-p2-bBv"; */
+"zp8-p2-bBv.normalTitle" = "Button";

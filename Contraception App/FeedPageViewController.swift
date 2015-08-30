@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 class FeedPageViewController: UIViewController {
 
@@ -81,8 +83,29 @@ class FeedPageViewController: UIViewController {
             selectedFeedFeedContent = "Mini-pills contain the hormone called progestin. They are different from regular combination birth control pills because they only contain one hormone. Progestin works in 3 ways: It thickens the cervical mucus, which keeps sperm from joining with the egg. It changes the lining of your uterus so a fertilized egg cannot attach to the uterus and grow. It sometimes stops the ovaries from releasing eggs. Mini-pills come in packs. There are no spacer pills for a week as the combination birth control pills have. You have to take a pill every day at the same time to prevent pregnancy. This means you take a pill even when you have your period. \n\n<b>Are there advantages in taking mini-pills?</b> Mini-pills work better than barrier methods such as condoms. Mini-pills may cause fewer side effects than combination birth control pills. They may reduce heavy bleeding and cramping. They do not contain estrogen. So you can use them if you do not want to take estrogen or if you have health problems where estrogen should not be taken. They are safe to use while breast-feeding. You do not have to interrupt sex to use them. \n\n<b>Are there disadvantages in taking mini-pills?</b> Mini-pills do NOT protect against sexually transmitted infections (STIs), such as herpes or HIV (the virus that causes AIDS). If you are not sure if your sexual partner might have an STI, use a condom to protect against disease. They may cause irregular periods. You may have spotting between periods. You may also stop getting a period. Some women see having no period as an advantage. You must take a pill at the same time every day to prevent pregnancy. \n\n<b>What is the possibility of getting pregnant while using the mini-pill?</b> Using the mini-pill can be a reliable method of birth control if used correctly. Out of 100 women who use this method, about 5 get pregnant. In the first year of use: When mini-pills are taken exactly as directed, less than 1 woman out of 100 gets pregnant. When pills are not taken exactly as directed, such as forgetting to take them sometimes, 8 or more women out of 100 get pregnant. It is actually user failure rather than method failure which is responsible for most of these pregnancies. It is important, therefore, to follow all instructions for using the mini-pill, and to use another reliable method of birth control if you stop taking the mini-pills or forget to take the mini-pills. \n\n\n\n"
             
         case "Condom – Male and Female":
-            feedImage.image = UIImage(named: "Condom")
+            //feedImage.image = UIImage(named: "Condom")
             
+            var query = PFQuery(className: "imageFiles")
+            query.whereKey("objectId", equalTo: "KqcrOgWbDg")
+            query.findObjectsInBackgroundWithBlock {
+                (objects: [AnyObject]?, error: NSError?) -> Void in
+
+                if error == nil {
+                    
+                    for object : PFObject in objects as! [PFObject] {
+                        let image = object["image"] as! PFFile
+                        
+                        image.getDataInBackgroundWithBlock {
+                            (imageData: NSData?, error: NSError?) -> Void in
+                            if error == nil {
+                                let finalimage = UIImage(data: imageData!)
+                                self.feedImage.image = finalimage
+
+                            }
+                        }
+                    }
+                }
+            }
             selectedFeedFeedContent = "<b>Male condom:</b> \n\nWorn by the man, a male condom keeps sperm from getting into a woman’s body. Latex condoms, the most common type, help prevent pregnancy, and HIV and other STDs, as do the newer synthetic condoms. “Natural” or “lambskin” condoms also help prevent pregnancy, but may not provide protection against STDs, including HIV. \n\nCondoms can only be used once. You can buy condoms, KY jelly, or water-based lubricants at a drug store. Do not use oil-based lubricants such as massage oils, baby oil, lotions, or petroleum jelly with latex condoms. They will weaken the condom, causing it to tear or break. \n\n<b>Female condom:</b>\n\nWorn by the woman, the female condom helps keeps sperm from getting into her body. It is packaged with a lubricant and is available at drug stores. It can be inserted up to eight hours before sexual intercourse. \n\n<b>Which barrier methods protect me from sexually transmitted infections (STIs)?</b> Male or female condoms are the only birth control methods that protect against sexually transmitted infections (STIs), including herpes and HIV (the virus that causes AIDS). To help protect yourself and your partner from getting or spreading a STI, be sure to use a condom every time you have sex. \n\n<b>How do I get a barrier method?</b> Male condoms, female condoms, sponge with a spermicide, and all the different types of spermicides can be bought over-the-counter. \n\n<b>Are there advantages in using barrier methods?</b> Male or female condoms are the only birth control methods that protect against sexually transmitted infections (STIs), including herpes and HIV (the virus that causes AIDS) or when you do not know that you are both infection-free. Barrier methods do not affect a woman or man's future fertility. Barrier methods are a good choice if you are planning to become pregnant soon and prefer a method you can stop using anytime you want. Barrier methods are only used at the time of sexual intercourse. Barrier methods are a good choice if you want an option that does not require hormones or insertion of an implant or IUD. Barrier methods do not affect other health conditions such as high blood pressure. Barrier methods are less expensive than some of the other methods of birth control, and some you can get without a prescription. Barrier methods are a good choice if you are breast-feeding. \n\n<b>Are there disadvantages in using barrier methods?</b> Couples who use barrier methods have the highest pregnancy rates than if they used any other type of birth control. It must be used EVERY time you have intercourse. Some couples find barrier methods embarrassing to use or they do not want a barrier method to interrupt foreplay or intercourse. The man or the woman may develop allergies to spermicides. Some of the barrier methods such as the diaphragm or cervical cap require spermicides. \n\n<b>What is the possibility of getting pregnant while using Male or Female Condoms?</b> In the first year of use: When male condoms are used exactly as directed, between 11 and 16 women out of 100 became pregnant, and when female condoms are used exactly as directed, 20 women out of 100 became pregnant. \n\n\n\n"
             
         case "Spermicide":

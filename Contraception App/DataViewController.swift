@@ -27,10 +27,10 @@ class DataViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     var picker3: UIPickerView = UIPickerView()
     var picker4: UIPickerView = UIPickerView()
     
-    var ages: NSMutableArray = ["Younger than 15", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-50", "Older than 50"]
-    var ethnicities: NSMutableArray = ["Hispanic or Latina", "Not Hispanic or Latina"]
-    var races: NSMutableArray = ["Black or African American", "Asian", "American Indian or Alaskan Native", "Native Hawaiian or Other Pacific Islander", "White"]
-    var medAssist: NSMutableArray = ["Yes", "No"]
+    var ages: NSMutableArray = ["","Younger than 15", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-50", "Older than 50"]
+    var ethnicities: NSMutableArray = ["", "Hispanic or Latina", "Not Hispanic or Latina"]
+    var races: NSMutableArray = ["", "Black or African American", "Asian", "American Indian or Alaskan Native", "Native Hawaiian or Other Pacific Islander", "White"]
+    var medAssist: NSMutableArray = ["", "Yes", "No"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -154,7 +154,11 @@ class DataViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     @IBAction func donePressed(sender: AnyObject) {
         
-        PFAnonymousUtils.logInWithBlock {
+        
+        if Reachability.isConnectedToNetwork() == true {
+            println("Internet connection OK")
+            
+            PFAnonymousUtils.logInWithBlock {
             (user: PFUser?, error: NSError?) -> Void in
             if error != nil || user == nil {
                 println("Anonymous login failed.")
@@ -184,6 +188,14 @@ class DataViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
                 }
             }
         }
+        }
+            
+            else {
+                println("Internet connection FAILED")
+                var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
+                alert.show()
+            }
+
     }
     
 

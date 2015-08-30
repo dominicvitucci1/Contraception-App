@@ -62,7 +62,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
 
         if (results.count == 0) {
             
-            var emptyAlertController = UIAlertController(title: "There were no birth control options that matched your preferances. Please reconsider some of your preferances regarding birth control.", message: "Press OK to change some of your preferances or press Cancel to exit the app.", preferredStyle: .Alert)
+            var emptyAlertController = UIAlertController(title: "There were no birth control options that matched your preferences. Please reconsider some of your preferences regarding birth control.", message: "Press OK to change some of your preferences or press Cancel to exit the app.", preferredStyle: .Alert)
             
             // Create the actions
             
@@ -170,7 +170,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBAction func noButtonPressed(sender: AnyObject) {
         
-        var larcAlertController = UIAlertController(title: "After using this application are you more likely to use an IUD or an Implant?", message: "Your responce will not be associated with any identifying information", preferredStyle: .Alert)
+        var larcAlertController = UIAlertController(title: "After using this application are you more likely to use an IUD or an Implant?", message: "Your response will not be associated with any identifying information", preferredStyle: .Alert)
         
         // Create the actions
         
@@ -178,13 +178,52 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
             UIAlertAction in
             NSLog("No Pressed")
             
+            if PFUser.currentUser() !== nil {
+                var query1 = PFQuery(className:"data")
+                query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
+                query1.findObjectsInBackgroundWithBlock {
+                    (objects: [AnyObject]?, error: NSError?) -> Void in
+                    
+                    if error == nil {
+                        // The find succeeded.
+                        println("Successfully retrieved \(objects!.count) scores.")
+                        // Do something with the found objects
+                        if let objects = objects as? [PFObject] {
+                            for object in objects {
+                                //finalObject = object
+                                println(object.objectId)
+                                
+                                var query2 = PFQuery(className:"data")
+                                query2.getObjectInBackgroundWithId(object.objectId!) {
+                                    (object, error) -> Void in
+                                    if error != nil {
+                                        println(error)
+                                    } else {
+                                        if let object = object {
+                                            object["After_using_this_application_are_you_more_likely_to_use_an_IUD_or_an_Implant"] = "No"
+                                        }
+                                        object!.saveInBackground()
+                                    }
+                                }
+                            }
+                        }
+                    } else {
+                        // Log details of the failure
+                        println("Error: \(error!) \(error!.userInfo!)")
+                    }
+                }
+                
+            }
+            
+
+            
             
             var quitAlert: UIAlertView = UIAlertView()
             
             quitAlert.delegate = self
             
-            quitAlert.title = "If you're finished viewing your results, and you don't wish to recieve them by email tap Okay to exit this page."
-            quitAlert.message = "Your results will not be recorded or shared with any third parties"
+            quitAlert.title = "If you're finished viewing your results, and you don't wish to receive them by email tap Okay to exit this page."
+            quitAlert.message = "Your email address will not be saved and the methods selected for you will not be connected to any identifying information."
             quitAlert.addButtonWithTitle("Cancel")
             quitAlert.addButtonWithTitle("Okay")
             
@@ -195,32 +234,50 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
             UIAlertAction in
             NSLog("Yes Pressed")
             
-            var query = PFQuery(className:"LARCResponce")
-            query.getObjectInBackgroundWithId("AOCYJDftn3") {
-                (gameScore: PFObject?, error: NSError?) -> Void in
-                if error != nil {
-                    println(error)
-                }
+            if PFUser.currentUser() !== nil {
+                var query1 = PFQuery(className:"data")
+                query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
+                query1.findObjectsInBackgroundWithBlock {
+                    (objects: [AnyObject]?, error: NSError?) -> Void in
                     
-                else {
-                    gameScore!.incrementKey("yesAnswers", byAmount: 1)
-                    gameScore!.saveInBackgroundWithBlock {
-                        (success: Bool, error: NSError?) -> Void in
-                        if (success) {
-                            // The score key has been incremented
-                        } else {
-                            // There was a problem, check error.description
+                    if error == nil {
+                        // The find succeeded.
+                        println("Successfully retrieved \(objects!.count) scores.")
+                        // Do something with the found objects
+                        if let objects = objects as? [PFObject] {
+                            for object in objects {
+                                //finalObject = object
+                                println(object.objectId)
+                                
+                                var query2 = PFQuery(className:"data")
+                                query2.getObjectInBackgroundWithId(object.objectId!) {
+                                    (object, error) -> Void in
+                                    if error != nil {
+                                        println(error)
+                                    } else {
+                                        if let object = object {
+                                            object["After_using_this_application_are_you_more_likely_to_use_an_IUD_or_an_Implant"] = "Yes"
+                                        }
+                                        object!.saveInBackground()
+                                    }
+                                }
+                            }
                         }
+                    } else {
+                        // Log details of the failure
+                        println("Error: \(error!) \(error!.userInfo!)")
                     }
                 }
+                
             }
+
             
             var quitAlert: UIAlertView = UIAlertView()
             
             quitAlert.delegate = self
             
-            quitAlert.title = "If you're finished viewing your results, and you don't wish to recieve them by email tap Okay to exit this page."
-            quitAlert.message = "Your results will not be recorded or shared with any third parties"
+            quitAlert.title = "If you're finished viewing your results, and you don't wish to receive them by email tap Okay to exit this page."
+            quitAlert.message = "Your email address will not be saved and the methods selected for you will not be connected to any identifying information."
             quitAlert.addButtonWithTitle("Cancel")
             quitAlert.addButtonWithTitle("Okay")
             

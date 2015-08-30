@@ -31,6 +31,32 @@ class LongActingViewController: UIViewController {
         labelText = "Do you know there are long acting reversible contraceptives?"
         
         questionLabel.text = "\(labelText)"
+        
+        if PFUser.currentUser() == nil {
+            
+        
+        PFAnonymousUtils.logInWithBlock {
+            (user: PFUser?, error: NSError?) -> Void in
+            if error != nil || user == nil {
+                println("Anonymous login failed.")
+            } else {
+                println("Anonymous user logged in.")
+                
+                var data = PFObject(className:"data")
+                data["userNumber"] = PFUser.currentUser()
+                data["age"] = "Not Provided"
+                data["ethnicity"] = "Not Provided"
+                data["race"] = "Not Provided"
+                data["medicalAssistance"] = "Not Provided"
+                data.saveInBackgroundWithBlock {
+                    (success: Bool, error: NSError?) -> Void in
+                    if (success) {
+                        println("objectSaved")
+                    }
+                }
+            }
+        }
+    }
 
     }
 
@@ -46,50 +72,86 @@ class LongActingViewController: UIViewController {
             switch text {
                 case "Do you know there are long acting reversible contraceptives?":
                     
-                    var query = PFQuery(className:"LARCResponce")
-                    query.getObjectInBackgroundWithId("QzH58LeDhM") {
-                        (gameScore: PFObject?, error: NSError?) -> Void in
-                        if error != nil {
-                            println(error)
-                        }
+                    if PFUser.currentUser() !== nil {
+                        var query1 = PFQuery(className:"data")
+                        query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
+                        query1.findObjectsInBackgroundWithBlock {
+                            (objects: [AnyObject]?, error: NSError?) -> Void in
                             
-                        else {
-                            gameScore!.incrementKey("yesAnswers", byAmount: 1)
-                            gameScore!.saveInBackgroundWithBlock {
-                                (success: Bool, error: NSError?) -> Void in
-                                if (success) {
-                                    // The score key has been incremented
-                                } else {
-                                    // There was a problem, check error.description
+                            if error == nil {
+                                // The find succeeded.
+                                println("Successfully retrieved \(objects!.count) scores.")
+                                // Do something with the found objects
+                                if let objects = objects as? [PFObject] {
+                                    for object in objects {
+                                        //finalObject = object
+                                        println(object.objectId)
+                                        
+                                        var query2 = PFQuery(className:"data")
+                                        query2.getObjectInBackgroundWithId(object.objectId!) {
+                                            (object, error) -> Void in
+                                            if error != nil {
+                                                println(error)
+                                            } else {
+                                                if let object = object {
+                                                    object["Do_you_know_there_are_long_acting_reversible_contraceptives"] = "Yes"
+                                                }
+                                                object!.saveInBackground()
+                                            }
+                                        }
+                                    }
                                 }
+                            } else {
+                                // Log details of the failure
+                                println("Error: \(error!) \(error!.userInfo!)")
                             }
                         }
+
                     }
+                    
                     
                     questionLabel.text = "Do you want to know more about them?"
 
                 
                 case "Do you want to know more about them?":
                     
-                    var query = PFQuery(className:"LARCResponce")
-                    query.getObjectInBackgroundWithId("rE5FGB5cTF") {
-                        (gameScore: PFObject?, error: NSError?) -> Void in
-                        if error != nil {
-                            println(error)
-                        }
+                    if PFUser.currentUser() !== nil {
+                        var query1 = PFQuery(className:"data")
+                        query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
+                        query1.findObjectsInBackgroundWithBlock {
+                            (objects: [AnyObject]?, error: NSError?) -> Void in
                             
-                        else {
-                            gameScore!.incrementKey("yesAnswers", byAmount: 1)
-                            gameScore!.saveInBackgroundWithBlock {
-                                (success: Bool, error: NSError?) -> Void in
-                                if (success) {
-                                    // The score key has been incremented
-                                } else {
-                                    // There was a problem, check error.description
+                            if error == nil {
+                                // The find succeeded.
+                                println("Successfully retrieved \(objects!.count) scores.")
+                                // Do something with the found objects
+                                if let objects = objects as? [PFObject] {
+                                    for object in objects {
+                                        //finalObject = object
+                                        println(object.objectId)
+                                        
+                                        var query2 = PFQuery(className:"data")
+                                        query2.getObjectInBackgroundWithId(object.objectId!) {
+                                            (object, error) -> Void in
+                                            if error != nil {
+                                                println(error)
+                                            } else {
+                                                if let object = object {
+                                                    object["Do_you_want_to_know_more_about_them"] = "Yes"
+                                                }
+                                                object!.saveInBackground()
+                                            }
+                                        }
+                                    }
                                 }
+                            } else {
+                                // Log details of the failure
+                                println("Error: \(error!) \(error!.userInfo!)")
                             }
                         }
+                        
                     }
+
                     
                     let feedController = self.storyboard!.instantiateViewControllerWithIdentifier("FeedController") as! FeedPageViewController
 
@@ -118,49 +180,84 @@ class LongActingViewController: UIViewController {
             switch text {
             case "Do you know there are long acting reversible contraceptives?":
                 
-                var query = PFQuery(className:"LARCResponce")
-                query.getObjectInBackgroundWithId("QzH58LeDhM") {
-                    (gameScore: PFObject?, error: NSError?) -> Void in
-                    if error != nil {
-                        println(error)
-                    }
+                if PFUser.currentUser() !== nil {
+                    var query1 = PFQuery(className:"data")
+                    query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
+                    query1.findObjectsInBackgroundWithBlock {
+                        (objects: [AnyObject]?, error: NSError?) -> Void in
                         
-                    else {
-                        gameScore!.incrementKey("noAnswers", byAmount: 1)
-                        gameScore!.saveInBackgroundWithBlock {
-                            (success: Bool, error: NSError?) -> Void in
-                            if (success) {
-                                // The score key has been incremented
-                            } else {
-                                // There was a problem, check error.description
+                        if error == nil {
+                            // The find succeeded.
+                            println("Successfully retrieved \(objects!.count) scores.")
+                            // Do something with the found objects
+                            if let objects = objects as? [PFObject] {
+                                for object in objects {
+                                    //finalObject = object
+                                    println(object.objectId)
+                                    
+                                    var query2 = PFQuery(className:"data")
+                                    query2.getObjectInBackgroundWithId(object.objectId!) {
+                                        (object, error) -> Void in
+                                        if error != nil {
+                                            println(error)
+                                        } else {
+                                            if let object = object {
+                                                object["Do_you_know_there_are_long_acting_reversible_contraceptives"] = "No"
+                                            }
+                                            object!.saveInBackground()
+                                        }
+                                    }
+                                }
                             }
+                        } else {
+                            // Log details of the failure
+                            println("Error: \(error!) \(error!.userInfo!)")
                         }
                     }
+                    
                 }
                 
                 questionLabel.text = "Do you want to know more about them?"
                 
             case "Do you want to know more about them?":
                 
-                var query = PFQuery(className:"LARCResponce")
-                query.getObjectInBackgroundWithId("rE5FGB5cTF") {
-                    (gameScore: PFObject?, error: NSError?) -> Void in
-                    if error != nil {
-                        println(error)
-                    }
+                if PFUser.currentUser() !== nil {
+                    var query1 = PFQuery(className:"data")
+                    query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
+                    query1.findObjectsInBackgroundWithBlock {
+                        (objects: [AnyObject]?, error: NSError?) -> Void in
                         
-                    else {
-                        gameScore!.incrementKey("noAnswers", byAmount: 1)
-                        gameScore!.saveInBackgroundWithBlock {
-                            (success: Bool, error: NSError?) -> Void in
-                            if (success) {
-                                // The score key has been incremented
-                            } else {
-                                // There was a problem, check error.description
+                        if error == nil {
+                            // The find succeeded.
+                            println("Successfully retrieved \(objects!.count) scores.")
+                            // Do something with the found objects
+                            if let objects = objects as? [PFObject] {
+                                for object in objects {
+                                    //finalObject = object
+                                    println(object.objectId)
+                                    
+                                    var query2 = PFQuery(className:"data")
+                                    query2.getObjectInBackgroundWithId(object.objectId!) {
+                                        (object, error) -> Void in
+                                        if error != nil {
+                                            println(error)
+                                        } else {
+                                            if let object = object {
+                                                object["Do_you_want_to_know_more_about_them"] = "No"
+                                            }
+                                            object!.saveInBackground()
+                                        }
+                                    }
+                                }
                             }
+                        } else {
+                            // Log details of the failure
+                            println("Error: \(error!) \(error!.userInfo!)")
                         }
                     }
+                    
                 }
+                
                 
                 let yesController = self.storyboard!.instantiateViewControllerWithIdentifier("YesController") as! QuestionViewController
                 

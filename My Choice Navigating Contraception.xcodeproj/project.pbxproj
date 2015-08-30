@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B62559E41B7423FF00789230 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62559E31B7423FF00789230 /* Reachability.swift */; };
 		B629368C1B1A0B4000987E36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B629368B1B1A0B4000987E36 /* AppDelegate.swift */; };
 		B629368F1B1A0B4000987E36 /* Contraception_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B629368D1B1A0B4000987E36 /* Contraception_App.xcdatamodeld */; };
 		B62936911B1A0B4000987E36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62936901B1A0B4000987E36 /* ViewController.swift */; };
@@ -58,7 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B62936861B1A0B4000987E36 /* Contraception App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contraception App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62559E31B7423FF00789230 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		B6255ACA1B8933D700789230 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		B6255ACB1B8933D700789230 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B62936861B1A0B4000987E36 /* My Choice Navigating Contraception.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Choice Navigating Contraception.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B629368A1B1A0B4000987E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B629368B1B1A0B4000987E36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B629368E1B1A0B4000987E36 /* Contraception_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Contraception_App.xcdatamodel; sourceTree = "<group>"; };
@@ -66,7 +70,7 @@
 		B62936931B1A0B4000987E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B62936951B1A0B4000987E36 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B62936981B1A0B4000987E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B629369E1B1A0B4000987E36 /* Contraception AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contraception AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B629369E1B1A0B4000987E36 /* My Choice Navigating ContraceptionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Choice Navigating ContraceptionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62936A31B1A0B4000987E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B62936A41B1A0B4000987E36 /* Contraception_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contraception_AppTests.swift; sourceTree = "<group>"; };
 		B62936B01B1E092E00987E36 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
@@ -152,8 +156,8 @@
 		B62936871B1A0B4000987E36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B62936861B1A0B4000987E36 /* Contraception App.app */,
-				B629369E1B1A0B4000987E36 /* Contraception AppTests.xctest */,
+				B62936861B1A0B4000987E36 /* My Choice Navigating Contraception.app */,
+				B629369E1B1A0B4000987E36 /* My Choice Navigating ContraceptionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,6 +169,7 @@
 				B62936901B1A0B4000987E36 /* ViewController.swift */,
 				B62936B01B1E092E00987E36 /* OptionsViewController.swift */,
 				B672D0D11B5AD1E40080FCBB /* DataViewController.swift */,
+				B62559E31B7423FF00789230 /* Reachability.swift */,
 				B62936B21B1E121E00987E36 /* FeedPageViewController.swift */,
 				B62936B41B1E543100987E36 /* LongActingViewController.swift */,
 				B6FFE7611B1E76C30040E206 /* CheckBox.swift */,
@@ -238,9 +243,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B62936851B1A0B4000987E36 /* Contraception App */ = {
+		B62936851B1A0B4000987E36 /* My Choice Navigating Contraception */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B62936A81B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "Contraception App" */;
+			buildConfigurationList = B62936A81B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "My Choice Navigating Contraception" */;
 			buildPhases = (
 				B62936821B1A0B4000987E36 /* Sources */,
 				B62936831B1A0B4000987E36 /* Frameworks */,
@@ -250,14 +255,14 @@
 			);
 			dependencies = (
 			);
-			name = "Contraception App";
+			name = "My Choice Navigating Contraception";
 			productName = "Contraception App";
-			productReference = B62936861B1A0B4000987E36 /* Contraception App.app */;
+			productReference = B62936861B1A0B4000987E36 /* My Choice Navigating Contraception.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B629369D1B1A0B4000987E36 /* Contraception AppTests */ = {
+		B629369D1B1A0B4000987E36 /* My Choice Navigating ContraceptionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B62936AB1B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "Contraception AppTests" */;
+			buildConfigurationList = B62936AB1B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "My Choice Navigating ContraceptionTests" */;
 			buildPhases = (
 				B629369A1B1A0B4000987E36 /* Sources */,
 				B629369B1B1A0B4000987E36 /* Frameworks */,
@@ -268,9 +273,9 @@
 			dependencies = (
 				B62936A01B1A0B4000987E36 /* PBXTargetDependency */,
 			);
-			name = "Contraception AppTests";
+			name = "My Choice Navigating ContraceptionTests";
 			productName = "Contraception AppTests";
-			productReference = B629369E1B1A0B4000987E36 /* Contraception AppTests.xctest */;
+			productReference = B629369E1B1A0B4000987E36 /* My Choice Navigating ContraceptionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -292,7 +297,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B62936811B1A0B4000987E36 /* Build configuration list for PBXProject "Contraception App" */;
+			buildConfigurationList = B62936811B1A0B4000987E36 /* Build configuration list for PBXProject "My Choice Navigating Contraception" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -305,8 +310,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B62936851B1A0B4000987E36 /* Contraception App */,
-				B629369D1B1A0B4000987E36 /* Contraception AppTests */,
+				B62936851B1A0B4000987E36 /* My Choice Navigating Contraception */,
+				B629369D1B1A0B4000987E36 /* My Choice Navigating ContraceptionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -350,6 +355,7 @@
 				B62936B71B1E649900987E36 /* QuestionViewController.swift in Sources */,
 				B62936B31B1E121E00987E36 /* FeedPageViewController.swift in Sources */,
 				B6FFE7681B2113C90040E206 /* ResultsViewController.swift in Sources */,
+				B62559E41B7423FF00789230 /* Reachability.swift in Sources */,
 				B687B67D1B4C959600A7F37F /* HSViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +373,7 @@
 /* Begin PBXTargetDependency section */
 		B62936A01B1A0B4000987E36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B62936851B1A0B4000987E36 /* Contraception App */;
+			target = B62936851B1A0B4000987E36 /* My Choice Navigating Contraception */;
 			targetProxy = B629369F1B1A0B4000987E36 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -377,6 +383,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B62936931B1A0B4000987E36 /* Base */,
+				B6255ACA1B8933D700789230 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -385,6 +392,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B62936981B1A0B4000987E36 /* Base */,
+				B6255ACB1B8933D700789230 /* es */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -488,7 +496,7 @@
 				INFOPLIST_FILE = "Contraception App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My Choice Navigating Contraception";
 			};
 			name = Debug;
 		};
@@ -505,7 +513,7 @@
 				INFOPLIST_FILE = "Contraception App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "My Choice Navigating Contraception";
 			};
 			name = Release;
 		};
@@ -523,8 +531,8 @@
 				);
 				INFOPLIST_FILE = "Contraception AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contraception App.app/Contraception App";
+				PRODUCT_NAME = "My Choice Navigating ContraceptionTests";
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
@@ -538,15 +546,15 @@
 				);
 				INFOPLIST_FILE = "Contraception AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contraception App.app/Contraception App";
+				PRODUCT_NAME = "My Choice Navigating ContraceptionTests";
+				TEST_HOST = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B62936811B1A0B4000987E36 /* Build configuration list for PBXProject "Contraception App" */ = {
+		B62936811B1A0B4000987E36 /* Build configuration list for PBXProject "My Choice Navigating Contraception" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B62936A61B1A0B4000987E36 /* Debug */,
@@ -555,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B62936A81B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "Contraception App" */ = {
+		B62936A81B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "My Choice Navigating Contraception" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B62936A91B1A0B4000987E36 /* Debug */,
@@ -564,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B62936AB1B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "Contraception AppTests" */ = {
+		B62936AB1B1A0B4000987E36 /* Build configuration list for PBXNativeTarget "My Choice Navigating ContraceptionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B62936AC1B1A0B4000987E36 /* Debug */,

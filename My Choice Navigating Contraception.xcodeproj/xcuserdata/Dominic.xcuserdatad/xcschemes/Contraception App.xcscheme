@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B62936851B1A0B4000987E36"
-               BuildableName = "Contraception App.app"
-               BlueprintName = "Contraception App"
-               ReferencedContainer = "container:Contraception App.xcodeproj">
+               BuildableName = "My Choice Navigating Contraception.app"
+               BlueprintName = "My Choice Navigating Contraception"
+               ReferencedContainer = "container:My Choice Navigating Contraception.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B629369D1B1A0B4000987E36"
-               BuildableName = "Contraception AppTests.xctest"
-               BlueprintName = "Contraception AppTests"
-               ReferencedContainer = "container:Contraception App.xcodeproj">
+               BuildableName = "My Choice Navigating ContraceptionTests.xctest"
+               BlueprintName = "My Choice Navigating ContraceptionTests"
+               ReferencedContainer = "container:My Choice Navigating Contraception.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B629369D1B1A0B4000987E36"
-               BuildableName = "Contraception AppTests.xctest"
-               BlueprintName = "Contraception AppTests"
-               ReferencedContainer = "container:Contraception App.xcodeproj">
+               BuildableName = "My Choice Navigating ContraceptionTests.xctest"
+               BlueprintName = "My Choice Navigating ContraceptionTests"
+               ReferencedContainer = "container:My Choice Navigating Contraception.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B62936851B1A0B4000987E36"
-            BuildableName = "Contraception App.app"
-            BlueprintName = "Contraception App"
-            ReferencedContainer = "container:Contraception App.xcodeproj">
+            BuildableName = "My Choice Navigating Contraception.app"
+            BlueprintName = "My Choice Navigating Contraception"
+            ReferencedContainer = "container:My Choice Navigating Contraception.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B62936851B1A0B4000987E36"
-            BuildableName = "Contraception App.app"
-            BlueprintName = "Contraception App"
-            ReferencedContainer = "container:Contraception App.xcodeproj">
+            BuildableName = "My Choice Navigating Contraception.app"
+            BlueprintName = "My Choice Navigating Contraception"
+            ReferencedContainer = "container:My Choice Navigating Contraception.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B62936851B1A0B4000987E36"
-            BuildableName = "Contraception App.app"
-            BlueprintName = "Contraception App"
-            ReferencedContainer = "container:Contraception App.xcodeproj">
+            BuildableName = "My Choice Navigating Contraception.app"
+            BlueprintName = "My Choice Navigating Contraception"
+            ReferencedContainer = "container:My Choice Navigating Contraception.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

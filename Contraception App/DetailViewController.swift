@@ -50,7 +50,7 @@ class DetailViewController: UIViewController {
         
         else if selected.containsObject("Monthly") {
             questionSet = "Monthly"
-            detailLabel.text = "Would you be willing to put your fingers insider your vagina to insert your birth control?"
+            detailLabel.text = "Would you be willing to put your fingers inside your vagina to insert your birth control?"
         }
         
         else if selected.containsObject("Three Month") {
@@ -65,12 +65,15 @@ class DetailViewController: UIViewController {
         
         else if selected.containsObject("5 Year") {
             questionSet = "5 Year"
-            detailLabel.text = "Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why?"
+            detailLabel.text = "Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”."
+            detailLabel.font = UIFont.systemFontOfSize(22)
+            
         }
         
         else if selected.containsObject("Ten Year") {
             questionSet = "Ten Year"
             detailLabel.text = "Do you want to have fewer periods?"
+            detailLabel.font = UIFont.systemFontOfSize(32)
         }
         
         else {
@@ -140,7 +143,7 @@ class DetailViewController: UIViewController {
             else if questionSet == "Monthly" {
                 
                 switch text {
-                case "Would you be willing to put your fingers insider your vagina to insert your birth control?":
+                case "Would you be willing to put your fingers inside your vagina to insert your birth control?":
                     selected.removeObject("Monthly")
                     finalResults.addObject("Vaginal Ring")
                     println(selected)
@@ -192,7 +195,7 @@ class DetailViewController: UIViewController {
             else if questionSet == "5 Year" {
                 
                 switch text {
-                case "Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why?":
+                case "Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”.":
                     selected.removeObject("5 Year")
                     selected.removeObject("Ten Year")
                     iudAns = 1
@@ -292,7 +295,7 @@ class DetailViewController: UIViewController {
             else if questionSet == "Monthly" {
                 
                 switch text {
-                case "Would you be willing to put your fingers insider your vagina to insert your birth control?":
+                case "Would you be willing to put your fingers inside your vagina to insert your birth control?":
                     selected.removeObject("Monthly")
                     println(selected)
                     viewDidLoad()
@@ -344,7 +347,7 @@ class DetailViewController: UIViewController {
             else if questionSet == "5 Year" {
                 
                 switch text {
-                case "Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why?":
+                case "Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”.":
                     selected.removeObject("5 Year")
                     finalResults.addObject("Intrauterine Device")
                     iudAns = 1
@@ -365,9 +368,14 @@ class DetailViewController: UIViewController {
                 switch text {
                 case "Do you want to have fewer periods?":
                     selected.removeObject("Ten Year")
-                    finalResults.removeObject("Implant")
-                    finalResults.removeObject("Birth Control Shot")
-                    finalResults.removeObject("Intrauterine Device")
+//                    finalResults.removeObject("Implant")
+//                    finalResults.removeObject("Birth Control Shot")
+//                    finalResults.removeObject("Intrauterine Device")
+                    
+                    finalResults.removeObject("")
+                    finalResults.removeObject("")
+                    finalResults.removeObject("")
+
                     viewDidLoad()
                     
                 case "Would you be opposed to having some side effects such as spotting during the initial few months after beginning a new method of birth control?":

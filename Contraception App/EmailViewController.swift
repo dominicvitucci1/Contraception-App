@@ -32,7 +32,7 @@ class EmailViewController: UIViewController {
         
         commaSeparted = message.componentsJoinedByString(", ")
         
-        var larcAlertController = UIAlertController(title: "After using this application are you more likely to use an IUD or an Implant?", message: "Your responce will not be associated with any identifying information", preferredStyle: .Alert)
+        var larcAlertController = UIAlertController(title: "After using this application are you more likely to use an IUD or an Implant?", message: "Your response will not be associated with any identifying information", preferredStyle: .Alert)
         
         // Create the actions
         
@@ -40,34 +40,88 @@ class EmailViewController: UIViewController {
             UIAlertAction in
             NSLog("No Pressed")
             
+            if PFUser.currentUser() !== nil {
+                var query1 = PFQuery(className:"data")
+                query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
+                query1.findObjectsInBackgroundWithBlock {
+                    (objects: [AnyObject]?, error: NSError?) -> Void in
+                    
+                    if error == nil {
+                        // The find succeeded.
+                        println("Successfully retrieved \(objects!.count) scores.")
+                        // Do something with the found objects
+                        if let objects = objects as? [PFObject] {
+                            for object in objects {
+                                //finalObject = object
+                                println(object.objectId)
+                                
+                                var query2 = PFQuery(className:"data")
+                                query2.getObjectInBackgroundWithId(object.objectId!) {
+                                    (object, error) -> Void in
+                                    if error != nil {
+                                        println(error)
+                                    } else {
+                                        if let object = object {
+                                            object["After_using_this_application_are_you_more_likely_to_use_an_IUD_or_an_Implant"] = "No"
+                                        }
+                                        object!.saveInBackground()
+                                    }
+                                }
+                            }
+                        }
+                    } else {
+                        // Log details of the failure
+                        println("Error: \(error!) \(error!.userInfo!)")
+                    }
+                }
+                
+            }
+
+            
         }
         
         var yesAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default) {
             UIAlertAction in
             NSLog("Yes Pressed")
             
-            var query = PFQuery(className:"LARCResponce")
-            query.getObjectInBackgroundWithId("AOCYJDftn3") {
-                (gameScore: PFObject?, error: NSError?) -> Void in
-                if error != nil {
-                    println(error)
-                }
+            if PFUser.currentUser() !== nil {
+                var query1 = PFQuery(className:"data")
+                query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
+                query1.findObjectsInBackgroundWithBlock {
+                    (objects: [AnyObject]?, error: NSError?) -> Void in
                     
-                else {
-                    gameScore!.incrementKey("yesAnswers", byAmount: 1)
-                    gameScore!.saveInBackgroundWithBlock {
-                        (success: Bool, error: NSError?) -> Void in
-                        if (success) {
-                            // The score key has been incremented
-                        } else {
-                            // There was a problem, check error.description
+                    if error == nil {
+                        // The find succeeded.
+                        println("Successfully retrieved \(objects!.count) scores.")
+                        // Do something with the found objects
+                        if let objects = objects as? [PFObject] {
+                            for object in objects {
+                                //finalObject = object
+                                println(object.objectId)
+                                
+                                var query2 = PFQuery(className:"data")
+                                query2.getObjectInBackgroundWithId(object.objectId!) {
+                                    (object, error) -> Void in
+                                    if error != nil {
+                                        println(error)
+                                    } else {
+                                        if let object = object {
+                                            object["After_using_this_application_are_you_more_likely_to_use_an_IUD_or_an_Implant"] = "Yes"
+                                        }
+                                        object!.saveInBackground()
+                                    }
+                                }
+                            }
                         }
+                    } else {
+                        // Log details of the failure
+                        println("Error: \(error!) \(error!.userInfo!)")
                     }
                 }
+                
             }
             
-            
-            
+  
             
         }
         
@@ -86,6 +140,9 @@ class EmailViewController: UIViewController {
     
     
     @IBAction func sendButtonPressed(sender: AnyObject) {
+        
+        if Reachability.isConnectedToNetwork() == true {
+            println("Internet connection OK")
 
         
 //        params = ["toEmail": toEmail]
@@ -162,7 +219,10 @@ class EmailViewController: UIViewController {
                                         println(error)
                                     } else {
                                         if let object = object {
+                                            let tempAge = object["age"] as! String
+                                            if tempAge != "Not Provided" {
                                             object["results"] = self.commaSeparted
+                                            }
                                         }
                                         object!.saveInBackground()
                                     }
@@ -183,6 +243,13 @@ class EmailViewController: UIViewController {
             
         }
         }
+        }
+            
+            else {
+                println("Internet connection FAILED")
+                var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
+                alert.show()
+            }
     
         
         
