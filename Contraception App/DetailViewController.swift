@@ -40,39 +40,39 @@ class DetailViewController: UIViewController {
         
         if selected.containsObject("Daily") {
             questionSet = "Daily"
-            detailLabel.text = "Would you remember to take a pill at the same time everyday?"
+            detailLabel.text = NSLocalizedString("Would you remember to take a pill at the same time everyday?", comment: "")
         }
         
         else if selected.containsObject("Weekly") {
             questionSet = "Weekly"
-            detailLabel.text = "Do you have sensitive skin with adhesives such as tape?"
+            detailLabel.text = NSLocalizedString("Do you have sensitive skin with adhesives such as tape?", comment: "")
         }
         
         else if selected.containsObject("Monthly") {
             questionSet = "Monthly"
-            detailLabel.text = "Would you be willing to put your fingers inside your vagina to insert your birth control?"
+            detailLabel.text = NSLocalizedString("Would you be willing to put your fingers inside your vagina to insert your birth control?", comment: "")
         }
         
         else if selected.containsObject("Three Month") {
             questionSet = "Three Month"
-            detailLabel.text = "Would you it bother you to get an injection (shot) every 3 months?"
+            detailLabel.text = NSLocalizedString("Would you it bother you to get an injection (shot) every 3 months?", comment: "")
         }
         
         else if selected.containsObject("3 Year") {
             questionSet = "3 Year"
-            detailLabel.text = "Would it bother you to have an implant put just under your skin?"
+            detailLabel.text = NSLocalizedString("Would it bother you to have an implant put just under your skin?", comment: "")
         }
         
         else if selected.containsObject("5 Year") {
             questionSet = "5 Year"
-            detailLabel.text = "Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”."
+            detailLabel.text = NSLocalizedString("Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”.", comment: "")
             detailLabel.font = UIFont.systemFontOfSize(22)
             
         }
         
         else if selected.containsObject("Ten Year") {
             questionSet = "Ten Year"
-            detailLabel.text = "Do you want to have fewer periods?"
+            detailLabel.text = NSLocalizedString("Do you want to have fewer periods?", comment: "")
             detailLabel.font = UIFont.systemFontOfSize(32)
         }
         
@@ -106,10 +106,10 @@ class DetailViewController: UIViewController {
             if questionSet == "Daily" {
             
             switch text {
-            case "Would you remember to take a pill at the same time everyday?":
-                detailLabel.text = "￼Have you had weight reduction surgery that shortens the length of your small intestine?"
+            case NSLocalizedString("Would you remember to take a pill at the same time everyday?", comment: ""):
+                detailLabel.text = NSLocalizedString("￼Have you had weight reduction surgery that shortens the length of your small intestine?", comment: "")
                 
-            case "￼Have you had weight reduction surgery that shortens the length of your small intestine?":
+            case NSLocalizedString("￼Have you had weight reduction surgery that shortens the length of your small intestine?", comment: ""):
                 selected.removeObject("Daily")
                 println(selected)
                 
@@ -125,7 +125,7 @@ class DetailViewController: UIViewController {
             else if questionSet == "Weekly" {
                 
                 switch text {
-                case "Do you have sensitive skin with adhesives such as tape?":
+                case NSLocalizedString("Do you have sensitive skin with adhesives such as tape?", comment: ""):
                     selected.removeObject("Weekly")
                     println(selected)
                     
@@ -143,9 +143,9 @@ class DetailViewController: UIViewController {
             else if questionSet == "Monthly" {
                 
                 switch text {
-                case "Would you be willing to put your fingers inside your vagina to insert your birth control?":
+                case NSLocalizedString("Would you be willing to put your fingers inside your vagina to insert your birth control?", comment: ""):
                     selected.removeObject("Monthly")
-                    finalResults.addObject("Vaginal Ring")
+                    finalResults.addObject(NSLocalizedString("Vaginal Ring", comment: ""))
                     println(selected)
                     println(finalResults)
                     viewDidLoad()
@@ -161,7 +161,7 @@ class DetailViewController: UIViewController {
             else if questionSet == "Three Month" {
                 
                 switch text {
-                case "Would you it bother you to get an injection (shot) every 3 months?":
+                case NSLocalizedString("Would you it bother you to get an injection (shot) every 3 months?", comment: ""):
                     selected.removeObject("Three Month")
                     shotAns = 1
                     println(selected)
@@ -178,7 +178,7 @@ class DetailViewController: UIViewController {
             else if questionSet == "3 Year" {
                 
                 switch text {
-                case "Would it bother you to have an implant put just under your skin?":
+                case NSLocalizedString("Would it bother you to have an implant put just under your skin?", comment: ""):
                     selected.removeObject("3 Year")
                     implantAns = 1
                     println(selected)
@@ -195,7 +195,7 @@ class DetailViewController: UIViewController {
             else if questionSet == "5 Year" {
                 
                 switch text {
-                case "Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”.":
+                case NSLocalizedString("Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”.", comment: ""):
                     selected.removeObject("5 Year")
                     selected.removeObject("Ten Year")
                     iudAns = 1
@@ -214,14 +214,14 @@ class DetailViewController: UIViewController {
             else if questionSet == "Ten Year" {
                 
                 switch text {
-                case "Do you want to have fewer periods?":
-                    detailLabel.text = "Would you be opposed to having some side effects such as spotting during the initial few months after beginning a new method of birth control?"
+                case NSLocalizedString("Do you want to have fewer periods?", comment: ""):
+                    detailLabel.text = NSLocalizedString("Would you be opposed to having some side effects such as spotting during the initial few months after beginning a new method of birth control?", comment: "")
                     
-                case "Would you be opposed to having some side effects such as spotting during the initial few months after beginning a new method of birth control?":
+                case NSLocalizedString("Would you be opposed to having some side effects such as spotting during the initial few months after beginning a new method of birth control?", comment: ""):
                     selected.removeObject("Ten Year")
-                    finalResults.removeObject("Implant")
-                    finalResults.removeObject("Birth Control Shot")
-                    finalResults.removeObject("Intrauterine Device")
+                    finalResults.removeObject(NSLocalizedString("Implant", comment: ""))
+                    finalResults.removeObject(NSLocalizedString("Birth Control Shot", comment: ""))
+                    finalResults.removeObject(NSLocalizedString("Intrauterine Device", comment: ""))
                     viewDidLoad()
                     
                     
@@ -245,14 +245,14 @@ class DetailViewController: UIViewController {
             if questionSet == "Daily" {
                 
                 switch text {
-                case "Would you remember to take a pill at the same time everyday?":
+                case NSLocalizedString("Would you remember to take a pill at the same time everyday?", comment: ""):
                     selected.removeObject("Daily")
                     println(selected)
                     
                     viewDidLoad()
                     
-                case "￼Have you had weight reduction surgery that shortens the length of your small intestine?":
-                    finalResults.addObject("Pill")
+                case NSLocalizedString("￼Have you had weight reduction surgery that shortens the length of your small intestine?", comment: ""):
+                    finalResults.addObject(NSLocalizedString("Pill", comment: ""))
                     //finalResults.addObject("Mini-Pill")
                     selected.removeObject("Daily")
                     viewDidLoad()
@@ -276,9 +276,9 @@ class DetailViewController: UIViewController {
             else if questionSet == "Weekly" {
                 
                 switch text {
-                case "Do you have sensitive skin with adhesives such as tape?":
+                case NSLocalizedString("Do you have sensitive skin with adhesives such as tape?", comment: ""):
                     selected.removeObject("Weekly")
-                    finalResults.addObject("Patch")
+                    finalResults.addObject(NSLocalizedString("Patch", comment: ""))
                     println(selected)
                     
                     viewDidLoad()
@@ -295,7 +295,7 @@ class DetailViewController: UIViewController {
             else if questionSet == "Monthly" {
                 
                 switch text {
-                case "Would you be willing to put your fingers inside your vagina to insert your birth control?":
+                case NSLocalizedString("Would you be willing to put your fingers inside your vagina to insert your birth control?", comment: ""):
                     selected.removeObject("Monthly")
                     println(selected)
                     viewDidLoad()
@@ -311,9 +311,9 @@ class DetailViewController: UIViewController {
             else if questionSet == "Three Month" {
                 
                 switch text {
-                case "Would you it bother you to get an injection (shot) every 3 months?":
+                case NSLocalizedString("Would you it bother you to get an injection (shot) every 3 months?", comment: ""):
                     selected.removeObject("Three Month")
-                    finalResults.addObject("Birth Control Shot")
+                    finalResults.addObject(NSLocalizedString("Birth Control Shot", comment: ""))
                     shotAns = 1
                     println(selected)
                     viewDidLoad()
@@ -329,9 +329,9 @@ class DetailViewController: UIViewController {
             else if questionSet == "3 Year" {
                 
                 switch text {
-                case "Would it bother you to have an implant put just under your skin?":
+                case NSLocalizedString("Would it bother you to have an implant put just under your skin?", comment: ""):
                     selected.removeObject("3 Year")
-                    finalResults.addObject("Implant")
+                    finalResults.addObject(NSLocalizedString("Implant", comment: ""))
                     implantAns = 1
                     println(selected)
                     viewDidLoad()
@@ -347,9 +347,9 @@ class DetailViewController: UIViewController {
             else if questionSet == "5 Year" {
                 
                 switch text {
-                case "Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”.":
+                case NSLocalizedString("Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”.", comment: ""):
                     selected.removeObject("5 Year")
-                    finalResults.addObject("Intrauterine Device")
+                    finalResults.addObject(NSLocalizedString("Intrauterine Device", comment: ""))
                     iudAns = 1
                     println(selected)
                     viewDidLoad()
@@ -366,7 +366,7 @@ class DetailViewController: UIViewController {
             else if questionSet == "Ten Year" {
                 
                 switch text {
-                case "Do you want to have fewer periods?":
+                case NSLocalizedString("Do you want to have fewer periods?", comment: ""):
                     selected.removeObject("Ten Year")
 //                    finalResults.removeObject("Implant")
 //                    finalResults.removeObject("Birth Control Shot")
@@ -378,17 +378,17 @@ class DetailViewController: UIViewController {
 
                     viewDidLoad()
                     
-                case "Would you be opposed to having some side effects such as spotting during the initial few months after beginning a new method of birth control?":
+                case NSLocalizedString("Would you be opposed to having some side effects such as spotting during the initial few months after beginning a new method of birth control?", comment: ""):
                     selected.removeObject("Ten Year")
                     
                     if implantAns == 0 {
-                    finalResults.addObject("Implant")
+                    finalResults.addObject(NSLocalizedString("Implant", comment: ""))
                     }
                     if shotAns == 0 {
-                    finalResults.addObject("Birth Control Shot")
+                    finalResults.addObject(NSLocalizedString("Birth Control Shot", comment: ""))
                     }
                     if iudAns == 0 {
-                    finalResults.addObject("Intrauterine Device")
+                    finalResults.addObject(NSLocalizedString("Intrauterine Device", comment: ""))
                     }
                     viewDidLoad()
                     

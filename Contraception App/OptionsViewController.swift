@@ -10,6 +10,8 @@ import UIKit
 import Parse
 import Bolts
 
+
+
 class OptionsViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
     
     
@@ -25,7 +27,7 @@ class OptionsViewController: UITableViewController, UITableViewDataSource, UITab
         
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "Options Background"))
         
-        options = ["Intrauterine Device", "Implant", "Birth Control Shot", "Vaginal Ring", "Patch", "Pill", "Mini-Pill", "Condom – Male and Female", "Spermicide", "Sponge with Spermicide", "Emergency Contraception"]
+        options = [NSLocalizedString("Intrauterine Device", comment: ""), NSLocalizedString("Implant", comment: ""), NSLocalizedString("Birth Control Shot", comment: ""), NSLocalizedString("Vaginal Ring", comment: ""), NSLocalizedString("Patch", comment: ""), NSLocalizedString("Pill", comment: ""), NSLocalizedString("Mini-Pill", comment: ""), NSLocalizedString("Condom – Male and Female", comment: ""), NSLocalizedString("Spermicide", comment: ""), NSLocalizedString("Sponge with Spermicide", comment: ""), NSLocalizedString("Emergency Contraception", comment: "")]
         
         
         self.tableView.reloadData()

@@ -62,17 +62,17 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
 
         if (results.count == 0) {
             
-            var emptyAlertController = UIAlertController(title: "There were no birth control options that matched your preferences. Please reconsider some of your preferences regarding birth control.", message: "Press OK to change some of your preferences or press Cancel to exit the app.", preferredStyle: .Alert)
+            var emptyAlertController = UIAlertController(title: NSLocalizedString("There were no birth control options that matched your preferences. Please reconsider some of your preferences regarding birth control.", comment: ""), message: NSLocalizedString("Press OK to change some of your preferences or press Cancel to exit the app.", comment: ""), preferredStyle: .Alert)
             
             // Create the actions
             
-            var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default) {
+            var cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: UIAlertActionStyle.Default) {
                 UIAlertAction in
                 NSLog("No Pressed")
                 self.restart()
             }
             
-            var yesAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+            var yesAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: UIAlertActionStyle.Default) {
                 UIAlertAction in
                 NSLog("Yes Pressed")
                 
@@ -170,11 +170,11 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBAction func noButtonPressed(sender: AnyObject) {
         
-        var larcAlertController = UIAlertController(title: "After using this application are you more likely to use an IUD or an Implant?", message: "Your response will not be associated with any identifying information", preferredStyle: .Alert)
+        var larcAlertController = UIAlertController(title: NSLocalizedString("After using this application are you more likely to use an IUD or an Implant?", comment: ""), message: NSLocalizedString("Your response will not be associated with any identifying information", comment: ""), preferredStyle: .Alert)
         
         // Create the actions
         
-        var cancelAction = UIAlertAction(title: "No", style: UIAlertActionStyle.Default) {
+        var cancelAction = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: UIAlertActionStyle.Default) {
             UIAlertAction in
             NSLog("No Pressed")
             
@@ -222,15 +222,15 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
             
             quitAlert.delegate = self
             
-            quitAlert.title = "If you're finished viewing your results, and you don't wish to receive them by email tap Okay to exit this page."
-            quitAlert.message = "Your email address will not be saved and the methods selected for you will not be connected to any identifying information."
-            quitAlert.addButtonWithTitle("Cancel")
-            quitAlert.addButtonWithTitle("Okay")
+            quitAlert.title = NSLocalizedString("If you're finished viewing your results, and you don't wish to receive them by email tap Okay to exit this page.", comment: "Results Exit")
+            quitAlert.message = NSLocalizedString("Your email address will not be saved and the methods selected for you will not be connected to any identifying information.", comment: "Results Exit")
+            quitAlert.addButtonWithTitle(NSLocalizedString("Cancel", comment: "Results Exit"))
+            quitAlert.addButtonWithTitle(NSLocalizedString("Okay", comment: "Results Exit"))
             
             quitAlert.show()
         }
         
-        var yesAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default) {
+        var yesAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: UIAlertActionStyle.Default) {
             UIAlertAction in
             NSLog("Yes Pressed")
             
@@ -276,10 +276,10 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
             
             quitAlert.delegate = self
             
-            quitAlert.title = "If you're finished viewing your results, and you don't wish to receive them by email tap Okay to exit this page."
-            quitAlert.message = "Your email address will not be saved and the methods selected for you will not be connected to any identifying information."
-            quitAlert.addButtonWithTitle("Cancel")
-            quitAlert.addButtonWithTitle("Okay")
+            quitAlert.title = NSLocalizedString("If you're finished viewing your results, and you don't wish to receive them by email tap Okay to exit this page.", comment: "Results Exit")
+            quitAlert.message = NSLocalizedString("Your email address will not be saved and the methods selected for you will not be connected to any identifying information.", comment: "Results Exit")
+            quitAlert.addButtonWithTitle(NSLocalizedString("Cancel", comment: "Results Exit"))
+            quitAlert.addButtonWithTitle(NSLocalizedString("Okay", comment: "Results Exit"))
             
             quitAlert.show()
             

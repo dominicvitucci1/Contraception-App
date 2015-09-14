@@ -28,7 +28,7 @@ class LongActingViewController: UIViewController {
 //        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: navigationController, action: nil)
 //        navigationItem.leftBarButtonItem = backButton
         
-        labelText = "Do you know there are long acting reversible contraceptives?"
+        labelText = NSLocalizedString("Do you know there are long acting reversible contraceptives?", comment: "Know LARC")
         
         questionLabel.text = "\(labelText)"
         
@@ -70,7 +70,7 @@ class LongActingViewController: UIViewController {
         if let text = questionLabel.text {
             
             switch text {
-                case "Do you know there are long acting reversible contraceptives?":
+                case NSLocalizedString("Do you know there are long acting reversible contraceptives?", comment: "Know LARC Case"):
                     
                     if PFUser.currentUser() !== nil {
                         var query1 = PFQuery(className:"data")
@@ -110,10 +110,10 @@ class LongActingViewController: UIViewController {
                     }
                     
                     
-                    questionLabel.text = "Do you want to know more about them?"
+                    questionLabel.text = NSLocalizedString("Do you want to know more about them?", comment: "Know More LARC")
 
                 
-                case "Do you want to know more about them?":
+                case NSLocalizedString("Do you want to know more about them?", comment: "Know More Case LARC"):
                     
                     if PFUser.currentUser() !== nil {
                         var query1 = PFQuery(className:"data")
@@ -155,8 +155,8 @@ class LongActingViewController: UIViewController {
                     
                     let feedController = self.storyboard!.instantiateViewControllerWithIdentifier("FeedController") as! FeedPageViewController
 
-                    feedController.selectedFeedTitle = "Long-Acting Reversible Contraceptives (LARC)"
-                    feedController.selectedFeedFeedContent = "Long-acting reversible contraceptives (LARC) or long-acting reversible birth control are methods of birth control that provide prevent pregnancy for a long period of time - up to 10 years for some methods! LARC include implants and intrauterine devices (IUD). What are the advantages of using LARCs? The advantages of using LARCs is that they are safe, reliable. and reversible. Using LARCs is better at preventing pregnancy because you would use the birth control method consistently and correctly without having to think about it. It does not require taking a pill every day or doing something every time before having sex. Most important, almost all women can use implants and IUDs even teenagers."
+                    feedController.selectedFeedTitle = NSLocalizedString("Long-Acting Reversible Contraceptives (LARC)", comment: "LARC Label")
+                    feedController.selectedFeedFeedContent = NSLocalizedString("Long-acting reversible contraceptives (LARC) or long-acting reversible birth control are methods of birth control that provide prevent pregnancy for a long period of time - up to 10 years for some methods! LARC include implants and intrauterine devices (IUD). What are the advantages of using LARCs? The advantages of using LARCs is that they are safe, reliable. and reversible. Using LARCs is better at preventing pregnancy because you would use the birth control method consistently and correctly without having to think about it. It does not require taking a pill every day or doing something every time before having sex. Most important, almost all women can use implants and IUDs even teenagers.", comment: "LARC Description")
  
                 
 
@@ -178,7 +178,7 @@ class LongActingViewController: UIViewController {
         if let text = questionLabel.text {
             
             switch text {
-            case "Do you know there are long acting reversible contraceptives?":
+            case NSLocalizedString("Do you know there are long acting reversible contraceptives?", comment: "Know Case LARC"):
                 
                 if PFUser.currentUser() !== nil {
                     var query1 = PFQuery(className:"data")
@@ -217,9 +217,9 @@ class LongActingViewController: UIViewController {
                     
                 }
                 
-                questionLabel.text = "Do you want to know more about them?"
+                questionLabel.text = NSLocalizedString("Do you want to know more about them?", comment: "Know More LARC")
                 
-            case "Do you want to know more about them?":
+            case NSLocalizedString("Do you want to know more about them?", comment: "Know More Case"):
                 
                 if PFUser.currentUser() !== nil {
                     var query1 = PFQuery(className:"data")

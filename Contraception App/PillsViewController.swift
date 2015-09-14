@@ -16,6 +16,7 @@ class PillsViewController: UIViewController {
     
     @IBOutlet weak var noButton: UIButton!
     
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var check1: CheckBox!
     
@@ -106,21 +107,23 @@ class PillsViewController: UIViewController {
         
         else {
             
-            label1.text = "Do you have a condition that causes you to develop blood clots more easily?"
+            label1.text = NSLocalizedString("Do you have a condition that causes you to develop blood clots more easily?", comment: "")
             
-            label2.text = "Do you have kidney disease? Do you have retinal disease of the eye?"
+            label2.text = NSLocalizedString("Do you have kidney disease? Do you have retinal disease of the eye?", comment: "")
             
-            label3.text = "Have you had diabetes for over 20 years?"
+            label3.text = NSLocalizedString("Have you had diabetes for over 20 years?", comment: "")
             
-            label4.text = "Do you have any disease of your blood vessels?"
+            label4.text = NSLocalizedString("Do you have any disease of your blood vessels?", comment: "")
             
-            label5.text = "Do you have numbness, tingling, and pain in your hands or feet?"
+            label5.text = NSLocalizedString("Do you have numbness, tingling, and pain in your hands or feet?", comment: "")
             
-            label6.text = "Do you have gallbladder disease and have not had your gallbladder removed?"
+            label6.text = NSLocalizedString("Do you have gallbladder disease and have not had your gallbladder removed?", comment: "")
             
             nextButton.hidden = true
             
             nextTwoButton.hidden = false
+            
+            scrollView.setContentOffset(CGPointMake(0.0, 0.0), animated: false)
         }
         
     }
@@ -147,9 +150,9 @@ class PillsViewController: UIViewController {
         else {
             
             
-            label1.text = "Do you have a history of a heart attack or chest pain due to heart disease?"
+            label1.text = NSLocalizedString("Do you have a history of a heart attack or chest pain due to heart disease?", comment: "")
             
-            label2.text = "Have you ever been told that you have heart disease or heart failure?"
+            label2.text = NSLocalizedString("Have you ever been told that you have heart disease or heart failure?", comment: "")
             
             label3.text = ""
             
@@ -167,9 +170,9 @@ class PillsViewController: UIViewController {
             
             nextTwoButton.hidden = true
             nextThreeButton.hidden = false
+            
+            scrollView.setContentOffset(CGPointMake(0.0, 0.0), animated: false)
 
-            
-            
         }
 }
     
@@ -197,17 +200,17 @@ class PillsViewController: UIViewController {
         else {
             
             
-            label1.text = "Have you ever had a stroke?"
+            label1.text = NSLocalizedString("Have you ever had a stroke?", comment: "")
             
-            label2.text = "Do you have lupus erythematosis with positive antiphospholipid antibodies?"
+            label2.text = NSLocalizedString("Do you have lupus erythematosis with positive antiphospholipid antibodies?", comment: "")
             
-            label3.text = "Do you have migraine headaches? Do you have warning signs before you have the migraine headache?"
+            label3.text = NSLocalizedString("Do you have migraine headaches? Do you have warning signs before you have the migraine headache?", comment: "")
             
-            label4.text = "Have you ever had breast cancer?"
+            label4.text = NSLocalizedString("Have you ever had breast cancer?", comment: "")
             
-            label5.text = "Do you have liver disease, a liver tumor, or liver cancer?"
+            label5.text = NSLocalizedString("Do you have liver disease, a liver tumor, or liver cancer?", comment: "")
             
-            label6.text = "Have you ever been told that you have scarring of the liver?"
+            label6.text = NSLocalizedString("Have you ever been told that you have scarring of the liver?", comment: "")
             
             check3.hidden = false
             check4.hidden = false
@@ -217,6 +220,8 @@ class PillsViewController: UIViewController {
             
             nextThreeButton.hidden = true
             nextFourButton.hidden = false
+            
+            scrollView.setContentOffset(CGPointMake(0.0, 0.0), animated: false)
 
     }
     }
@@ -272,11 +277,13 @@ class PillsViewController: UIViewController {
             medField.text = "\u{2022} Rifampin \n\u{2022} Rifabutin \n\u{2022} Phenobarbitol/barbituates (Lumina, Barbital, Solfoton) \n\u{2022} Primidone (Mysoline) \n\u{2022} Phenytoin (Dilantin) \n\u{2022} Lamotrigine (Lamictal) \n\u{2022} Carbamazepine (Tegretol) \n\u{2022} Topiramate (Topamax)"
             
             
-            initialLabel.text = "Are you taking any of these medications that are used for tuberculosis (TB) or seizures?"
+            initialLabel.text = NSLocalizedString("Are you taking any of these medications that are used for tuberculosis (TB) or seizures?", comment: "")
             
 //            Rifampin, Rifabutin, Phenobarbitol/barbituates (Lumina, Barbital, Solfoton), Primidone (Mysoline),Phenytoin (Dilantin), Lamotrigine (Lamictal) Carbamazepine (Tegretol) Topiramate (Topamax)
             
             initialLabel.font = UIFont(name: initialLabel.font.fontName, size: 20)
+            
+            scrollView.setContentOffset(CGPointMake(0.0, 0.0), animated: false)
             
             
         }

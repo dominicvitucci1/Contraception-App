@@ -27,10 +27,10 @@ class DataViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     var picker3: UIPickerView = UIPickerView()
     var picker4: UIPickerView = UIPickerView()
     
-    var ages: NSMutableArray = ["","Younger than 15", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-50", "Older than 50"]
-    var ethnicities: NSMutableArray = ["", "Hispanic or Latina", "Not Hispanic or Latina"]
-    var races: NSMutableArray = ["", "Black or African American", "Asian", "American Indian or Alaskan Native", "Native Hawaiian or Other Pacific Islander", "White"]
-    var medAssist: NSMutableArray = ["", "Yes", "No"]
+    var ages: NSMutableArray = ["",NSLocalizedString("Younger than 15", comment: "Age"), NSLocalizedString("15-19", comment: "Age"), NSLocalizedString("20-24", comment: "Age"), NSLocalizedString("25-29", comment: "Age"), NSLocalizedString("30-34", comment: "Age"), NSLocalizedString("35-39", comment: "Age"), NSLocalizedString("40-44", comment: "Age"), NSLocalizedString("45-50", comment: "Age"), NSLocalizedString("Older than 50", comment: "Age")]
+    var ethnicities: NSMutableArray = ["", NSLocalizedString("Hispanic or Latina", comment: "Ethnicity"), NSLocalizedString("Not Hispanic or Latina", comment: "Ethnicity")]
+    var races: NSMutableArray = ["", NSLocalizedString("Black or African American", comment: "Race"), NSLocalizedString("Asian", comment: "Race"), NSLocalizedString("American Indian or Alaskan Native", comment: "Race"), NSLocalizedString("Native Hawaiian or Other Pacific Islander", comment: "Race"), NSLocalizedString("White", comment: "Race")]
+    var medAssist: NSMutableArray = ["", NSLocalizedString("Yes", comment: "Medical Assitance Answer"), NSLocalizedString("No", comment: "Medical Assistance Answer")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -192,7 +192,7 @@ class DataViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             
             else {
                 println("Internet connection FAILED")
-                var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
+                var alert = UIAlertView(title: NSLocalizedString("No Internet Connection", comment: ""), message: NSLocalizedString("Make sure your device is connected to the internet.", comment: ""), delegate: nil, cancelButtonTitle: NSLocalizedString("OK", comment: "Internet Connection Popup"))
                 alert.show()
             }
 

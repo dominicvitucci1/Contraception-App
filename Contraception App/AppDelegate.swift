@@ -24,11 +24,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "languageWillChange:", name: "LANGUAGE_WILL_CHANGE", object: nil)
         
+        let targetLang = NSUserDefaults.standardUserDefaults().objectForKey("selectedLanguage") as? String
         
+        NSBundle.setLanguage((targetLang != nil) ? targetLang : "en")
+        
+        NSUserDefaults.standardUserDefaults().setObject(false, forKey: "langSelect")
         return true
     }
-
+    
+    func languageWillChange(notification:NSNotification){
+        let targetLang = notification.object as! String
+        NSUserDefaults.standardUserDefaults().setObject(targetLang, forKey: "selectedLanguage")
+        NSBundle.setLanguage(targetLang)
+        NSNotificationCenter.defaultCenter().postNotificationName("LANGUAGE_DID_CHANGE", object: targetLang)
+        
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

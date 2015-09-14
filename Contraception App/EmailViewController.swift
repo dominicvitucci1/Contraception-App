@@ -32,11 +32,11 @@ class EmailViewController: UIViewController {
         
         commaSeparted = message.componentsJoinedByString(", ")
         
-        var larcAlertController = UIAlertController(title: "After using this application are you more likely to use an IUD or an Implant?", message: "Your response will not be associated with any identifying information", preferredStyle: .Alert)
+        var larcAlertController = UIAlertController(title: NSLocalizedString("After using this application are you more likely to use an IUD or an Implant?", comment: ""), message: NSLocalizedString("Your response will not be associated with any identifying information", comment: ""), preferredStyle: .Alert)
         
         // Create the actions
         
-        var cancelAction = UIAlertAction(title: "No", style: UIAlertActionStyle.Default) {
+        var cancelAction = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: UIAlertActionStyle.Default) {
             UIAlertAction in
             NSLog("No Pressed")
             
@@ -80,7 +80,7 @@ class EmailViewController: UIViewController {
             
         }
         
-        var yesAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default) {
+        var yesAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: UIAlertActionStyle.Default) {
             UIAlertAction in
             NSLog("Yes Pressed")
             
@@ -161,11 +161,11 @@ class EmailViewController: UIViewController {
         
         if (emailField.text.isEmpty) {
             
-            var alertController = UIAlertController(title: "Please enter your email address.", message: "", preferredStyle: .Alert)
+            var alertController = UIAlertController(title: NSLocalizedString("Please enter your email address.", comment: ""), message: "", preferredStyle: .Alert)
             
             // Create the actions
             
-            var cancelAction = UIAlertAction(title: "Okay", style: UIAlertActionStyle.Cancel) {
+            var cancelAction = UIAlertAction(title: NSLocalizedString("Okay", comment: ""), style: UIAlertActionStyle.Cancel) {
                 UIAlertAction in
                 NSLog("Cancel Pressed")
             }
@@ -182,7 +182,7 @@ class EmailViewController: UIViewController {
         
         //toName = self.nameField.text
         toEmail = self.emailField.text
-            messageText = String(format:"%@", "Your chosen forms of birth control are: " + commaSeparted + ". Ask your Healthcare Provider about these methods to learn more.\n\n\n\n\n\n\nDISCLAIMER: This application (app) does not provide specific medical advice and does not endorse any medical or professional service obtained through information provided on this app or any links provided. It is intended for general informational purposes only. Use of this app does not replace medical consultation with a qualified health or medical professional to meet the health and medical needs of you or others. Never ignore professional medical advice in seeking treatment because of something that you have read on this app. If you think you may have a medical emergency, please dial 911. While the content of this app is periodically updated, medical information changes rapidly and therefore, some information may be out of date, and/or contain inaccuracies or typographical errors.")
+            messageText = String(format:"%@", NSLocalizedString("Your chosen forms of birth control are: ", comment: "") + commaSeparted + NSLocalizedString(". Ask your Healthcare Provider about these methods to learn more.\n\n\n\n\n\n\nDISCLAIMER: This application (app) does not provide specific medical advice and does not endorse any medical or professional service obtained through information provided on this app or any links provided. It is intended for general informational purposes only. Use of this app does not replace medical consultation with a qualified health or medical professional to meet the health and medical needs of you or others. Never ignore professional medical advice in seeking treatment because of something that you have read on this app. If you think you may have a medical emergency, please dial 911. While the content of this app is periodically updated, medical information changes rapidly and therefore, some information may be out of date, and/or contain inaccuracies or typographical errors.", comment: ""))
         println(messageText)
     
         
@@ -267,9 +267,9 @@ class EmailViewController: UIViewController {
     
     sentAlert.delegate = self
     sentAlert.tag = 1
-    sentAlert.title = "Your results have been sent."
-    sentAlert.message = "Thank you."
-    sentAlert.addButtonWithTitle("Okay")
+    sentAlert.title = NSLocalizedString("Your results have been sent.", comment: "")
+    sentAlert.message = NSLocalizedString("Thank you.", comment: "")
+    sentAlert.addButtonWithTitle(NSLocalizedString("Okay", comment: ""))
     
     sentAlert.show()
     

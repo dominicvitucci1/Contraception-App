@@ -74,14 +74,17 @@
 /* Class = "UILabel"; text = "Every Three Months"; ObjectID = "I0k-pV-FiU"; */
 "I0k-pV-FiU.text" = "Every Three Months";
 
-/* Class = "UILabel"; text = "Welcome"; ObjectID = "I3f-gi-9F2"; */
-"I3f-gi-9F2.text" = "Welcome";
+/* Class = "UILabel"; text = "Welcome \nto"; ObjectID = "I3f-gi-9F2"; */
+"I3f-gi-9F2.text" = "Welcome \nto";
 
 /* Class = "UILabel"; text = "Enter your information to send your results"; ObjectID = "OBO-7y-LjE"; */
 "OBO-7y-LjE.text" = "Enter your information to send your results";
 
 /* Class = "UILabel"; text = "Did you have a baby less than 3 weeks ago?"; ObjectID = "Ocv-Zj-46z"; */
 "Ocv-Zj-46z.text" = "Did you have a baby less than 3 weeks ago?";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "OkC-ru-2LZ"; */
+"OkC-ru-2LZ.normalTitle" = "No";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "P3l-2O-y3a"; */
 "P3l-2O-y3a.normalTitle" = "Button";
@@ -137,6 +140,9 @@
 /* Class = "UITextField"; placeholder = "Tap here to selct your race"; ObjectID = "ha9-iy-XVI"; */
 "ha9-iy-XVI.placeholder" = "Tap here to selct your race";
 
+/* Class = "UILabel"; text = "Label"; ObjectID = "kM0-B6-w7z"; */
+"kM0-B6-w7z.text" = "Label";
+
 /* Class = "UITextField"; placeholder = "Tap here to select your age range"; ObjectID = "lZX-dx-SKa"; */
 "lZX-dx-SKa.placeholder" = "Tap here to select your age range";
 
@@ -182,6 +188,9 @@
 /* Class = "UIButton"; normalTitle = "Send"; ObjectID = "uYj-Bg-M3t"; */
 "uYj-Bg-M3t.normalTitle" = "Send";
 
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "vV1-Fz-Wpo"; */
+"vV1-Fz-Wpo.normalTitle" = "Yes";
+
 /* Class = "UIButton"; normalTitle = "No"; ObjectID = "vbi-Hn-41U"; */
 "vbi-Hn-41U.normalTitle" = "No";
 
@@ -200,8 +209,8 @@
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xme-fo-K6u"; */
 "xme-fo-K6u.normalTitle" = "Button";
 
-/* Class = "UILabel"; text = "I'm in High School, what should I know about birth control"; ObjectID = "z8w-d4-eXn"; */
-"z8w-d4-eXn.text" = "I'm in High School, what should I know about birth control";
+/* Class = "UILabel"; text = "I'm in High School, what should I know about birth control?"; ObjectID = "z8w-d4-eXn"; */
+"z8w-d4-eXn.text" = "I'm in High School, what should I know about birth control?";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zp8-p2-bBv"; */
 "zp8-p2-bBv.normalTitle" = "Button";
