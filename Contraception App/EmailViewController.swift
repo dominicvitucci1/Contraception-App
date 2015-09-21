@@ -30,6 +30,18 @@ class EmailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.titleView = UIImageView(image: UIImage(named: "Top Bar"))
+        
+        var titleView : UIImageView
+        // set the dimensions you want here
+        titleView = UIImageView(frame:CGRectMake(0, 0, 320, 44))
+        // Set how do you want to maintain the aspect
+        titleView.contentMode = .ScaleAspectFit
+        titleView.image = UIImage(named: "Top Bar")
+        
+        self.navigationItem.titleView = titleView
+
+        
         commaSeparted = message.componentsJoinedByString(", ")
         
         var larcAlertController = UIAlertController(title: NSLocalizedString("After using this application are you more likely to use an IUD or an Implant?", comment: ""), message: NSLocalizedString("Your response will not be associated with any identifying information", comment: ""), preferredStyle: .Alert)

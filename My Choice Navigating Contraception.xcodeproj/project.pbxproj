@@ -20,6 +20,7 @@
 		B62936B51B1E543100987E36 /* LongActingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62936B41B1E543100987E36 /* LongActingViewController.swift */; };
 		B62936B71B1E649900987E36 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62936B61B1E649900987E36 /* QuestionViewController.swift */; };
 		B6677AE01BA5CEE900EC818A /* CozyLoadingActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6677ADF1BA5CEE900EC818A /* CozyLoadingActivity.swift */; };
+		B6677AE21BA770DF00EC818A /* PregnantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6677AE11BA770DF00EC818A /* PregnantViewController.swift */; };
 		B672D0D21B5AD1E40080FCBB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672D0D11B5AD1E40080FCBB /* DataViewController.swift */; };
 		B672D0D41B5AD2FB0080FCBB /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672D0D31B5AD2FB0080FCBB /* ThreeViewController.swift */; };
 		B687B67D1B4C959600A7F37F /* HSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687B67C1B4C959600A7F37F /* HSViewController.swift */; };
@@ -83,6 +84,7 @@
 		B62936B61B1E649900987E36 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		B6645D7D1BA49CDC00733504 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		B6677ADF1BA5CEE900EC818A /* CozyLoadingActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CozyLoadingActivity.swift; sourceTree = "<group>"; };
+		B6677AE11BA770DF00EC818A /* PregnantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PregnantViewController.swift; sourceTree = "<group>"; };
 		B672D0D11B5AD1E40080FCBB /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		B672D0D31B5AD2FB0080FCBB /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		B687B67C1B4C959600A7F37F /* HSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				B6677ADF1BA5CEE900EC818A /* CozyLoadingActivity.swift */,
 				B62559E31B7423FF00789230 /* Reachability.swift */,
 				B6FFE7611B1E76C30040E206 /* CheckBox.swift */,
+				B6677AE11BA770DF00EC818A /* PregnantViewController.swift */,
 				B62936B01B1E092E00987E36 /* OptionsViewController.swift */,
 				B672D0D11B5AD1E40080FCBB /* DataViewController.swift */,
 				B62936B21B1E121E00987E36 /* FeedPageViewController.swift */,
@@ -371,6 +374,7 @@
 			files = (
 				B6FFE7661B1F72E10040E206 /* DetailViewController.swift in Sources */,
 				B62936911B1A0B4000987E36 /* ViewController.swift in Sources */,
+				B6677AE21BA770DF00EC818A /* PregnantViewController.swift in Sources */,
 				B6FFE7621B1E76C30040E206 /* CheckBox.swift in Sources */,
 				B62936B51B1E543100987E36 /* LongActingViewController.swift in Sources */,
 				B6677AE01BA5CEE900EC818A /* CozyLoadingActivity.swift in Sources */,
