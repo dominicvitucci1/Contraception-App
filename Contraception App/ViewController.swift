@@ -113,7 +113,7 @@ class ViewController: BaseViewController {
         
         myActionSheet.addAction(actionOne)
         myActionSheet.addAction(actionTwo)
-        myActionSheet.addAction(actionCancel)
+        //myActionSheet.addAction(actionCancel)
         
         self.presentViewController(myActionSheet, animated: true, completion: nil)
         
