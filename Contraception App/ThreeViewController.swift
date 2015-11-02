@@ -26,20 +26,20 @@ class ThreeViewController: UIViewController {
 
         NSUserDefaults.standardUserDefaults().setObject(false, forKey: "langSelect")
         
-        var display = NSUserDefaults.standardUserDefaults().objectForKey("popup") as! Bool
+        let display = NSUserDefaults.standardUserDefaults().objectForKey("popup") as! Bool
         
         if (display != true) {
 
-        var dataAlertController = UIAlertController(title: NSLocalizedString("Would you like to provide us with some basic data to help improve our app?", comment: ""), message: NSLocalizedString("None of this data will be associated with your name or any other identifying information", comment: ""), preferredStyle: .Alert)
+        let dataAlertController = UIAlertController(title: NSLocalizedString("Would you like to provide us with some basic data to help improve our app?", comment: ""), message: NSLocalizedString("None of this data will be associated with your name or any other identifying information", comment: ""), preferredStyle: .Alert)
         
         // Create the actions
         
-        var cancelAction = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: UIAlertActionStyle.Default) {
+        let cancelAction = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: UIAlertActionStyle.Default) {
             UIAlertAction in
             NSLog("No Pressed")
         }
         
-        var yesAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: UIAlertActionStyle.Default) {
+        let yesAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: UIAlertActionStyle.Default) {
             UIAlertAction in
             NSLog("Yes Pressed")
             

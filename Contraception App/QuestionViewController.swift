@@ -42,11 +42,11 @@ class QuestionViewController: UIViewController {
         PFAnonymousUtils.logInWithBlock {
             (user: PFUser?, error: NSError?) -> Void in
             if error != nil || user == nil {
-                println("Anonymous login failed.")
+                print("Anonymous login failed.")
             } else {
-                println("Anonymous user logged in.")
+                print("Anonymous user logged in.")
                 
-                var data = PFObject(className:"data")
+                let data = PFObject(className:"data")
                 data["userNumber"] = PFUser.currentUser()
                 data["age"] = "Not Provided"
                 data["ethnicity"] = "Not Provided"
@@ -55,7 +55,7 @@ class QuestionViewController: UIViewController {
                 data.saveInBackgroundWithBlock {
                     (success: Bool, error: NSError?) -> Void in
                     if (success) {
-                        println("objectSaved")
+                        print("objectSaved")
                     }
                 }
             }

@@ -557,7 +557,7 @@ class FeedPageViewController: UIViewController {
     
     func noPressed(sender: UIButton!) {
         
-        var quitAlert: UIAlertView = UIAlertView()
+        let quitAlert: UIAlertView = UIAlertView()
         
         quitAlert.delegate = self
         
@@ -579,7 +579,7 @@ class FeedPageViewController: UIViewController {
             NSLog("sent")
             
         default:
-            println("alertView \(buttonIndex) clicked")
+            print("alertView \(buttonIndex) clicked")
             
             
         }

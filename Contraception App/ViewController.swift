@@ -23,11 +23,11 @@ class ViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var langSelect = NSUserDefaults.standardUserDefaults().objectForKey("langSelect") as! Bool
+        let langSelect = NSUserDefaults.standardUserDefaults().objectForKey("langSelect") as! Bool
         
         NSUserDefaults.standardUserDefaults().removeObjectForKey("Final Results")
         
-        println( NSUserDefaults.standardUserDefaults().objectForKey("Final Results"))
+        print( NSUserDefaults.standardUserDefaults().objectForKey("Final Results"))
         
         NSUserDefaults.standardUserDefaults().setObject(false, forKey: "popup")
         
@@ -36,7 +36,7 @@ class ViewController: BaseViewController {
         NSUserDefaults.standardUserDefaults().setObject(false, forKey: "startDisplay")
         }
         
-        println( NSUserDefaults.standardUserDefaults().objectForKey("popup"))
+        print( NSUserDefaults.standardUserDefaults().objectForKey("popup"))
         
 //        welcomeLabel.text = NSLocalizedString("Welcome \nto", comment: "")
 //        getStartedLabel.text = NSLocalizedString("Press \"Get Started\" to begin.", comment: "")
@@ -68,7 +68,7 @@ class ViewController: BaseViewController {
     
     
     override func viewDidAppear(animated: Bool) {
-        var display = NSUserDefaults.standardUserDefaults().objectForKey("startDisplay") as! Bool
+        let display = NSUserDefaults.standardUserDefaults().objectForKey("startDisplay") as! Bool
         var localeString:String?
         
         if (display != true) {
@@ -76,7 +76,7 @@ class ViewController: BaseViewController {
         let myActionSheet = UIAlertController (title: "Please Select Your Language", message: "", preferredStyle: UIAlertControllerStyle.Alert)
         
         let actionOne = UIAlertAction (title: "English", style: .Default, handler: { (action) in
-            println("test0")
+            print("test0")
             
             localeString = "en"
             if localeString != nil {
@@ -86,12 +86,12 @@ class ViewController: BaseViewController {
             NSUserDefaults.standardUserDefaults().setObject(true, forKey: "startDisplay")
             NSUserDefaults.standardUserDefaults().setObject(true, forKey: "langSelect")
 
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Main") as! UIViewController
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Main") 
             self.navigationController?.pushViewController(viewController, animated: false)
             
         })
         let actionTwo = UIAlertAction (title: "Spanish", style: .Default, handler: { (action) in
-            println("test1")
+            print("test1")
             
             localeString = "es"
             if localeString != nil {
@@ -101,15 +101,15 @@ class ViewController: BaseViewController {
             NSUserDefaults.standardUserDefaults().setObject(true, forKey: "startDisplay")
             NSUserDefaults.standardUserDefaults().setObject(true, forKey: "langSelect")
             
-            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Main") as! UIViewController
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Main") 
             self.navigationController?.pushViewController(viewController, animated: false)
 
             
         })
         
-        let actionCancel = UIAlertAction (title: "Cancel", style: .Cancel, handler: { (action) in
-            println("test2")
-        })
+//        let actionCancel = UIAlertAction (title: "Cancel", style: .Cancel, handler: { (action) in
+//            print("test2")
+//        })
         
         myActionSheet.addAction(actionOne)
         myActionSheet.addAction(actionTwo)

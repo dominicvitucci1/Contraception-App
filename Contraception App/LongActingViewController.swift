@@ -50,11 +50,11 @@ class LongActingViewController: UIViewController {
         PFAnonymousUtils.logInWithBlock {
             (user: PFUser?, error: NSError?) -> Void in
             if error != nil || user == nil {
-                println("Anonymous login failed.")
+                print("Anonymous login failed.")
             } else {
-                println("Anonymous user logged in.")
+                print("Anonymous user logged in.")
                 
-                var data = PFObject(className:"data")
+                let data = PFObject(className:"data")
                 data["userNumber"] = PFUser.currentUser()
                 data["age"] = "Not Provided"
                 data["ethnicity"] = "Not Provided"
@@ -63,7 +63,7 @@ class LongActingViewController: UIViewController {
                 data.saveInBackgroundWithBlock {
                     (success: Bool, error: NSError?) -> Void in
                     if (success) {
-                        println("objectSaved")
+                        print("objectSaved")
                     }
                 }
             }
@@ -85,25 +85,25 @@ class LongActingViewController: UIViewController {
                 case NSLocalizedString("Do you know there are long acting reversible contraceptives?", comment: "Know LARC Case"):
                     
                     if PFUser.currentUser() !== nil {
-                        var query1 = PFQuery(className:"data")
+                        let query1 = PFQuery(className:"data")
                         query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
                         query1.findObjectsInBackgroundWithBlock {
                             (objects: [AnyObject]?, error: NSError?) -> Void in
                             
                             if error == nil {
                                 // The find succeeded.
-                                println("Successfully retrieved \(objects!.count) scores.")
+                                print("Successfully retrieved \(objects!.count) scores.")
                                 // Do something with the found objects
                                 if let objects = objects as? [PFObject] {
                                     for object in objects {
                                         //finalObject = object
-                                        println(object.objectId)
+                                        print(object.objectId)
                                         
-                                        var query2 = PFQuery(className:"data")
+                                        let query2 = PFQuery(className:"data")
                                         query2.getObjectInBackgroundWithId(object.objectId!) {
                                             (object, error) -> Void in
                                             if error != nil {
-                                                println(error)
+                                                print(error)
                                             } else {
                                                 if let object = object {
                                                     object["Do_you_know_there_are_long_acting_reversible_contraceptives"] = "Yes"
@@ -115,7 +115,7 @@ class LongActingViewController: UIViewController {
                                 }
                             } else {
                                 // Log details of the failure
-                                println("Error: \(error!) \(error!.userInfo!)")
+                                print("Error: \(error!) \(error!.userInfo)")
                             }
                         }
 
@@ -128,25 +128,25 @@ class LongActingViewController: UIViewController {
                 case NSLocalizedString("Do you want to know more about them?", comment: "Know More Case LARC"):
                     
                     if PFUser.currentUser() !== nil {
-                        var query1 = PFQuery(className:"data")
+                        let query1 = PFQuery(className:"data")
                         query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
                         query1.findObjectsInBackgroundWithBlock {
                             (objects: [AnyObject]?, error: NSError?) -> Void in
                             
                             if error == nil {
                                 // The find succeeded.
-                                println("Successfully retrieved \(objects!.count) scores.")
+                                print("Successfully retrieved \(objects!.count) scores.")
                                 // Do something with the found objects
                                 if let objects = objects as? [PFObject] {
                                     for object in objects {
                                         //finalObject = object
-                                        println(object.objectId)
+                                        print(object.objectId)
                                         
-                                        var query2 = PFQuery(className:"data")
+                                        let query2 = PFQuery(className:"data")
                                         query2.getObjectInBackgroundWithId(object.objectId!) {
                                             (object, error) -> Void in
                                             if error != nil {
-                                                println(error)
+                                                print(error)
                                             } else {
                                                 if let object = object {
                                                     object["Do_you_want_to_know_more_about_them"] = "Yes"
@@ -158,7 +158,7 @@ class LongActingViewController: UIViewController {
                                 }
                             } else {
                                 // Log details of the failure
-                                println("Error: \(error!) \(error!.userInfo!)")
+                                print("Error: \(error!) \(error!.userInfo)")
                             }
                         }
                         
@@ -193,25 +193,25 @@ class LongActingViewController: UIViewController {
             case NSLocalizedString("Do you know there are long acting reversible contraceptives?", comment: "Know Case LARC"):
                 
                 if PFUser.currentUser() !== nil {
-                    var query1 = PFQuery(className:"data")
+                    let query1 = PFQuery(className:"data")
                     query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
                     query1.findObjectsInBackgroundWithBlock {
                         (objects: [AnyObject]?, error: NSError?) -> Void in
                         
                         if error == nil {
                             // The find succeeded.
-                            println("Successfully retrieved \(objects!.count) scores.")
+                            print("Successfully retrieved \(objects!.count) scores.")
                             // Do something with the found objects
                             if let objects = objects as? [PFObject] {
                                 for object in objects {
                                     //finalObject = object
-                                    println(object.objectId)
+                                    print(object.objectId)
                                     
-                                    var query2 = PFQuery(className:"data")
+                                    let query2 = PFQuery(className:"data")
                                     query2.getObjectInBackgroundWithId(object.objectId!) {
                                         (object, error) -> Void in
                                         if error != nil {
-                                            println(error)
+                                            print(error)
                                         } else {
                                             if let object = object {
                                                 object["Do_you_know_there_are_long_acting_reversible_contraceptives"] = "No"
@@ -223,7 +223,7 @@ class LongActingViewController: UIViewController {
                             }
                         } else {
                             // Log details of the failure
-                            println("Error: \(error!) \(error!.userInfo!)")
+                            print("Error: \(error!) \(error!.userInfo)")
                         }
                     }
                     
@@ -234,25 +234,25 @@ class LongActingViewController: UIViewController {
             case NSLocalizedString("Do you want to know more about them?", comment: "Know More Case"):
                 
                 if PFUser.currentUser() !== nil {
-                    var query1 = PFQuery(className:"data")
+                    let query1 = PFQuery(className:"data")
                     query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
                     query1.findObjectsInBackgroundWithBlock {
                         (objects: [AnyObject]?, error: NSError?) -> Void in
                         
                         if error == nil {
                             // The find succeeded.
-                            println("Successfully retrieved \(objects!.count) scores.")
+                            print("Successfully retrieved \(objects!.count) scores.")
                             // Do something with the found objects
                             if let objects = objects as? [PFObject] {
                                 for object in objects {
                                     //finalObject = object
-                                    println(object.objectId)
+                                    print(object.objectId)
                                     
-                                    var query2 = PFQuery(className:"data")
+                                    let query2 = PFQuery(className:"data")
                                     query2.getObjectInBackgroundWithId(object.objectId!) {
                                         (object, error) -> Void in
                                         if error != nil {
-                                            println(error)
+                                            print(error)
                                         } else {
                                             if let object = object {
                                                 object["Do_you_want_to_know_more_about_them"] = "No"
@@ -264,7 +264,7 @@ class LongActingViewController: UIViewController {
                             }
                         } else {
                             // Log details of the failure
-                            println("Error: \(error!) \(error!.userInfo!)")
+                            print("Error: \(error!) \(error!.userInfo)")
                         }
                     }
                     

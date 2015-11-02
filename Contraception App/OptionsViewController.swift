@@ -12,7 +12,7 @@ import Bolts
 
 
 
-class OptionsViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
+class OptionsViewController: UITableViewController {
     
     
     var options : NSArray = []
@@ -65,7 +65,7 @@ class OptionsViewController: UITableViewController, UITableViewDataSource, UITab
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) 
         
         if(indexPath.row % 2 == 0){
             cell.backgroundColor = UIColor.clearColor()
@@ -84,7 +84,7 @@ class OptionsViewController: UITableViewController, UITableViewDataSource, UITab
         //cell.accessoryView = UIButton.buttonWithType()
         
         // Feeds dictionary.
-        var dict : NSDictionary! = options.objectAtIndex(indexPath.row) as? NSDictionary
+        //var dict : NSDictionary! = options.objectAtIndex(indexPath.row) as? NSDictionary
         
         // Set cell properties.
         let row = indexPath.row
@@ -109,7 +109,7 @@ class OptionsViewController: UITableViewController, UITableViewDataSource, UITab
         if segue.identifier == "openPage" {
             
                 if let destination = segue.destinationViewController as? FeedPageViewController {
-                    if let index = tableView.indexPathForSelectedRow()?.row {
+                    if let index = tableView.indexPathForSelectedRow?.row {
                         destination.selectedFeedTitle = options[index] as! String
                         
                     }

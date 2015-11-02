@@ -56,15 +56,15 @@ class DataViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         picker4.tag = 3
         
 
-        var toolBar = UIToolbar()
+        let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.Default
         toolBar.translucent = true
         toolBar.tintColor = UIColor(red: 201/255, green: 187/255, blue: 96/255, alpha: 1)
         toolBar.sizeToFit()
         
         
-        var doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: "donePicker")
-        var spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: "donePicker")
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
         
         toolBar.setItems([spaceButton, doneButton], animated: false)
         toolBar.userInteractionEnabled = true
@@ -116,16 +116,16 @@ class DataViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         return 1
     }
     
-    func pickerView(picker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(picker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if picker.tag == 0 {
-            return ages[row] as! String
+            return ages[row] as? String
         } else if picker.tag == 1 {
-            return ethnicities[row] as! String
+            return ethnicities[row] as? String
         } else if picker.tag == 2 {
-            return races[row] as! String
+            return races[row] as? String
         } else if  picker.tag == 3 {
-            return medAssist[row] as! String
+            return medAssist[row] as? String
         }
         return ""
     }
@@ -134,13 +134,13 @@ class DataViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     {
         
         if picker.tag == 0 {
-            ageField.text = ages[row] as! String
+            ageField.text = ages[row] as? String
         } else if picker.tag == 1 {
-            ethnicityField.text = ethnicities[row] as! String
+            ethnicityField.text = ethnicities[row] as? String
         } else if picker.tag == 2 {
-            raceField.text = races[row] as! String
+            raceField.text = races[row] as? String
         } else if picker.tag == 3 {
-            assistanceField.text = medAssist[row] as! String
+            assistanceField.text = medAssist[row] as? String
         }
     }
     
@@ -168,16 +168,16 @@ class DataViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         
         if Reachability.isConnectedToNetwork() == true {
-            println("Internet connection OK")
+            print("Internet connection OK")
             
             PFAnonymousUtils.logInWithBlock {
             (user: PFUser?, error: NSError?) -> Void in
             if error != nil || user == nil {
-                println("Anonymous login failed.")
+                print("Anonymous login failed.")
             } else {
-                println("Anonymous user logged in.")
+                print("Anonymous user logged in.")
                 
-                var data = PFObject(className:"data")
+                let data = PFObject(className:"data")
                 data["userNumber"] = PFUser.currentUser()
                 data["age"] = self.ageField.text
                 data["ethnicity"] = self.ethnicityField.text
@@ -187,7 +187,7 @@ class DataViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
                     (success: Bool, error: NSError?) -> Void in
                     if (success) {
                         // The object has been saved.
-                        var popupPresented = true
+                        _ = true
                         
                         NSUserDefaults.standardUserDefaults().setObject(true, forKey: "popup")
                         
@@ -203,8 +203,8 @@ class DataViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         }
             
             else {
-                println("Internet connection FAILED")
-                var alert = UIAlertView(title: NSLocalizedString("No Internet Connection", comment: ""), message: NSLocalizedString("Make sure your device is connected to the internet.", comment: ""), delegate: nil, cancelButtonTitle: NSLocalizedString("OK", comment: "Internet Connection Popup"))
+                print("Internet connection FAILED")
+                let alert = UIAlertView(title: NSLocalizedString("No Internet Connection", comment: ""), message: NSLocalizedString("Make sure your device is connected to the internet.", comment: ""), delegate: nil, cancelButtonTitle: NSLocalizedString("OK", comment: "Internet Connection Popup"))
                 alert.show()
             }
 

@@ -41,7 +41,7 @@ class CozyLoadingActivity: UIView {
     var UIDisabled = false
     
     convenience init(text: String, sender: UIViewController, disableUI: Bool) {
-        let screenWidth = UIScreen.mainScreen().bounds.size.width
+        _ = UIScreen.mainScreen().bounds.size.width
         
         let width = sender.view.frame.width / 1.6
         let height = width / 3
@@ -51,7 +51,7 @@ class CozyLoadingActivity: UIView {
         layer.cornerRadius = 8
         createShadow()
         
-        var yPosition = frame.height/2 - 20
+        let yPosition = frame.height/2 - 20
         
         activityView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
         activityView.frame = CGRect(x: 10, y: yPosition, width: 40, height: 40)
@@ -87,7 +87,7 @@ class CozyLoadingActivity: UIView {
     }
     
     func createShadowPath() -> UIBezierPath {
-        var myBezier = UIBezierPath()
+        let myBezier = UIBezierPath()
         myBezier.moveToPoint(CGPoint(x: -3, y: -3))
         myBezier.addLineToPoint(CGPoint(x: frame.width + 3, y: -3))
         myBezier.addLineToPoint(CGPoint(x: frame.width + 3, y: frame.height + 3))
@@ -96,7 +96,7 @@ class CozyLoadingActivity: UIView {
         return myBezier
     }
     
-    func hideLoadingActivity(#success: Bool, animated: Bool) {
+    func hideLoadingActivity(success success: Bool, animated: Bool) {
         if UIDisabled {
             UIApplication.sharedApplication().endIgnoringInteractionEvents()
         }
@@ -162,7 +162,7 @@ extension NSObject {
     
     /// Cozy extension
     func callSelectorAsync(selector: Selector, delay: NSTimeInterval) {
-        var timer = NSTimer.scheduledTimerWithTimeInterval(delay, target: self, selector: selector, userInfo: nil, repeats: false)
+        let timer = NSTimer.scheduledTimerWithTimeInterval(delay, target: self, selector: selector, userInfo: nil, repeats: false)
         NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
     }
     

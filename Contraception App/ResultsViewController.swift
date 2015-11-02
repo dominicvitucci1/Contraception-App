@@ -44,7 +44,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
         
         results = NSUserDefaults.standardUserDefaults().objectForKey("Final Results") as! NSMutableArray
         
-        println(results)
+        print(results)
         
         self.tableView.rowHeight = 70
         self.tableView.dataSource = self
@@ -74,17 +74,17 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
 
         if (results.count == 0) {
             
-            var emptyAlertController = UIAlertController(title: NSLocalizedString("There were no birth control options that matched your preferences. Please reconsider some of your preferences regarding birth control.", comment: ""), message: NSLocalizedString("Press OK to change some of your preferences or press Cancel to exit the app.", comment: ""), preferredStyle: .Alert)
+            let emptyAlertController = UIAlertController(title: NSLocalizedString("There were no birth control options that matched your preferences. Please reconsider some of your preferences regarding birth control.", comment: ""), message: NSLocalizedString("Press OK to change some of your preferences or press Cancel to exit the app.", comment: ""), preferredStyle: .Alert)
             
             // Create the actions
             
-            var cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: UIAlertActionStyle.Default) {
+            let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: UIAlertActionStyle.Default) {
                 UIAlertAction in
                 NSLog("No Pressed")
                 self.restart()
             }
             
-            var yesAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: UIAlertActionStyle.Default) {
+            let yesAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: UIAlertActionStyle.Default) {
                 UIAlertAction in
                 NSLog("Yes Pressed")
                 
@@ -127,7 +127,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) 
         
         if(indexPath.row % 2 == 0){
             cell.backgroundColor = UIColor.clearColor()
@@ -145,7 +145,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
         cell.textLabel?.font = UIFont.systemFontOfSize(20)
         
         // Feeds dictionary.
-        var dict : NSDictionary! = results.objectAtIndex(indexPath.row) as? NSDictionary
+        //let dict : NSDictionary! = results.objectAtIndex(indexPath.row) as? NSDictionary
         
         // Set cell properties.
         let row = indexPath.row
@@ -182,34 +182,34 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBAction func noButtonPressed(sender: AnyObject) {
         
-        var larcAlertController = UIAlertController(title: NSLocalizedString("After using this application are you more likely to use an IUD or an Implant?", comment: ""), message: NSLocalizedString("Your response will not be associated with any identifying information", comment: ""), preferredStyle: .Alert)
+        let larcAlertController = UIAlertController(title: NSLocalizedString("After using this application are you more likely to use an IUD or an Implant?", comment: ""), message: NSLocalizedString("Your response will not be associated with any identifying information", comment: ""), preferredStyle: .Alert)
         
         // Create the actions
         
-        var cancelAction = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: UIAlertActionStyle.Default) {
+        let cancelAction = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: UIAlertActionStyle.Default) {
             UIAlertAction in
             NSLog("No Pressed")
             
             if PFUser.currentUser() !== nil {
-                var query1 = PFQuery(className:"data")
+                let query1 = PFQuery(className:"data")
                 query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
                 query1.findObjectsInBackgroundWithBlock {
                     (objects: [AnyObject]?, error: NSError?) -> Void in
                     
                     if error == nil {
                         // The find succeeded.
-                        println("Successfully retrieved \(objects!.count) scores.")
+                        print("Successfully retrieved \(objects!.count) scores.")
                         // Do something with the found objects
                         if let objects = objects as? [PFObject] {
                             for object in objects {
                                 //finalObject = object
-                                println(object.objectId)
+                                print(object.objectId)
                                 
-                                var query2 = PFQuery(className:"data")
+                                let query2 = PFQuery(className:"data")
                                 query2.getObjectInBackgroundWithId(object.objectId!) {
                                     (object, error) -> Void in
                                     if error != nil {
-                                        println(error)
+                                        print(error)
                                     } else {
                                         if let object = object {
                                             object["After_using_this_application_are_you_more_likely_to_use_an_IUD_or_an_Implant"] = "No"
@@ -221,7 +221,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
                         }
                     } else {
                         // Log details of the failure
-                        println("Error: \(error!) \(error!.userInfo!)")
+                        print("Error: \(error!) \(error!.userInfo)")
                     }
                 }
                 
@@ -230,7 +230,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
 
             
             
-            var quitAlert: UIAlertView = UIAlertView()
+            let quitAlert: UIAlertView = UIAlertView()
             
             quitAlert.delegate = self
             
@@ -242,30 +242,30 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
             quitAlert.show()
         }
         
-        var yesAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: UIAlertActionStyle.Default) {
+        let yesAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: UIAlertActionStyle.Default) {
             UIAlertAction in
             NSLog("Yes Pressed")
             
             if PFUser.currentUser() !== nil {
-                var query1 = PFQuery(className:"data")
+                let query1 = PFQuery(className:"data")
                 query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
                 query1.findObjectsInBackgroundWithBlock {
                     (objects: [AnyObject]?, error: NSError?) -> Void in
                     
                     if error == nil {
                         // The find succeeded.
-                        println("Successfully retrieved \(objects!.count) scores.")
+                        print("Successfully retrieved \(objects!.count) scores.")
                         // Do something with the found objects
                         if let objects = objects as? [PFObject] {
                             for object in objects {
                                 //finalObject = object
-                                println(object.objectId)
+                                print(object.objectId)
                                 
-                                var query2 = PFQuery(className:"data")
+                                let query2 = PFQuery(className:"data")
                                 query2.getObjectInBackgroundWithId(object.objectId!) {
                                     (object, error) -> Void in
                                     if error != nil {
-                                        println(error)
+                                        print(error)
                                     } else {
                                         if let object = object {
                                             object["After_using_this_application_are_you_more_likely_to_use_an_IUD_or_an_Implant"] = "Yes"
@@ -277,14 +277,14 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
                         }
                     } else {
                         // Log details of the failure
-                        println("Error: \(error!) \(error!.userInfo!)")
+                        print("Error: \(error!) \(error!.userInfo)")
                     }
                 }
                 
             }
 
             
-            var quitAlert: UIAlertView = UIAlertView()
+            let quitAlert: UIAlertView = UIAlertView()
             
             quitAlert.delegate = self
             
@@ -317,7 +317,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
             NSLog("sent")
             
         default:
-            println("alertView \(buttonIndex) clicked")
+            print("alertView \(buttonIndex) clicked")
             
             
         }
@@ -342,7 +342,7 @@ class ResultsViewController: UIViewController, UITableViewDataSource, UITableVie
         if segue.identifier == "openResults" {
             
             if let destination = segue.destinationViewController as? FeedPageViewController {
-                if let index = tableView.indexPathForSelectedRow()?.row {
+                if let index = tableView.indexPathForSelectedRow?.row {
                     destination.selectedFeedTitle = results[index] as! String
                     
                     //self.navigationController!.pushViewController(destination, animated: true)

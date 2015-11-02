@@ -48,7 +48,7 @@ class DetailViewController: UIViewController {
         
         resultsButton.hidden = true
         
-        println(selected)
+        print(selected)
         
         if selected.containsObject("Daily") {
             questionSet = "Daily"
@@ -84,7 +84,8 @@ class DetailViewController: UIViewController {
         
         else if selected.containsObject("Ten Year") {
             questionSet = "Ten Year"
-            detailLabel.text = NSLocalizedString("Do you want to have fewer periods?", comment: "")
+            detailLabel.text = NSLocalizedString("Would you be opposed to having some side effects such as spotting during the initial few months after beginning a new method of birth control?", comment: "")
+            //detailLabel.text = NSLocalizedString("Do you want to have fewer periods?", comment: "")
             detailLabel.font = UIFont.systemFontOfSize(32)
         }
         
@@ -123,7 +124,7 @@ class DetailViewController: UIViewController {
                 
             case NSLocalizedString("￼Have you had weight reduction surgery that shortens the length of your small intestine?", comment: ""):
                 selected.removeObject("Daily")
-                println(selected)
+                print(selected)
                 
                 viewDidLoad()
  
@@ -139,7 +140,7 @@ class DetailViewController: UIViewController {
                 switch text {
                 case NSLocalizedString("Do you have sensitive skin with adhesives such as tape?", comment: ""):
                     selected.removeObject("Weekly")
-                    println(selected)
+                    print(selected)
                     
                     viewDidLoad()
                 
@@ -158,8 +159,8 @@ class DetailViewController: UIViewController {
                 case NSLocalizedString("Would you be willing to put your fingers inside your vagina to insert your birth control?", comment: ""):
                     selected.removeObject("Monthly")
                     finalResults.addObject(NSLocalizedString("Vaginal Ring", comment: ""))
-                    println(selected)
-                    println(finalResults)
+                    print(selected)
+                    print(finalResults)
                     viewDidLoad()
                 
                 default:
@@ -176,7 +177,7 @@ class DetailViewController: UIViewController {
                 case NSLocalizedString("Would you it bother you to get an injection (shot) every 3 months?", comment: ""):
                     selected.removeObject("Three Month")
                     shotAns = 1
-                    println(selected)
+                    print(selected)
                     viewDidLoad()
                     
                 default:
@@ -193,7 +194,7 @@ class DetailViewController: UIViewController {
                 case NSLocalizedString("Would it bother you to have an implant put just under your skin?", comment: ""):
                     selected.removeObject("3 Year")
                     implantAns = 1
-                    println(selected)
+                    print(selected)
                     viewDidLoad()
                     
                 default:
@@ -211,7 +212,7 @@ class DetailViewController: UIViewController {
                     selected.removeObject("5 Year")
                     selected.removeObject("Ten Year")
                     iudAns = 1
-                    println(selected)
+                    print(selected)
                     viewDidLoad()
                     
                     
@@ -259,7 +260,7 @@ class DetailViewController: UIViewController {
                 switch text {
                 case NSLocalizedString("Would you remember to take a pill at the same time everyday?", comment: ""):
                     selected.removeObject("Daily")
-                    println(selected)
+                    print(selected)
                     
                     viewDidLoad()
                     
@@ -291,7 +292,7 @@ class DetailViewController: UIViewController {
                 case NSLocalizedString("Do you have sensitive skin with adhesives such as tape?", comment: ""):
                     selected.removeObject("Weekly")
                     finalResults.addObject(NSLocalizedString("Patch", comment: ""))
-                    println(selected)
+                    print(selected)
                     
                     viewDidLoad()
                     
@@ -309,7 +310,7 @@ class DetailViewController: UIViewController {
                 switch text {
                 case NSLocalizedString("Would you be willing to put your fingers inside your vagina to insert your birth control?", comment: ""):
                     selected.removeObject("Monthly")
-                    println(selected)
+                    print(selected)
                     viewDidLoad()
                     
                 default:
@@ -327,7 +328,7 @@ class DetailViewController: UIViewController {
                     selected.removeObject("Three Month")
                     finalResults.addObject(NSLocalizedString("Birth Control Shot", comment: ""))
                     shotAns = 1
-                    println(selected)
+                    print(selected)
                     viewDidLoad()
                     
                 default:
@@ -345,7 +346,7 @@ class DetailViewController: UIViewController {
                     selected.removeObject("3 Year")
                     finalResults.addObject(NSLocalizedString("Implant", comment: ""))
                     implantAns = 1
-                    println(selected)
+                    print(selected)
                     viewDidLoad()
                     
                 default:
@@ -363,7 +364,7 @@ class DetailViewController: UIViewController {
                     selected.removeObject("5 Year")
                     finalResults.addObject(NSLocalizedString("Intrauterine Device", comment: ""))
                     iudAns = 1
-                    println(selected)
+                    print(selected)
                     viewDidLoad()
                     
                     

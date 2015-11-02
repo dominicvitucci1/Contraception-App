@@ -44,34 +44,34 @@ class EmailViewController: UIViewController {
         
         commaSeparted = message.componentsJoinedByString(", ")
         
-        var larcAlertController = UIAlertController(title: NSLocalizedString("After using this application are you more likely to use an IUD or an Implant?", comment: ""), message: NSLocalizedString("Your response will not be associated with any identifying information", comment: ""), preferredStyle: .Alert)
+        let larcAlertController = UIAlertController(title: NSLocalizedString("After using this application are you more likely to use an IUD or an Implant?", comment: ""), message: NSLocalizedString("Your response will not be associated with any identifying information", comment: ""), preferredStyle: .Alert)
         
         // Create the actions
         
-        var cancelAction = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: UIAlertActionStyle.Default) {
+        let cancelAction = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: UIAlertActionStyle.Default) {
             UIAlertAction in
             NSLog("No Pressed")
             
             if PFUser.currentUser() !== nil {
-                var query1 = PFQuery(className:"data")
+                let query1 = PFQuery(className:"data")
                 query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
                 query1.findObjectsInBackgroundWithBlock {
                     (objects: [AnyObject]?, error: NSError?) -> Void in
                     
                     if error == nil {
                         // The find succeeded.
-                        println("Successfully retrieved \(objects!.count) scores.")
+                        print("Successfully retrieved \(objects!.count) scores.")
                         // Do something with the found objects
                         if let objects = objects as? [PFObject] {
                             for object in objects {
                                 //finalObject = object
-                                println(object.objectId)
+                                print(object.objectId)
                                 
-                                var query2 = PFQuery(className:"data")
+                                let query2 = PFQuery(className:"data")
                                 query2.getObjectInBackgroundWithId(object.objectId!) {
                                     (object, error) -> Void in
                                     if error != nil {
-                                        println(error)
+                                        print(error)
                                     } else {
                                         if let object = object {
                                             object["After_using_this_application_are_you_more_likely_to_use_an_IUD_or_an_Implant"] = "No"
@@ -83,7 +83,7 @@ class EmailViewController: UIViewController {
                         }
                     } else {
                         // Log details of the failure
-                        println("Error: \(error!) \(error!.userInfo!)")
+                        print("Error: \(error!) \(error!.userInfo)")
                     }
                 }
                 
@@ -92,30 +92,30 @@ class EmailViewController: UIViewController {
             
         }
         
-        var yesAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: UIAlertActionStyle.Default) {
+        let yesAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: UIAlertActionStyle.Default) {
             UIAlertAction in
             NSLog("Yes Pressed")
             
             if PFUser.currentUser() !== nil {
-                var query1 = PFQuery(className:"data")
+                let query1 = PFQuery(className:"data")
                 query1.whereKey("userNumber", equalTo: PFUser.currentUser()!)
                 query1.findObjectsInBackgroundWithBlock {
                     (objects: [AnyObject]?, error: NSError?) -> Void in
                     
                     if error == nil {
                         // The find succeeded.
-                        println("Successfully retrieved \(objects!.count) scores.")
+                        print("Successfully retrieved \(objects!.count) scores.")
                         // Do something with the found objects
                         if let objects = objects as? [PFObject] {
                             for object in objects {
                                 //finalObject = object
-                                println(object.objectId)
+                                print(object.objectId)
                                 
-                                var query2 = PFQuery(className:"data")
+                                let query2 = PFQuery(className:"data")
                                 query2.getObjectInBackgroundWithId(object.objectId!) {
                                     (object, error) -> Void in
                                     if error != nil {
-                                        println(error)
+                                        print(error)
                                     } else {
                                         if let object = object {
                                             object["After_using_this_application_are_you_more_likely_to_use_an_IUD_or_an_Implant"] = "Yes"
@@ -127,7 +127,7 @@ class EmailViewController: UIViewController {
                         }
                     } else {
                         // Log details of the failure
-                        println("Error: \(error!) \(error!.userInfo!)")
+                        print("Error: \(error!) \(error!.userInfo)")
                     }
                 }
                 
@@ -154,7 +154,7 @@ class EmailViewController: UIViewController {
     @IBAction func sendButtonPressed(sender: AnyObject) {
         
         if Reachability.isConnectedToNetwork() == true {
-            println("Internet connection OK")
+            print("Internet connection OK")
 
         
 //        params = ["toEmail": toEmail]
@@ -171,7 +171,7 @@ class EmailViewController: UIViewController {
 //        
 //        }
         
-        if (emailField.text.isEmpty) {
+        if (emailField.text!.isEmpty) {
             
             var alertController = UIAlertController(title: NSLocalizedString("Please enter your email address.", comment: ""), message: "", preferredStyle: .Alert)
             
@@ -193,9 +193,9 @@ class EmailViewController: UIViewController {
         
         
         //toName = self.nameField.text
-        toEmail = self.emailField.text
+        toEmail = self.emailField.text!
             messageText = String(format:"%@", NSLocalizedString("Your chosen forms of birth control are: ", comment: "") + commaSeparted + NSLocalizedString(". Ask your Healthcare Provider about these methods to learn more.\n\n\n\n\n\n\nDISCLAIMER: This application (app) does not provide specific medical advice and does not endorse any medical or professional service obtained through information provided on this app or any links provided. It is intended for general informational purposes only. Use of this app does not replace medical consultation with a qualified health or medical professional to meet the health and medical needs of you or others. Never ignore professional medical advice in seeking treatment because of something that you have read on this app. If you think you may have a medical emergency, please dial 911. While the content of this app is periodically updated, medical information changes rapidly and therefore, some information may be out of date, and/or contain inaccuracies or typographical errors.", comment: ""))
-        println(messageText)
+        print(messageText)
     
         
         
@@ -203,7 +203,7 @@ class EmailViewController: UIViewController {
         PFCloud.callFunctionInBackground("sendMail", withParameters: ["text": messageText, "toEmail": toEmail, "name": toName]) {
             (response: AnyObject?, error: NSError?) -> Void in
             let responseString = response as? String
-            println(responseString)
+            print(responseString)
             
             if response !== nil {
 //                var finalObject: AnyObject
@@ -217,18 +217,18 @@ class EmailViewController: UIViewController {
                     
                     if error == nil {
                         // The find succeeded.
-                        println("Successfully retrieved \(objects!.count) scores.")
+                        print("Successfully retrieved \(objects!.count) scores.")
                         // Do something with the found objects
                         if let objects = objects as? [PFObject] {
                             for object in objects {
                                 //finalObject = object
-                                println(object.objectId)
+                                print(object.objectId)
                                 
                                 var query2 = PFQuery(className:"data")
                                 query2.getObjectInBackgroundWithId(object.objectId!) {
                                     (object, error) -> Void in
                                     if error != nil {
-                                        println(error)
+                                        print(error)
                                     } else {
                                         if let object = object {
                                             let tempAge = object["age"] as! String
@@ -243,7 +243,7 @@ class EmailViewController: UIViewController {
                         }
                     } else {
                         // Log details of the failure
-                        println("Error: \(error!) \(error!.userInfo!)")
+                        print("Error: \(error!) \(error!.userInfo)")
                     }
                 }
             
@@ -258,7 +258,7 @@ class EmailViewController: UIViewController {
         }
             
             else {
-                println("Internet connection FAILED")
+                print("Internet connection FAILED")
                 var alert = UIAlertView(title: "No Internet Connection", message: "Make sure your device is connected to the internet.", delegate: nil, cancelButtonTitle: "OK")
                 alert.show()
             }
@@ -275,7 +275,7 @@ class EmailViewController: UIViewController {
 
 }
     func alertCreated() {
-    var sentAlert: UIAlertView = UIAlertView()
+    let sentAlert: UIAlertView = UIAlertView()
     
     sentAlert.delegate = self
     sentAlert.tag = 1
@@ -298,7 +298,7 @@ func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
         
         
     default:
-        println("alertView \(buttonIndex) clicked")
+        print("alertView \(buttonIndex) clicked")
     }
 }
 

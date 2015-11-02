@@ -73,7 +73,7 @@ class PillsViewController: UIViewController {
 
 
         
-        println(tempSelect)
+        print(tempSelect)
         
         
         nextTwoButton.hidden = true
