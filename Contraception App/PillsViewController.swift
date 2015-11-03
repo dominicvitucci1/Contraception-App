@@ -70,7 +70,7 @@ class PillsViewController: UIViewController {
         titleView.image = UIImage(named: "Top Bar")
         
         self.navigationItem.titleView = titleView
-
+        //scrollView.contentSize = CGSizeMake(scrollView.frame.width, scrollView.frame.height)
 
         
         print(tempSelect)

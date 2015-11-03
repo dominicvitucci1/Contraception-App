@@ -480,7 +480,7 @@ While the content of this app is periodically updated, medical information chang
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1s-JD-szg" userLabel="BC Options">
                                         <rect key="frame" x="1" y="20" width="120" height="123"/>
-                                        <state key="normal" image="Bubble-Options">
+                                        <state key="normal" image="Bubbles-For-Me">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -512,7 +512,7 @@ While the content of this app is periodically updated, medical information chang
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9Y-qd-bw6" userLabel="Survey">
                                         <rect key="frame" x="0.0" y="15" width="120" height="123"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" image="Bubble-Me">
+                                        <state key="normal" image="Bubbles-Options">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -547,7 +547,7 @@ While the content of this app is periodically updated, medical information chang
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60R-XG-tF8" userLabel="Protect">
                                         <rect key="frame" x="0.0" y="19" width="120" height="123"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                        <state key="normal" image="Bubble-HS">
+                                        <state key="normal" image="Bubbles-HS">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -595,6 +595,11 @@ While the content of this app is periodically updated, medical information chang
                             <constraint firstItem="qxo-NX-3N1" firstAttribute="height" secondItem="jxu-Ze-aeD" secondAttribute="height" id="zfq-55-WRD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="forMeButton" destination="R9Y-qd-bw6" id="1Ab-kc-HAS"/>
+                        <outlet property="hsButton" destination="60R-XG-tF8" id="TN4-71-ZA6"/>
+                        <outlet property="optionsButton" destination="O1s-JD-szg" id="qPX-AT-HP1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2o-Ko-UzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1436,6 +1441,7 @@ While the content of this app is periodically updated, medical information chang
                                     <constraint firstItem="ohV-Fn-QuQ" firstAttribute="top" secondItem="ccI-Rd-Tne" secondAttribute="bottom" constant="18" id="gFy-QY-4l6"/>
                                     <constraint firstItem="daD-gx-Ygy" firstAttribute="leading" secondItem="pRM-U5-P4c" secondAttribute="leading" constant="27" id="kVw-yF-abi"/>
                                     <constraint firstItem="gUw-sX-vl5" firstAttribute="top" secondItem="pRM-U5-P4c" secondAttribute="top" constant="8" id="nft-js-dBB"/>
+                                    <constraint firstItem="ccI-Rd-Tne" firstAttribute="centerX" secondItem="pRM-U5-P4c" secondAttribute="centerX" id="sdW-Iz-ZBh"/>
                                     <constraint firstItem="ccI-Rd-Tne" firstAttribute="centerX" secondItem="pRM-U5-P4c" secondAttribute="centerX" id="tkF-zA-bSx"/>
                                     <constraint firstItem="daD-gx-Ygy" firstAttribute="top" secondItem="ccI-Rd-Tne" secondAttribute="bottom" constant="18" id="tqA-N0-W3q"/>
                                     <constraint firstAttribute="trailing" secondItem="vbi-Hn-41U" secondAttribute="trailing" constant="16" id="vc8-Mv-dO9"/>
@@ -2305,9 +2311,9 @@ While the content of this app is periodically updated, medical information chang
         </scene>
     </scenes>
     <resources>
-        <image name="Bubble-HS" width="600" height="614"/>
-        <image name="Bubble-Me" width="600" height="614"/>
-        <image name="Bubble-Options" width="600" height="614"/>
+        <image name="Bubbles-For-Me" width="600" height="614"/>
+        <image name="Bubbles-HS" width="600" height="614"/>
+        <image name="Bubbles-Options" width="600" height="614"/>
         <image name="Cathy" width="2592" height="1936"/>
         <image name="Get Started" width="320" height="80"/>
         <image name="Model 1" width="702" height="910"/>

@@ -2,18 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "Bubbles-For-Me.png"
+      "filename" : "Bubbles-For-Me.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "Bubbles-For-Me-1.png"
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "Bubbles-For-Me-2.png"
+      "scale" : "3x"
     }
   ],
   "info" : {

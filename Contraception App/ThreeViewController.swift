@@ -9,7 +9,13 @@
 import UIKit
 
 class ThreeViewController: UIViewController {
+    
+    @IBOutlet weak var optionsButton: UIButton!
+    
+    @IBOutlet weak var hsButton: UIButton!
 
+    @IBOutlet weak var forMeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +29,11 @@ class ThreeViewController: UIViewController {
         titleView.image = UIImage(named: "Top Bar")
         
         self.navigationItem.titleView = titleView
-
+        
+        optionsButton.setImage(UIImage(named:NSLocalizedString("Options", comment: "")), forState: .Normal)
+        hsButton.setImage(UIImage(named:NSLocalizedString("High School", comment: "")), forState: .Normal)
+        forMeButton.setImage(UIImage(named:NSLocalizedString("For Me", comment: "")), forState: .Normal)
+        
         NSUserDefaults.standardUserDefaults().setObject(false, forKey: "langSelect")
         
         let display = NSUserDefaults.standardUserDefaults().objectForKey("popup") as! Bool
