@@ -12,6 +12,8 @@ import Bolts
 
 class FeedPageViewController: UIViewController {
 
+    //Will need to chnage entire VC layout
+    
     @IBOutlet var textView: UITextView!
     
     @IBOutlet weak var textLabel: UILabel!
