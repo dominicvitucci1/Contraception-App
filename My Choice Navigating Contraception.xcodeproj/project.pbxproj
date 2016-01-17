@@ -24,7 +24,6 @@
 		B672D0D21B5AD1E40080FCBB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672D0D11B5AD1E40080FCBB /* DataViewController.swift */; };
 		B672D0D41B5AD2FB0080FCBB /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672D0D31B5AD2FB0080FCBB /* ThreeViewController.swift */; };
 		B679B28E1C4BF12B0047F3F2 /* ExpandingTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B679B28D1C4BF12B0047F3F2 /* ExpandingTableView.framework */; };
-		B679B2911C4BF2B70047F3F2 /* CustomExpandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B679B2901C4BF2B70047F3F2 /* CustomExpandingCell.swift */; };
 		B687B67D1B4C959600A7F37F /* HSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687B67C1B4C959600A7F37F /* HSViewController.swift */; };
 		B69178761B9F4F66009FF35C /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = B69178751B9F4F66009FF35C /* NSBundle+Language.m */; };
 		B69178781B9F5332009FF35C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69178771B9F5332009FF35C /* BaseViewController.swift */; };
@@ -90,7 +89,6 @@
 		B672D0D11B5AD1E40080FCBB /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		B672D0D31B5AD2FB0080FCBB /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		B679B28D1C4BF12B0047F3F2 /* ExpandingTableView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExpandingTableView.framework; path = Carthage/Build/iOS/ExpandingTableView.framework; sourceTree = "<group>"; };
-		B679B2901C4BF2B70047F3F2 /* CustomExpandingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomExpandingCell.swift; sourceTree = "<group>"; };
 		B687B67C1B4C959600A7F37F /* HSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSViewController.swift; sourceTree = "<group>"; };
 		B69178731B9F4F65009FF35C /* My Choice Navigating Contraception-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "My Choice Navigating Contraception-Bridging-Header.h"; sourceTree = "<group>"; };
 		B69178741B9F4F65009FF35C /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 				B62936B01B1E092E00987E36 /* OptionsViewController.swift */,
 				B672D0D11B5AD1E40080FCBB /* DataViewController.swift */,
 				B62936B21B1E121E00987E36 /* FeedPageViewController.swift */,
-				B679B2901C4BF2B70047F3F2 /* CustomExpandingCell.swift */,
 				B62936B41B1E543100987E36 /* LongActingViewController.swift */,
 				B62936B61B1E649900987E36 /* QuestionViewController.swift */,
 				B6FFE7651B1F72E10040E206 /* DetailViewController.swift */,
@@ -416,7 +413,6 @@
 				B69178801BA24857009FF35C /* DisclaimerViewController.swift in Sources */,
 				B6FFE76A1B21342D0040E206 /* PillsViewController.swift in Sources */,
 				B62936B71B1E649900987E36 /* QuestionViewController.swift in Sources */,
-				B679B2911C4BF2B70047F3F2 /* CustomExpandingCell.swift in Sources */,
 				B62936B31B1E121E00987E36 /* FeedPageViewController.swift in Sources */,
 				B6FFE7681B2113C90040E206 /* ResultsViewController.swift in Sources */,
 				B62559E41B7423FF00789230 /* Reachability.swift in Sources */,
