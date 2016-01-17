@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 import Bolts
+import ExpandingTableView
 
 class FeedPageViewController: UIViewController {
 
