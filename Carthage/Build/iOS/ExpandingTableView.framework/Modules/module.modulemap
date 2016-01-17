@@ -1,0 +1,10 @@
+framework module ExpandingTableView {
+  umbrella header "ExpandingTableView.h"
+
+  export *
+  module * { export * }
+}
+
+module ExpandingTableView.Swift {
+    header "ExpandingTableView-Swift.h"
+}

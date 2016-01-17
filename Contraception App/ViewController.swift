@@ -76,7 +76,7 @@ class ViewController: BaseViewController {
         let myActionSheet = UIAlertController (title: "Please Select Your Language", message: "", preferredStyle: UIAlertControllerStyle.Alert)
         
         let actionOne = UIAlertAction (title: "English", style: .Default, handler: { (action) in
-            print("test0")
+            print("EN")
             
             localeString = "en"
             if localeString != nil {
@@ -91,7 +91,7 @@ class ViewController: BaseViewController {
             
         })
         let actionTwo = UIAlertAction (title: "Spanish", style: .Default, handler: { (action) in
-            print("test1")
+            print("ES")
             
             localeString = "es"
             if localeString != nil {
