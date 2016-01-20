@@ -10,9 +10,9 @@ import UIKit
 import Parse
 import Bolts
 
-class FeedPageViewController: UIViewController {
+let cellID = "cell"
+class FeedPageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    //Will need to chnage entire VC layout
     
     @IBOutlet var textView: UITextView!
     
@@ -28,9 +28,12 @@ class FeedPageViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var tableView: UITableView!
+    
     
     var selectedFeedTitle = String()
     var selectedFeedFeedContent = String()
+    var questionArray = ["1","2","3"]
 
     
     override func viewDidLoad() {
@@ -38,10 +41,13 @@ class FeedPageViewController: UIViewController {
         
         var loadingActivity = CozyLoadingActivity(text: "Loading...", sender: self, disableUI: true)
         
-        textView.editable = false
-        textView.contentInset = UIEdgeInsets(top: +60,left: 0,bottom: 0,right: 0)
+        //textView.editable = false
+        //textView.contentInset = UIEdgeInsets(top: +60,left: 0,bottom: 0,right: 0)
         // Populate Text Area
         textLabel.text = "\(selectedFeedTitle)"
+        self.tableView.rowHeight = 70
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
 
         
         yesButton2.hidden = true
@@ -488,7 +494,7 @@ class FeedPageViewController: UIViewController {
             
             return attrString
         }
-        textView.attributedText = convertText(selectedFeedFeedContent)
+        //textView.attributedText = convertText(selectedFeedFeedContent)
         
         
     }
@@ -609,14 +615,65 @@ class FeedPageViewController: UIViewController {
 
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    var selectedIndexPath : NSIndexPath?
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
-    */
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return questionArray.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as! TableViewCell
+        let row = indexPath.row
+        cell.titleLabel.text = questionArray[row] as String
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let previousIndexPath = selectedIndexPath
+        if indexPath == selectedIndexPath {
+            selectedIndexPath = nil
+        } else {
+            selectedIndexPath = indexPath
+        }
+        
+        var indexPaths : Array<NSIndexPath> = []
+        if let previous = previousIndexPath {
+            indexPaths += [previous]
+        }
+        if let current = selectedIndexPath {
+            indexPaths += [current]
+        }
+        if indexPaths.count > 0 {
+            tableView.reloadRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        (cell as! TableViewCell).watchFrameChanges()
+        
+    }
+    
+    func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        (cell as! TableViewCell).ignoreFrameChanges()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        for cell in tableView.visibleCells as! [TableViewCell] {
+            cell.ignoreFrameChanges()
+        }
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath == selectedIndexPath {
+            return TableViewCell.expandedHeight
+        } else {
+            return TableViewCell.defaultHeight
+        }
+    }
 
 }
