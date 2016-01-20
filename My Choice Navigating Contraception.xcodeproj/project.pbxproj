@@ -23,7 +23,6 @@
 		B6677AE21BA770DF00EC818A /* PregnantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6677AE11BA770DF00EC818A /* PregnantViewController.swift */; };
 		B672D0D21B5AD1E40080FCBB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672D0D11B5AD1E40080FCBB /* DataViewController.swift */; };
 		B672D0D41B5AD2FB0080FCBB /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B672D0D31B5AD2FB0080FCBB /* ThreeViewController.swift */; };
-		B679B28E1C4BF12B0047F3F2 /* ExpandingTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B679B28D1C4BF12B0047F3F2 /* ExpandingTableView.framework */; };
 		B687B67D1B4C959600A7F37F /* HSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687B67C1B4C959600A7F37F /* HSViewController.swift */; };
 		B69178761B9F4F66009FF35C /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = B69178751B9F4F66009FF35C /* NSBundle+Language.m */; };
 		B69178781B9F5332009FF35C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69178771B9F5332009FF35C /* BaseViewController.swift */; };
@@ -88,7 +87,6 @@
 		B6677AE11BA770DF00EC818A /* PregnantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PregnantViewController.swift; sourceTree = "<group>"; };
 		B672D0D11B5AD1E40080FCBB /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		B672D0D31B5AD2FB0080FCBB /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
-		B679B28D1C4BF12B0047F3F2 /* ExpandingTableView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExpandingTableView.framework; path = Carthage/Build/iOS/ExpandingTableView.framework; sourceTree = "<group>"; };
 		B687B67C1B4C959600A7F37F /* HSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSViewController.swift; sourceTree = "<group>"; };
 		B69178731B9F4F65009FF35C /* My Choice Navigating Contraception-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "My Choice Navigating Contraception-Bridging-Header.h"; sourceTree = "<group>"; };
 		B69178741B9F4F65009FF35C /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				B697CEE31B3F822E00D11AB1 /* ParseFacebookUtils.framework in Frameworks */,
 				B697CEE01B3F822E00D11AB1 /* Bolts.framework in Frameworks */,
 				B697CEE41B3F822E00D11AB1 /* ParseFacebookUtilsV4.framework in Frameworks */,
-				B679B28E1C4BF12B0047F3F2 /* ExpandingTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +240,6 @@
 		B697CF001B3F833100D11AB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B679B28D1C4BF12B0047F3F2 /* ExpandingTableView.framework */,
 				B697CEFE1B3F832900D11AB1 /* Social.framework */,
 				B697CEFC1B3F832200D11AB1 /* Accounts.framework */,
 				B697CEFA1B3F831A00D11AB1 /* libsqlite3.dylib */,
@@ -277,7 +273,6 @@
 				B62936821B1A0B4000987E36 /* Sources */,
 				B62936831B1A0B4000987E36 /* Frameworks */,
 				B62936841B1A0B4000987E36 /* Resources */,
-				B679B28F1C4BF17F0047F3F2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -373,23 +368,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B679B28F1C4BF17F0047F3F2 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ExpandingTableView.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B62936821B1A0B4000987E36 /* Sources */ = {
