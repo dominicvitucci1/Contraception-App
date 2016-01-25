@@ -30,10 +30,12 @@ class FeedPageViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var titleLabel: UILabel!
     
     var selectedFeedTitle = String()
     var selectedFeedFeedContent = String()
     var questionArray = ["1","2","3"]
+    var testArray = ["test"]
 
     
     override func viewDidLoad() {
@@ -95,6 +97,8 @@ class FeedPageViewController: UIViewController, UITableViewDataSource, UITableVi
                     }
                 }
             }
+            
+
             selectedFeedFeedContent = NSLocalizedString("An IUD is a small, soft, flexible T-shaped device that is wrapped in copper or contains hormones. A health care provider puts it into your uterus. A thin plastic string tied to the end of the IUD hangs down through the cervix into the vagina. You can check that the IUD is in place by feeling for this string every month. Your sexual partner cannot feel the string during sex. The string is also used by your health care provider to remove the IUD. \n\nThere are two types of IUDs: the Copper IUD and the Hormonal IUD. \n\nThe Copper IUD goes by the brand name ParaGard®. It releases a small amount of copper into the uterus that makes the uterus and fallopian tubes produce a fluid that kills sperm. Killing the sperm prevents them from reaching and fertilizing the egg. If fertilization does occur, the IUD keeps the fertilized egg from attaching to the uterus and growing. It can stay in your uterus for up to 10 years, but it can be removed at any time. It is hormone free. It begins working as soon as it is inserted in your uterus and you can get pregnant as soon as it is removed. \n\nThe Hormonal IUD contains a form of the hormone progestin that is released into the uterus. There are 2 types of hormonal IUDs available, Mirena® and Skyla®. It is sometimes called an intrauterine system, or IUS. The progestin works in 3 ways: It thickens the cervical mucus, which keeps sperm from joining with the egg. It changes the lining of your uterus so a fertilized egg cannot attach to the uterus and grow. It sometimes stops the ovaries from releasing eggs. The hormones in this type of IUD also reduce menstrual bleeding and cramping. An IUD can stay in your uterus for up to 5 years (Mirena® – 5 years; Sklya® – 3 years), but it can be removed at any time. \n\n<b>What can I expect when the IUD is inserted?</b> The insertion procedure only takes a few minutes and can be done in the health care provider’s office. During insertion, you might feel a temporary pinching or cramping. Light cramping and spotting may occur for 1-2 days after insertion. You may immediately return to your normal daily activities after insertion. Your period will begin again shortly after the IUD is removed. \n\n<b>Are there advantages in using an IUD?</b> An IUD is more than 99% effective in preventing pregnancy. It is the most cost-effective method of birth control over time. Having an IUD is hassle-free, as you do not have to take a daily pill or change a patch weekly or change a ring monthly. An IUD is effective in preventing pregnancy for 3-10 years, depending on the type and brand of IUD. An IUD does not require interruption of sexual activity. Using an IUD does not require cooperation of sexual partner. Your partner will not feel it during sex. It is safe to use while breast-feeding. An IUD can be removed whenever you have problems or want to stop using it. Fertility returns with the first ovulation cycle following IUD removal. For the hormonal IUD, after your body has adjusted, your period may be shorter and lighter than before. It may remain irregular or it may stop completely. These effects will continue as long as you have the hormonal IUD in place. A hormonal IUD can relieve heavy menstrual bleeding and cramping in most women. \n\n<b>Are there disadvantages in using an IUD?</b> It may be costly, but the costs may be reduced or free at a community clinic or if you have health insurance. It also costs to have the IUD removed. However, if an IUD is used for 5 years or longer, it is the most cost-effective form of birth control. The implant does NOT protect against sexually transmitted infections (STIs), including herpes and HIV (the virus that causes AIDS). If you are not sure if your sex partner might have a STI, use a condom to protect against infection. You are screened for STIs before getting an IUD to prevent any infection from moving from your vagina into your uterus. For the copper IUD, you might have heavier, longer periods, and some spotting between periods for a few months. After about four months, your body adjusts to having the copper IUD in place. The hormonal IUD can cause hormonal side effects similar to those caused by any birth control method that contains estrogen such as breast tenderness, mood swings, headaches, and acne. This is rare. When side effects do happen, they usually go away after the first few months. \n\n<b>How do I get an IUD?</b> A health care provider inserts it into your uterus during an office visit. After it is inserted, you only need to do monthly string checks at home. To do a monthly string check, insert a finger into your vagina and feel for the cervix, which is at the top of the vagina and feels harder than the rest of your vagina (some women say it feels like the tip of your nose). You should be able to feel the thin, plastic string coming out of the opening of your cervix. It may coil around the cervix, which can make it difficult to find. If you cannot feel the string, it does not necessarily mean that the IUD has come out of the uterus. Use another form of birth control until your health care provider makes sure that the IUD is still in place. If you have no problems, check the string after each period and return to your doctor once a year for a checkup. \n\n<b>What is the possibility of getting pregnant while having an IUD?</b> Using an IUD is one of the most reliable methods of birth control. Out of 100 women who use this method, less than 1 woman gets pregnant. \n\n\n\n", comment: "IUD Description")
             
             
@@ -628,7 +632,15 @@ class FeedPageViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as! TableViewCell
         let row = indexPath.row
-        cell.titleLabel.text = questionArray[row] as String
+        
+        switch cell.titleLabel.text {
+            
+            case NSLocalizedString("Intrauterine Device", comment: ""):
+            cell.titleLabel.text = testArray[row] as String
+            
+            default:
+            cell.titleLabel.text = "NIL"
+        }
         return cell
     }
     
