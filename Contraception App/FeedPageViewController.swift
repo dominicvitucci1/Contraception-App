@@ -30,12 +30,11 @@ class FeedPageViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var titleLabel: UILabel!
     
     var selectedFeedTitle = String()
     var selectedFeedFeedContent = String()
     var questionArray = ["1","2","3"]
-    var testArray = ["test"]
+    var testArray = ["test", "test", "test", "test", "test"]
 
     
     override func viewDidLoad() {
@@ -626,14 +625,14 @@ class FeedPageViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return questionArray.count
+        return testArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as! TableViewCell
         let row = indexPath.row
         
-        switch cell.titleLabel.text {
+        switch selectedFeedTitle {
             
             case NSLocalizedString("Intrauterine Device", comment: ""):
             cell.titleLabel.text = testArray[row] as String
