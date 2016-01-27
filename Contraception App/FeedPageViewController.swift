@@ -33,7 +33,7 @@ class FeedPageViewController: UIViewController, UITableViewDataSource, UITableVi
     
     var selectedFeedTitle = String()
     var selectedFeedFeedContent = String()
-    var questionArray = ["1","2","3"]
+    var IUDQuestionsArray = [NSLocalizedString("What is it?", comment: ""),NSLocalizedString("There are two types of IUDs:", comment: ""),NSLocalizedString("What can I expect when the IUD is inserted?", comment: ""), NSLocalizedString("Are there advantages in using an IUD?", comment: ""), NSLocalizedString("Are there disadvantages in using an IUD?", comment: ""), NSLocalizedString("How do I get an IUD?", comment: ""), NSLocalizedString("What is the possibility of getting pregnant while having an IUD?", comment: "")]
     var testArray = ["test", "test", "test", "test", "test"]
 
     
@@ -635,11 +635,57 @@ class FeedPageViewController: UIViewController, UITableViewDataSource, UITableVi
         switch selectedFeedTitle {
             
             case NSLocalizedString("Intrauterine Device", comment: ""):
+            cell.titleLabel.text = IUDQuestionsArray[row] as String
+            
+            case NSLocalizedString("Implant", comment: ""):
+            cell.titleLabel.text = testArray[row] as String
+            
+            case NSLocalizedString("Birth Control Shot", comment: ""):
+            cell.titleLabel.text = testArray[row] as String
+            
+            case NSLocalizedString("Vaginal Ring", comment: ""):
+            cell.titleLabel.text = testArray[row] as String
+            
+            case NSLocalizedString("Patch", comment: ""):
+            cell.titleLabel.text = testArray[row] as String
+            
+            case NSLocalizedString("Pill", comment: ""):
+            cell.titleLabel.text = testArray[row] as String
+            
+            case NSLocalizedString("Mini-Pill", comment: ""):
+            cell.titleLabel.text = testArray[row] as String
+            
+            case NSLocalizedString("Condom – Male and Female", comment: ""):
+            cell.titleLabel.text = testArray[row] as String
+            
+            case NSLocalizedString("Spermicide", comment: ""):
+            cell.titleLabel.text = testArray[row] as String
+            
+            case NSLocalizedString("Sponge with Spermicide", comment: ""):
+            cell.titleLabel.text = testArray[row] as String
+            
+            case NSLocalizedString("Emergency Contraception", comment: ""):
+            cell.titleLabel.text = testArray[row] as String
+            
+            case NSLocalizedString("Long-Acting Reversible Contraceptives (LARC)", comment: ""):
             cell.titleLabel.text = testArray[row] as String
             
             default:
             cell.titleLabel.text = "NIL"
         }
+        
+        if(indexPath.row % 2 == 0){
+            cell.backgroundColor = UIColor.clearColor()
+        }
+            
+        else {
+            cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.2)
+            cell.titleLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
+            cell.detailTextLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
+            
+        }
+        
+        cell.titleLabel?.textColor = UIColor.whiteColor()
         return cell
     }
     
