@@ -14,6 +14,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var infoView: UITextView!
     
+    
     class var expandedHeight: CGFloat { get { return 400 } }
     class var defaultHeight: CGFloat  { get { return 100  } }
     
@@ -40,6 +41,5 @@ class TableViewCell: UITableViewCell {
             checkHeight()
         }
     }
-    
     
 }
