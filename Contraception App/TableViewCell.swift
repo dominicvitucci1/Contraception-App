@@ -15,7 +15,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var infoView: UITextView!
     
     
-    class var expandedHeight: CGFloat { get { return 400 } }
+    class var expandedHeight: CGFloat { get { return 600 } }
     class var defaultHeight: CGFloat  { get { return 100  } }
     
     func checkHeight() {
