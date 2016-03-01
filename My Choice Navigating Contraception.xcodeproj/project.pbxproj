@@ -121,6 +121,7 @@
 		B6FFE7651B1F72E10040E206 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B6FFE7671B2113C90040E206 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		B6FFE7691B21342D0040E206 /* PillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PillsViewController.swift; sourceTree = "<group>"; };
+		F0566CD01C8648F400EA39B5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +164,7 @@
 		B629367D1B1A0B4000987E36 = {
 			isa = PBXGroup;
 			children = (
+				F0566CCF1C8648F400EA39B5 /* Localizable.strings */,
 				B697CF001B3F833100D11AB1 /* Frameworks */,
 				B62936881B1A0B4000987E36 /* Contraception App */,
 				B62936A11B1A0B4000987E36 /* Contraception AppTests */,
@@ -447,6 +449,14 @@
 			);
 			name = Localizable.strings;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		F0566CCF1C8648F400EA39B5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0566CD01C8648F400EA39B5 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
