@@ -1,7 +1,7 @@
 /* Created with Localizable Strings Merge, the swiss-army knife for iOS and OS X localization. */
 
 /* No comment provided by engineer. */
-". Ask your Healthcare Provider about these methods to learn more.\n\n\n\n\n\n\nDISCLAIMER: This application (app) does not provide specific medical advice and does not endorse any medical or professional service obtained through information provided on this app or any links provided. It is intended for general informational purposes only. Use of this app does not replace medical consultation with a qualified health or medical professional to meet the health and medical needs of you or others. Never ignore professional medical advice in seeking treatment because of something that you have read on this app. If you think you may have a medical emergency, please dial 911. While the content of this app is periodically updated, medical information changes rapidly and therefore, some information may be out of date, and/or contain inaccuracies or typographical errors." = ". Pregúntele a su medico de salud sobre estos métodos para aprender más. \n\n\n\n\n\n\n Descargo de responsabilidad: Este aplicación móvil no provee consejos médicos específicos y no promociona cualquier servicio medico o profesional obtenido a través de información o enlaces proporcionadas en esta aplicación. Está diseñado para ser utilizado como información general. El uso de esta aplicación no reemplaza una consulta médica con un profesional de salud calificado para satisfacer sus necesidades de salud o las necesidades de salud de los demás. Nunca ignore el consejo médico profesional cuando esta buscando tratamiento debido a algo usted ha leído en esta aplicación móvil. Si usted piensa que tiene una emergencia, por favor marque los números 911. A pesar de que el contenido de esta aplicación se actualiza periódicamente, información medica se cambia rápidamente. Entonces, alguna información puede ser anticuado y/o contiene inexactitudes o errores de tipográfico.";
+". Ask your Healthcare Provider about these methods to learn more.\n\n\n\n\n\n\nDISCLAIMER: This application (app) does not provide specific medical advice and does not endorse any medical or professional service obtained through information provided on this app or any links provided. It is intended for general informational purposes only. Use of this app does not replace medical consultation with a qualified health or medical professional to meet the health and medical needs of you or others. Never ignore professional medical advice in seeking treatment because of something that you have read on this app. If you think you may have a medical emergency, please dial 911. While the content of this app is periodically updated, medical information changes rapidly and therefore, some information may be out of date, and/or contain inaccuracies or typographical errors." = ". Pregúntele a su medico de salud sobre estos métodos para aprender más. \n\n\n\n\n\n\nDescargo de responsabilidad: Este aplicación móvil no provee consejos médicos específicos y no promociona cualquier servicio medico o profesional obtenido a través de información o enlaces proporcionadas en esta aplicación. Está diseñado para ser utilizado como información general. El uso de esta aplicación no reemplaza una consulta médica con un profesional de salud calificado para satisfacer sus necesidades de salud o las necesidades de salud de los demás. Nunca ignore el consejo médico profesional cuando esta buscando tratamiento debido a algo usted ha leído en esta aplicación móvil. Si usted piensa que tiene una emergencia, por favor marque los números 911. A pesar de que el contenido de esta aplicación se actualiza periódicamente, información medica se cambia rápidamente. Entonces, alguna información puede ser anticuado y/o contiene inexactitudes o errores de tipográfico.";
 
 /* Age */
 "15-19" = "15-19";
@@ -25,7 +25,7 @@
 "45-50" = "45-50";
 
 /* No comment provided by engineer. */
-"test" = "El DIU de cobre \n\n• El DIU de cobre es llamado ParaGard ®. Libera una pequeña cantidad de cobre en el útero que hace el útero y las trompas de Falopio producen un líquido que mata los espermatozoides. Matar a los espermatozoides les impide alcanzar y fertilizar el óvulo. \n\n• Si ocurre la fertilización, el DIU mantiene el óvulo fertilizado de fijación del útero y crece. Puede permanecer en el útero hasta por 10 años, pero se pueden quitarlo en cualquier momento. \n\n• Es hormona libre. \n\n• Comienza a trabajar tan pronto como se inserta en el útero y puede quedar embarazada tan pronto como se retira. \n\n<b>El DIU Hormonal</b> \n\n• El DIU Hormonal contiene una forma de la hormona llamada progestina que se libera en el útero. Hay 2 tipos de DIU hormonal disponible, Mirena ® y Skyla ®. \n\n• A veces se llama un sistema intrauterino o IUS. \n\n• La progestina trabaja en 3 formas: espesa el moco cervical, que mantiene los espermatozoides de unirse con el óvulo. Cambia el revestimiento del útero para que un óvulo fertilizado no puede conectar al útero y crecer. A veces se detiene los ovarios liberen óvulos. el óvulo no puede cumplir con un espermatozoide. \n\n• Las hormonas en este tipo de DIU también reducen el sangrado y los calambres menstruales. Estos efectos continuarán siempre y cuando tenga el DIU hormonal en su sitio. \n\n•El DIU puede permanecer en el útero por 5 años (Mirena ® – 5 años; Sklya ® – 3 años), pero se pueden eliminarse en cualquier momento."; /* NEW */
+"IUD_Description" = "El DIU de cobre \n\n• El DIU de cobre es llamado ParaGard ®. Libera una pequeña cantidad de cobre en el útero que hace el útero y las trompas de Falopio producen un líquido que mata los espermatozoides. Matar a los espermatozoides les impide alcanzar y fertilizar el óvulo. \n\n• Si ocurre la fertilización, el DIU mantiene el óvulo fertilizado de fijación del útero y crece. Puede permanecer en el útero hasta por 10 años, pero se pueden quitarlo en cualquier momento. \n\n• Es hormona libre. \n\n• Comienza a trabajar tan pronto como se inserta en el útero y puede quedar embarazada tan pronto como se retira. \n\n<b>El DIU Hormonal</b> \n\n• El DIU Hormonal contiene una forma de la hormona llamada progestina que se libera en el útero. Hay 2 tipos de DIU hormonal disponible, Mirena ® y Skyla ®. \n\n• A veces se llama un sistema intrauterino o IUS. \n\n• La progestina trabaja en 3 formas: espesa el moco cervical, que mantiene los espermatozoides de unirse con el óvulo. Cambia el revestimiento del útero para que un óvulo fertilizado no puede conectar al útero y crecer. A veces se detiene los ovarios liberen óvulos. el óvulo no puede cumplir con un espermatozoide. \n\n• Las hormonas en este tipo de DIU también reducen el sangrado y los calambres menstruales. Estos efectos continuarán siempre y cuando tenga el DIU hormonal en su sitio. \n\n•El DIU puede permanecer en el útero por 5 años (Mirena ® – 5 años; Sklya ® – 3 años), pero se pueden eliminarse en cualquier momento."; /* NEW */
 
 /* No comment provided by engineer. */
 "• A health care provider, usually a doctor or nurse practitioner, needs to put it under the skin of your upper arm near your elbow. \n\n• Putting the implant in only takes a few minutes and can be done in the health care provider’s office. \n\n• While the implant is being put in, you will get a shot to numb the skin, and then the thin rod is put just under the skin with a needle. \n\n• To take out the implant later, your health care provider numbs the area, makes a small cut in the skin, and pulls the implant out." = "• Un médico, generalmente un médico o enfermera, tiene que poner debajo de la piel de su brazo cerca de su codo. \n\n• La inserción sólo toma unos pocos minutos y puede realizarse en la oficina de su médico. \n\n• Para insertar el implante, recibirá una inyección para adormecer la piel, y luego se coloca la varilla delgada debajo de la piel con una aguja. \n\n• Para retirar el implante, el médico insensibiliza el área, hace una pequeña incisión en la piel y saca el implante."; /* NEW */
@@ -202,178 +202,178 @@
 "Are there disadvantages in using emergency birth control?" = "¿Hay desventajas en el uso del anticonceptivos de emergencia?"; /* NEW */
 
 /* No comment provided by engineer. */
-"Are there disadvantages in using the birth control shot?" = "Are there disadvantages in using the birth control shot?"; /* NEW */
+"Are there disadvantages in using the birth control shot?" = "¿Hay desventajas en el uso de las inyecciones anticonceptivos?"; /* NEW */
 
 /* No comment provided by engineer. */
-"Are there disadvantages in using the patch?" = "Are there disadvantages in using the patch?"; /* NEW */
+"Are there disadvantages in using the patch?" = "¿Hay desventajas en el uso del parche?"; /* NEW */
 
 /* No comment provided by engineer. */
-"Are there disadvantages in using the ring?" = "Are there disadvantages in using the ring?"; /* NEW */
+"Are there disadvantages in using the ring?" = "¿Hay desventajas en el uso del anillo?"; /* NEW */
 
 /* No comment provided by engineer. */
-"Are there disadvantages to taking birth control pills?" = "Are there disadvantages to taking birth control pills?"; /* NEW */
+"Are there disadvantages to taking birth control pills?" = "¿Hay desventajas de tomar las pastillas anticonceptivas?"; /* NEW */
 
 /* No comment provided by engineer. */
-"Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”." = "Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”.";
+"Are you being treated for any sexually transmitted infections (STIs)? Do you have a lot of vaginal bleeding? Do you have unusual vaginal bleeding and not know why? \n\nIf the answer is “yes” to one or more of the above questions, please select “yes”." = "¿Está usted recibiendo tratamiento para cualquier infección de transmisión sexual (ITS)? ¿Tienes mucho sangrado vaginal? ¿Tiene sangrado vaginal inusual y no sé por qué? \n\nSi la respuesta es sí a uno o más de las preguntas anteriores, seleccione sí.";
 
 /* No comment provided by engineer. */
-"Are you taking any of these medications that are used for tuberculosis (TB) or seizures?" = "Are you taking any of these medications that are used for tuberculosis (TB) or seizures?";
+"Are you taking any of these medications that are used for tuberculosis (TB) or seizures?" = "¿Está tomando cualquiera de estos medicamentos que se utilizan para tuberculosis (TB) o crisis?";
 
 /* Race */
-"Asian" = "Asian";
+"Asian" = "Asiático";
 
 /* No comment provided by engineer. */
-"Birth Control Shot" = "Birth Control Shot";
+"Birth Control Shot" = "Inyección Anticonceptivo ";
 
 /* Race */
-"Black or African American" = "Black or African American";
+"Black or African American" = "Negro/a o afroamericano/a";
 
 /* LARC Exit Popup
    Results Exit */
-"Cancel" = "Cancel";
+"Cancel" = "Cancelar";
 
 /* No comment provided by engineer. */
-"Condom – Male and Female" = "Condom – Male and Female";
+"Condom – Male and Female" = "Condón – hombre y mujer";
 
 /* No comment provided by engineer. */
-"Disclaimer" = "Disclaimer"; /* NEW */
+"Disclaimer" = "Descargo de responsabilidad"; /* NEW */
 
 /* No comment provided by engineer. */
-"Do you have a condition that causes you to develop blood clots more easily?" = "Do you have a condition that causes you to develop blood clots more easily?";
+"Do you have a condition that causes you to develop blood clots more easily?" = "¿Usted tiene una afección que provoca desarrollar coágulos más fácilmente?";
 
 /* No comment provided by engineer. */
-"Do you have a history of a heart attack or chest pain due to heart disease?" = "Do you have a history of a heart attack or chest pain due to heart disease?";
+"Do you have a history of a heart attack or chest pain due to heart disease?" = "¿Tiene una historia de un ataque al corazón o dolor en el pecho debido a enfermedades del corazón?";
 
 /* No comment provided by engineer. */
-"Do you have any disease of your blood vessels?" = "Do you have any disease of your blood vessels?";
+"Do you have any disease of your blood vessels?" = "¿Tienes alguna enfermedad de los vasos sanguíneos?";
 
 /* No comment provided by engineer. */
-"Do you have gallbladder disease and have not had your gallbladder removed?" = "Do you have gallbladder disease and have not had your gallbladder removed?";
+"Do you have gallbladder disease and have not had your gallbladder removed?" = "¿Tiene enfermedad de la vesícula biliar y no han tenido su vesícula biliar retirado?";
 
 /* No comment provided by engineer. */
-"Do you have kidney disease? Do you have retinal disease of the eye?" = "Do you have kidney disease? Do you have retinal disease of the eye?";
+"Do you have kidney disease? Do you have retinal disease of the eye?" = "¿Tiene enfermedad del riñón? ¿Tienes enfermedad retiniana del ojo?";
 
 /* No comment provided by engineer. */
-"Do you have liver disease, a liver tumor, or liver cancer?" = "Do you have liver disease, a liver tumor, or liver cancer?";
+"Do you have liver disease, a liver tumor, or liver cancer?" = "¿Tiene enfermedad del hígado, un tumor del hígado o cáncer de hígado?";
 
 /* No comment provided by engineer. */
-"Do you have lupus erythematosis with positive antiphospholipid antibodies?" = "Do you have lupus erythematosis with positive antiphospholipid antibodies?";
+"Do you have lupus erythematosis with positive antiphospholipid antibodies?" = "¿Tiene lupus eritematoso con anticuerpos antifosfolípidos positivos?";
 
 /* No comment provided by engineer. */
-"Do you have migraine headaches? Do you have warning signs before you have the migraine headache?" = "Do you have migraine headaches? Do you have warning signs before you have the migraine headache?";
+"Do you have migraine headaches? Do you have warning signs before you have the migraine headache?" = "¿Tiene dolores de cabeza de migraña? ¿Tiene señales de advertencia antes de tener el dolor de cabeza Migraña?";
 
 /* No comment provided by engineer. */
-"Do you have numbness, tingling, and pain in your hands or feet?" = "Do you have numbness, tingling, and pain in your hands or feet?";
+"Do you have numbness, tingling, and pain in your hands or feet?" = "¿Tiene entumecimiento, hormigueo y dolor en las manos o los pies?";
 
 /* No comment provided by engineer. */
-"Do you have sensitive skin with adhesives such as tape?" = "Do you have sensitive skin with adhesives such as tape?";
+"Do you have sensitive skin with adhesives such as tape?" = "¿Tiene piel sensible con adhesivos como la cinta?";
 
 /* Know Case LARC
    Know LARC
    Know LARC Case */
-"Do you know there are long acting reversible contraceptives?" = "Do you know there are long acting reversible contraceptives?";
+"Do you know there are long acting reversible contraceptives?" = "¿Sabe usted que hay anticonceptivos reversibles de larga duración?";
 
 /* No comment provided by engineer. */
-"Do you want to have fewer periods?" = "Do you want to have fewer periods?";
+"Do you want to have fewer periods?" = "¿Quiere tener menos períodos?";
 
 /* Know More Case
    Know More Case LARC
    Know More LARC */
-"Do you want to know more about them?" = "Do you want to know more about them?";
+"Do you want to know more about them?" = "¿Usted quiere saber más sobre ellos?";
 
 /* No comment provided by engineer. */
-"Emergency Contraception" = "Emergency Contraception";
+"Emergency Contraception" = "Anticoncepción de emergencia";
 
 /* No comment provided by engineer. */
 "For Me" = "Bubbles-For-Me-Span";
 
 /* No comment provided by engineer. */
-"Get Started" = "Get Started"; /* NEW */
+"Get Started" = "Comenzar"; /* NEW */
 
 /* No comment provided by engineer. */
-"Have you ever been told that you have heart disease or heart failure?" = "Have you ever been told that you have heart disease or heart failure?";
+"Have you ever been told that you have heart disease or heart failure?" = "¿Alguna vez le han dicho que tiene una enfermedad del corazón o la insuficiencia cardíaca?";
 
 /* No comment provided by engineer. */
-"Have you ever been told that you have scarring of the liver?" = "Have you ever been told that you have scarring of the liver?";
+"Have you ever been told that you have scarring of the liver?" = "¿Le siempre han dicho que tienes cicatrices en el hígado?";
 
 /* No comment provided by engineer. */
-"Have you ever had a stroke?" = "Have you ever had a stroke?";
+"Have you ever had a stroke?" = "¿Ha tenido un apoplejía?";
 
 /* No comment provided by engineer. */
-"Have you ever had breast cancer?" = "Have you ever had breast cancer?";
+"Have you ever had breast cancer?" = "¿Alguna vez ha tenido cáncer de mama?";
 
 /* No comment provided by engineer. */
-"Have you had diabetes for over 20 years?" = "Have you had diabetes for over 20 years?";
+"Have you had diabetes for over 20 years?" = "¿Ha tenido diabetes por más de 20 años?";
 
 /* No comment provided by engineer. */
 "High School" = "Bubbles-HS-Span";
 
 /* Ethnicity */
-"Hispanic or Latina" = "Hispanic or Latina";
+"Hispanic or Latina" = "Hispano/a o Latino/a";
 
 /* No comment provided by engineer. */
-"How do I get a barrier method?" = "How do I get a barrier method?"; /* NEW */
+"How do I get a barrier method?" = "¿Cómo puedo obtener un método de barrera?"; /* NEW */
 
 /* No comment provided by engineer. */
-"How do I get an IUD?" = "How do I get an IUD?"; /* NEW */
+"How do I get an IUD?" = "¿Cómo puedo obtener un DIU?"; /* NEW */
 
 /* No comment provided by engineer. */
-"How do I get it?" = "How do I get it?"; /* NEW */
+"How do I get it?" = "¿Cómo lo consigo?"; /* NEW */
 
 /* No comment provided by engineer. */
-"How do I get the emergency birth control?" = "How do I get the emergency birth control?"; /* NEW */
+"How do I get the emergency birth control?" = "¿Cómo obtener el anticonceptivo de emergencia?"; /* NEW */
 
 /* No comment provided by engineer. */
-"How do I get the ring?" = "How do I get the ring?"; /* NEW */
+"How do I get the ring?" = "¿Cómo obtengo el anillo?"; /* NEW */
 
 /* No comment provided by engineer. */
-"How do I get the shot?" = "How do I get the shot?"; /* NEW */
+"How do I get the shot?" = "¿Cómo puedo obtener la inyección?"; /* NEW */
 
 /* No comment provided by engineer. */
-"If you do use emergency birth control, be sure to follow up with your healthcare provider to find an effective, ongoing method of birth control for you." = "If you do use emergency birth control, be sure to follow up with your healthcare provider to find an effective, ongoing method of birth control for you."; /* NEW */
+"If you do use emergency birth control, be sure to follow up with your healthcare provider to find an effective, ongoing method of birth control for you." = "Si usted usa anticonceptivos de emergencia, asegúrese de seguimiento con su médico para encontrar un método eficaz y continuo de anticonceptivo para usted."; /* NEW */
 
 /* LARC Exit Popup */
-"If you're finished viewing this information, tap Okay to exit this page." = "If you're finished viewing this information, tap Okay to exit this page.";
+"If you're finished viewing this information, tap Okay to exit this page." = "Si termine viendo esta información, pulse OK para salir de esta página.";
 
 /* Results Exit */
-"If you're finished viewing your results, and you don't wish to receive them by email tap Okay to exit this page." = "If you're finished viewing your results, and you don't wish to receive them by email tap Okay to exit this page.";
+"If you're finished viewing your results, and you don't wish to receive them by email tap Okay to exit this page." = "Si haya terminado de ver los resultados, y usted no desea recibirlos por correo electrónico pulse OK para salir de esta página.";
 
 /* No comment provided by engineer. */
-"Implant" = "Implant";
+"Implant" = "Implante";
 
 /* No comment provided by engineer. */
-"Intrauterine Device" = "Intrauterine Device";
+"Intrauterine Device" = "El dispositivo intrauterino";
 
 /* LARC Label */
-"Long-Acting Reversible Contraceptives (LARC)" = "Long-Acting Reversible Contraceptives (LARC)";
+"Long-Acting Reversible Contraceptives (LARC)" = "Anticonceptivos reversibles de acción prolongada";
 
 /* LARC Description */
-"Long-acting reversible contraceptives (LARC) or long-acting reversible birth control are methods of birth control that provide prevent pregnancy for a long period of time - up to 10 years for some methods! LARC include implants and intrauterine devices (IUD). \n\n<b>What are the advantages of using LARCs?</b> The advantages of using LARCs is that they are safe, reliable. and reversible. Using LARCs is better at preventing pregnancy because you would use the birth control method consistently and correctly without having to think about it. It does not require taking a pill every day or doing something every time before having sex. Most important, almost all women can use implants and IUDs even teenagers. \n\n\n\n" = "Long-acting reversible contraceptives (LARC) or long-acting reversible birth control are methods of birth control that provide prevent pregnancy for a long period of time - up to 10 years for some methods! LARC include implants and intrauterine devices (IUD). \n\n<b>What are the advantages of using LARCs?</b> The advantages of using LARCs is that they are safe, reliable. and reversible. Using LARCs is better at preventing pregnancy because you would use the birth control method consistently and correctly without having to think about it. It does not require taking a pill every day or doing something every time before having sex. Most important, almost all women can use implants and IUDs even teenagers. \n\n\n\n";
+"Long-acting reversible contraceptives (LARC) or long-acting reversible birth control are methods of birth control that provide prevent pregnancy for a long period of time - up to 10 years for some methods! LARC include implants and intrauterine devices (IUD). \n\n<b>What are the advantages of using LARCs?</b> The advantages of using LARCs is that they are safe, reliable. and reversible. Using LARCs is better at preventing pregnancy because you would use the birth control method consistently and correctly without having to think about it. It does not require taking a pill every day or doing something every time before having sex. Most important, almost all women can use implants and IUDs even teenagers. \n\n\n\n" = "Anticonceptivos reversibles de larga duración (LARC, por sus siglas en inglés) es un método anticonceptivos que permite evitar el embarazo durante un largo periodo de tiempo - hasta 10 años para algunos métodos. LARC son implantes y dispositivos intrauterinos (DIU). \n\n<b>¿Cuáles son las ventajas de utilizar LARCs?</b> Las ventajas de utilizar LARCs es que son seguros, confiables y reversible. Usando LARCs es mejor en prevenir el embarazo porque se usaría el método de anticoncepción consistentemente y correctamente sin tener que pensar en ello. No necesita tomar una pastilla todos los días o hacer algo cada vez antes de tener sexo. Más importante, casi todas las mujeres pueden usar implantes y DIU incluso adolescentes. \n\n\n\n";
 
 /* LARC Description */
-"Long-acting reversible contraceptives (LARC) or long-acting reversible birth control are methods of birth control that provide prevent pregnancy for a long period of time - up to 10 years for some methods! LARC include implants and intrauterine devices (IUD). What are the advantages of using LARCs? The advantages of using LARCs is that they are safe, reliable. and reversible. Using LARCs is better at preventing pregnancy because you would use the birth control method consistently and correctly without having to think about it. It does not require taking a pill every day or doing something every time before having sex. Most important, almost all women can use implants and IUDs even teenagers." = "Long-acting reversible contraceptives (LARC) or long-acting reversible birth control are methods of birth control that provide prevent pregnancy for a long period of time - up to 10 years for some methods! LARC include implants and intrauterine devices (IUD). What are the advantages of using LARCs? The advantages of using LARCs is that they are safe, reliable. and reversible. Using LARCs is better at preventing pregnancy because you would use the birth control method consistently and correctly without having to think about it. It does not require taking a pill every day or doing something every time before having sex. Most important, almost all women can use implants and IUDs even teenagers.";
+"Long-acting reversible contraceptives (LARC) or long-acting reversible birth control are methods of birth control that provide prevent pregnancy for a long period of time - up to 10 years for some methods! LARC include implants and intrauterine devices (IUD). What are the advantages of using LARCs? The advantages of using LARCs is that they are safe, reliable. and reversible. Using LARCs is better at preventing pregnancy because you would use the birth control method consistently and correctly without having to think about it. It does not require taking a pill every day or doing something every time before having sex. Most important, almost all women can use implants and IUDs even teenagers." = "Anticonceptivos reversibles de larga duración (LARC, por sus siglas en inglés) es un método anticonceptivos que permite evitar el embarazo durante un largo periodo de tiempo - hasta 10 años para algunos métodos. LARC son implantes y dispositivos intrauterinos (DIU). \n\n<b>¿Cuáles son las ventajas de utilizar LARCs?</b> Las ventajas de utilizar LARCs es que son seguros, confiables y reversible. Usando LARCs es mejor en prevenir el embarazo porque se usaría el método de anticoncepción consistentemente y correctamente sin tener que pensar en ello. No necesita tomar una pastilla todos los días o hacer algo cada vez antes de tener sexo. Más importante, casi todas las mujeres pueden usar implantes y DIU incluso adolescentes.";
 
 /* No comment provided by engineer. */
-"Make sure your device is connected to the internet." = "Make sure your device is connected to the internet.";
+"Make sure your device is connected to the internet." = "Asegúrese de que su teléfono móvil está conectado al internet.";
 
 /* No comment provided by engineer. */
-"Mini-Pill" = "Mini-Pill";
+"Mini-Pill" = "Pastilla miniatura";
 
 /* Race */
-"Native Hawaiian or Other Pacific Islander" = "Native Hawaiian or Other Pacific Islander";
+"Native Hawaiian or Other Pacific Islander" = "Nativo/a a Hawái u otros isleños del Pacífico";
 
 /* LARC More Info NO Button
    Medical Assistance Answer */
 "No" = "No";
 
 /* No comment provided by engineer. */
-"No Internet Connection" = "No Internet Connection";
+"No Internet Connection" = "No hay conexión del internet";
 
 /* No comment provided by engineer. */
-"None of this data will be associated with your name or any other identifying information" = "None of this data will be associated with your name or any other identifying information";
+"None of this data will be associated with your name or any other identifying information" = "Ninguno de estos datos se asociará a su nombre o cualquier otra información de identificación";
 
 /* Ethnicity */
-"Not Hispanic or Latina" = "Not Hispanic or Latina";
+"Not Hispanic or Latina" = "No Hispano/a o Latino/a";
 
 /* Internet Connection Popup */
 "OK" = "OK";
@@ -383,162 +383,161 @@
 "Okay" = "Okay";
 
 /* Age */
-"Older than 50" = "Older than 50";
+"Older than 50" = "Mayor de 50 años";
 
 /* No comment provided by engineer. */
 "Options" = "Bubbles-Options-Span";
 
 /* No comment provided by engineer. */
-"Patch" = "Patch";
+"Patch" = "El Parche";
 
 /* No comment provided by engineer. */
-"Pill" = "Pill";
+"Pill" = "La Pastilla";
 
 /* No comment provided by engineer. */
-"Please enter your email address." = "Please enter your email address.";
+"Please enter your email address." = "Por favor, rellene su correo electronico.";
 
 /* No comment provided by engineer. */
-"Press \"Get Started\" to begin." = "Press \"Get Started\" to begin."; /* NEW */
+"Press \"Get Started\" to begin." = "Toque “Comenzar”."; /* NEW */
 
 /* No comment provided by engineer. */
-"Press OK to change some of your preferences or press Cancel to exit the app." = "Press OK to change some of your preferences or press Cancel to exit the app.";
+"Press OK to change some of your preferences or press Cancel to exit the app." = "Toque OK para cambiar alguna de su preferencias o toque Cancelar para salir la aplicación móvil.";
 
 /* No comment provided by engineer. */
-"Spermicide" = "Spermicide";
+"Spermicide" = "La Espermicida";
 
 /* No comment provided by engineer. */
-"Sponge with Spermicide" = "Sponge with Spermicide";
+"Sponge with Spermicide" = "Esponja de espermicida";
 
 /* No comment provided by engineer. */
-"Thank you." = "Thank you.";
+"Thank you." = "Gracias.";
 
 /* No comment provided by engineer. */
-"There are two types of IUDs:" = "There are two types of IUDs:"; /* NEW */
+"There are two types of IUDs:" = "Hay dos tipos de DIU:"; /* NEW */
 
 /* No comment provided by engineer. */
-"There were no birth control options that matched your preferences. Please reconsider some of your preferences regarding birth control." = "There were no birth control options that matched your preferences. Please reconsider some of your preferences regarding birth control.";
+"There were no birth control options that matched your preferences. Please reconsider some of your preferences regarding birth control." = "No había ningún opción de anticoncepción que coinciden con sus preferencias. Por favor reconsidere algunas de sus preferencias sobre anticoncepción.";
 
 /* No comment provided by engineer. */
-"Thinking about having sex? You may feel curious, interested or even pressured. How do you know what is right for you? Here are some things to consider: \n\n What is your knowledge of sexual issues, HIV, other STDs, and pregnancy (including methods of prevention)? \n\n Are you confident with your individual ability to avoid HIV/STD risk and risk behaviors? What do you know about condoms and other birth control methods? Are you comfortable that you’ll be able to refuse sex or use condoms? \n\n What are your personal values about sex and abstinence? \n\n Are you comfortable communicating with parents or other adults about sex, condoms, and contraception? (http://www.cdc.gov/teenpregnancy/about/index.htm) \n\n Good decision-making is what becoming an adult is all about, so it is important to educate yourself and decide what’s important to you. It is no secret that sex can be fun, and it is also important to realize that there are certain risks associated with it. The only way to completely avoid these risks is to not engage in any type of sexual activity (abstinence). However, if you do choose to have sex, the best thing you can do is understand these risks, and how to avoid them, to protect your body and your future. You have a long time in your body, so take care of you and it. \n\n So what are these risks? Here are some quick facts about the main risks involving sex; pregnancy and sexually transmitted infections. In America, 3 out of every 10 teen girls (or 750,000 per year) will get pregnant at least once before they turn 20. Teens who do not use a birth control method have a 90% chance of becoming pregnant. Of the teens who become pregnant, more than 50% will never graduate high school and less than 2% will earn a college degree before they turn 30. 80% of teen dads will not marry the mother of their child. 2/3 of teen mothers will live in poverty and over half become dependent on welfare. The United States has the highest teen pregnancy rate of any other industrialized nation. \n\nThe good news is in the last couple of years teen pregnancy rates have fallen dramatically thanks to teens being better educated about sex. (https://www.dosomething.org/facts/11-facts-about-teen-pregnancy). \n\n 1 out of every 4 sexually active teens becomes infected with an STD every year. Many teens do not realize that these infections can be spread through oral sex as well as intercourse, which raises the risk. Condoms are the only birth control method that protects against STDs. So it’s best to use condoms in conjunction with other birth control methods to better protect yourself. \n\n How do I lower the risks? There are many different types of birth control available. Find one that works for you! The best birth control methods for teenagers are those that are easy for you to use (or are already in effect) each time you have intercourse. The easiest and most reliable methods for birth control are a birth control implant or intrauterine device (IUD). They are recommended for teenagers and are reversible. When you finally do want to become pregnant, you just have them removed by a health care provider. Having an implant or IUD is hassle-free, as you do not have to take a daily pill or change a patch weekly or change a ring monthly. An implant or IUD is effective in preventing pregnancy for 3-10 years, depending on which type you choose. Using the pill, patch, or ring can be reliable methods of birth control if used correctly. It is actually user failure rather than method failure which is responsible for most of the pregnancies that happen while using these methods. It is important, therefore, to follow all instructions for using the method you have chosen. Condoms are the only birth control method that protects against sexually transmitted infections (STIs), including herpes and HIV (the virus that causes AIDS). Using a condom as birth control is not a reliable method for preventing pregnancy. \n\n What else can I do? Educate yourself on how your body works. Male sperm can live in the female body for up to 5 days after sexual intercourse. Generally women can only become pregnant during ovulation, which usually occurs 14 days after the start of each period. But it’s possible for some women to ovulate more than once per month, or have cycles that don’t follow the 14 day rule. This makes it possible for some women to become pregnant while on their period. Many people believe different sexual positions can prevent pregnancy. But the truth is women can become pregnant in any position. Know yourself. Feelings of sexual desire are normal and can be intense and exciting, which sometimes makes it hard to stay safe. Don’t give in to something that makes you uncomfortable. Avoid situations where you feel pressured to have sex. Find an adult you’re comfortable with that can honestly answer questions you have about sex. This person may be a parent or other family member, or even someone like a counselor, doctor, or nurse. Choose sexual partners who care about and respect your health and boundaries. \n\n\n\n" = "Thinking about having sex? You may feel curious, interested or even pressured. How do you know what is right for you? Here are some things to consider: \n\n What is your knowledge of sexual issues, HIV, other STDs, and pregnancy (including methods of prevention)? \n\n Are you confident with your individual ability to avoid HIV/STD risk and risk behaviors? What do you know about condoms and other birth control methods? Are you comfortable that you’ll be able to refuse sex or use condoms? \n\n What are your personal values about sex and abstinence? \n\n Are you comfortable communicating with parents or other adults about sex, condoms, and contraception? (http://www.cdc.gov/teenpregnancy/about/index.htm) \n\n Good decision-making is what becoming an adult is all about, so it is important to educate yourself and decide what’s important to you. It is no secret that sex can be fun, and it is also important to realize that there are certain risks associated with it. The only way to completely avoid these risks is to not engage in any type of sexual activity (abstinence). However, if you do choose to have sex, the best thing you can do is understand these risks, and how to avoid them, to protect your body and your future. You have a long time in your body, so take care of you and it. \n\n So what are these risks? Here are some quick facts about the main risks involving sex; pregnancy and sexually transmitted infections. In America, 3 out of every 10 teen girls (or 750,000 per year) will get pregnant at least once before they turn 20. Teens who do not use a birth control method have a 90%1$ chance of becoming pregnant. Of the teens who become pregnant, more than 50%2$ will never graduate high school and less than 2%3$ will earn a college degree before they turn 30. 80%4$ of teen dads will not marry the mother of their child. 2/3 of teen mothers will live in poverty and over half become dependent on welfare. The United States has the highest teen pregnancy rate of any other industrialized nation. \n\nThe good news is in the last couple of years teen pregnancy rates have fallen dramatically thanks to teens being better educated about sex. (https://www.dosomething.org/facts/11-facts-about-teen-pregnancy). \n\n 1 out of every 4 sexually active teens becomes infected with an STD every year. Many teens do not realize that these infections can be spread through oral sex as well as intercourse, which raises the risk. Condoms are the only birth control method that protects against STDs. So it’s best to use condoms in conjunction with other birth control methods to better protect yourself. \n\n How do I lower the risks? There are many different types of birth control available. Find one that works for you! The best birth control methods for teenagers are those that are easy for you to use (or are already in effect) each time you have intercourse. The easiest and most reliable methods for birth control are a birth control implant or intrauterine device (IUD). They are recommended for teenagers and are reversible. When you finally do want to become pregnant, you just have them removed by a health care provider. Having an implant or IUD is hassle-free, as you do not have to take a daily pill or change a patch weekly or change a ring monthly. An implant or IUD is effective in preventing pregnancy for 3-10 years, depending on which type you choose. Using the pill, patch, or ring can be reliable methods of birth control if used correctly. It is actually user failure rather than method failure which is responsible for most of the pregnancies that happen while using these methods. It is important, therefore, to follow all instructions for using the method you have chosen. Condoms are the only birth control method that protects against sexually transmitted infections (STIs), including herpes and HIV (the virus that causes AIDS). Using a condom as birth control is not a reliable method for preventing pregnancy. \n\n What else can I do? Educate yourself on how your body works. Male sperm can live in the female body for up to 5 days after sexual intercourse. Generally women can only become pregnant during ovulation, which usually occurs 14 days after the start of each period. But it’s possible for some women to ovulate more than once per month, or have cycles that don’t follow the 14 day rule. This makes it possible for some women to become pregnant while on their period. Many people believe different sexual positions can prevent pregnancy. But the truth is women can become pregnant in any position. Know yourself. Feelings of sexual desire are normal and can be intense and exciting, which sometimes makes it hard to stay safe. Don’t give in to something that makes you uncomfortable. Avoid situations where you feel pressured to have sex. Find an adult you’re comfortable with that can honestly answer questions you have about sex. This person may be a parent or other family member, or even someone like a counselor, doctor, or nurse. Choose sexual partners who care about and respect your health and boundaries. \n\n\n\n";
+"Thinking about having sex? You may feel curious, interested or even pressured. How do you know what is right for you? Here are some things to consider: \n\n What is your knowledge of sexual issues, HIV, other STDs, and pregnancy (including methods of prevention)? \n\n Are you confident with your individual ability to avoid HIV/STD risk and risk behaviors? What do you know about condoms and other birth control methods? Are you comfortable that you’ll be able to refuse sex or use condoms? \n\n What are your personal values about sex and abstinence? \n\n Are you comfortable communicating with parents or other adults about sex, condoms, and contraception? (http://www.cdc.gov/teenpregnancy/about/index.htm) \n\n Good decision-making is what becoming an adult is all about, so it is important to educate yourself and decide what’s important to you. It is no secret that sex can be fun, and it is also important to realize that there are certain risks associated with it. The only way to completely avoid these risks is to not engage in any type of sexual activity (abstinence). However, if you do choose to have sex, the best thing you can do is understand these risks, and how to avoid them, to protect your body and your future. You have a long time in your body, so take care of you and it. \n\n So what are these risks? Here are some quick facts about the main risks involving sex; pregnancy and sexually transmitted infections. In America, 3 out of every 10 teen girls (or 750,000 per year) will get pregnant at least once before they turn 20. Teens who do not use a birth control method have a 90% chance of becoming pregnant. Of the teens who become pregnant, more than 50% will never graduate high school and less than 2% will earn a college degree before they turn 30. 80% of teen dads will not marry the mother of their child. 2/3 of teen mothers will live in poverty and over half become dependent on welfare. The United States has the highest teen pregnancy rate of any other industrialized nation. \n\nThe good news is in the last couple of years teen pregnancy rates have fallen dramatically thanks to teens being better educated about sex. (https://www.dosomething.org/facts/11-facts-about-teen-pregnancy). \n\n 1 out of every 4 sexually active teens becomes infected with an STD every year. Many teens do not realize that these infections can be spread through oral sex as well as intercourse, which raises the risk. Condoms are the only birth control method that protects against STDs. So it’s best to use condoms in conjunction with other birth control methods to better protect yourself. \n\n How do I lower the risks? There are many different types of birth control available. Find one that works for you! The best birth control methods for teenagers are those that are easy for you to use (or are already in effect) each time you have intercourse. The easiest and most reliable methods for birth control are a birth control implant or intrauterine device (IUD). They are recommended for teenagers and are reversible. When you finally do want to become pregnant, you just have them removed by a health care provider. Having an implant or IUD is hassle-free, as you do not have to take a daily pill or change a patch weekly or change a ring monthly. An implant or IUD is effective in preventing pregnancy for 3-10 years, depending on which type you choose. Using the pill, patch, or ring can be reliable methods of birth control if used correctly. It is actually user failure rather than method failure which is responsible for most of the pregnancies that happen while using these methods. It is important, therefore, to follow all instructions for using the method you have chosen. Condoms are the only birth control method that protects against sexually transmitted infections (STIs), including herpes and HIV (the virus that causes AIDS). Using a condom as birth control is not a reliable method for preventing pregnancy. \n\n What else can I do? Educate yourself on how your body works. Male sperm can live in the female body for up to 5 days after sexual intercourse. Generally women can only become pregnant during ovulation, which usually occurs 14 days after the start of each period. But it’s possible for some women to ovulate more than once per month, or have cycles that don’t follow the 14 day rule. This makes it possible for some women to become pregnant while on their period. Many people believe different sexual positions can prevent pregnancy. But the truth is women can become pregnant in any position. Know yourself. Feelings of sexual desire are normal and can be intense and exciting, which sometimes makes it hard to stay safe. Don’t give in to something that makes you uncomfortable. Avoid situations where you feel pressured to have sex. Find an adult you’re comfortable with that can honestly answer questions you have about sex. This person may be a parent or other family member, or even someone like a counselor, doctor, or nurse. Choose sexual partners who care about and respect your health and boundaries. \n\n\n\n" = "¿Esta pensando sobre tener sexo? Usted puede sentir curioso, interesado o incluso presionado. ¿Cómo se sabe lo que es correcto para usted? Aquí están algunas cosas a considerar: \n\n ¿Cuál es su conocimiento de temas sexuales, VIH, otras enfermedades de transmisión sexual y embarazo (incluyendo métodos de prevención)? \n\n ¿Está seguro de su habilidad individual para evitar el VIH/riesgo de ETS y las conductas de riesgo? ¿Qué sabe acerca de los condones y otros métodos de anticoncepción? ¿Se siente usted cómodo que podrá negarse a tener relaciones sexuales o usar los condones? \n\n ¿Cuáles son sus valores personales sobre el sexo y la abstinencia? \n\n ¿Está cómodo comunicando con sus padres u otros adultos sobre sexo, condones y anticonceptivos? (http://www.cdc.gov/teenpregnancy/about/index.htm) \n\n Buena toma de decisiones es un parte de convertirse un adulto, entonces es importante educarse a sí mismo y decida lo que es importante para usted. No es un secreto que el sexo puede ser divertido, y también es importante darse cuenta que hay ciertos riesgos asociados con sexo. La única manera de evitar completamente estos riesgos es no participar en cualquier tipo de actividad sexual (abstinencia). Sin embargo, si usted elige tener relaciones sexuales, la mejor cosa que hacer es entender estos riesgos y cómo evitarlos, para proteger su cuerpo y su futuro. Tiene mucho tiempo en su cuerpo, así tenga cuidado de usted. \n\n ¿Cuáles son estos riesgos? Aquí están algunos datos sobre los principales riesgos que implica el sexo; embarazo e infecciones de transmisión sexual. En Los Estados Unidos, 3 de cada 10 adolescentes (o 750.000 al año) se quedan embarazada al menos una vez antes de cumplir 20. Adolescentes que no usan un método de anticoncepción tienen un 90% oportunidad de quedar embarazada. De las adolescentes embarazadas, más de 50% nunca se graduarán de escuela secundaria y menos de 2% a obtener un título universitario antes de cumplir 30. 80% de los padres adolescentes no se casarán con la madre de su hijo. 2/3 de las madres adolescentes que van a vivir en pobreza y sobre la mitad se vuelven dependiente de bienestar. Los Estados Unidos tiene la tasa de embarazo adolescente más alta de cualquier otra nación industrializada. \n\n La buena noticia es en los últimos años las tasas de embarazo adolescente han disminuido gracias a adolescentes están mejor educados acerca del sexo. (https://www.dosomething.org/facts/11-facts-about-teen-pregnancy). \n\n 1 de cada 4 adolescentes sexualmente activos resulta infectada con una ETS cada año. Muchos adolescentes no se dan cuenta que estas infecciones pueden transmitirse a través de sexo oral así como las relaciones sexuales, que aumenta el riesgo. Los condones son el único método anticonceptivo que protege contra las ETS. Así que lo mejor es usar condones junto con otros métodos de control de la natalidad para protegerse mejor. \n\n ¿Cómo reducir los riesgos? Existen muchos tipos diferentes de anticoncepción. Encuentre uno que funcione para usted. Los mejores métodos de anticoncepción para adolescentes son los que son fácil de usar (o son ya en efecto) cada vez que tiene relaciones sexuales. Los métodos más fáciles y más confiables para anticoncepción son un anticonceptivo implante o dispositivo intrauterino (DIU). Se recomienda para los adolescentes y son reversibles. Cuando finalmente desea quedar embarazada, debe remover por un médico. Tener un implante o el DIU es sin complicaciones, ya que no tiene que tomar una pastilla diaria o cambiar un parche semanal o cambiar un anillo mensual. Un implante o el DIU es eficaz en la prevención de embarazo de 3-10 años, dependiendo de que tipo que elija. Uso de la pastilla, el parche o el anillo puede ser métodos fiables de anticoncepción si se usa correctamente. Realmente es la falla de usuario en lugar de la falta de método que se encarga de la mayoría de los embarazos que ocurren durante el uso de estos métodos. Por lo tanto, es importante, siga todas las instrucciones para usar el método que ha elegido. Los condones son el único método anticonceptivo que protege contra infecciones de transmisión sexual (ITS), incluyendo el herpes y el VIH (el virus que causa el SIDA). Uso del condón como anticonceptivo no es un método confiable para prevenir el embarazo. \n\n ¿Qué más puedo hacer? Edúquese sobre el funcionamiento de su cuerpo. Esperma masculina puede vivir en el cuerpo de la mujer hasta 5 días después del coito. Generalmente las mujeres sólo pueden quedar embarazadas durante la ovulación, que generalmente ocurre 14 días después del comienzo de cada período. Pero es posible que algunas mujeres ovulan más de una vez por mes, o tener ciclos que no siguen la regla de 14 días. Esto hace posible para algunas mujeres a quedar embarazada mientras está en su período. Muchas personas creen que posiciones sexuales diferentes pueden prevenir el embarazo. Pero la verdad es que la mujer puede quedar embarazada en cualquier posición. Conozca a su mismo. Sentimientos de deseo sexual son normales y pueden ser intensa y excitante, que a veces hace difícil mantenerse a salvo. No ceder a algo que le hace incomoda. Evitar situaciones donde le siente presionada a tener relaciones sexuales. Encuentre a un adulto que usted se siente comodo con que honestamente puede responder a sus preguntas sobre el sexo. Esta persona puede ser un padre u otro miembro de la familia o incluso alguien como un consejero, médico o enfermera. Elija a parejas sexuales que se preocupan por usted y respetan su salud y límites. \n\n\n\n";
 
 /* No comment provided by engineer. */
-"THIS APP DOES NOT PROVIDE MEDICAL ADVICE.  For additional information, please see our full disclaimer." = "THIS APP DOES NOT PROVIDE MEDICAL ADVICE.  For additional information, please see our full disclaimer."; /* NEW */
+"disclaimerButtonTitle" = "ESTE APLICACIÓN MÓVIL NO PROVEE CONSEJOS MÉDICOS. Para obtener información adicional, consulte nuestro Descargo de responsabilidad."; /* NEW */
 
 /* No comment provided by engineer. */
-"This application (app) does not provide specific medical advice and does not endorse any medical or professional service obtained through information provided on this app or any links provided. It is intended for general informational purposes only. Use of this app does not replace medical consultation with a qualified health or medical professional to meet the health and medical needs of you or others. Never ignore professional medical advice in seeking treatment because of something that you have read on this app. If you think you may have a medical emergency, please dial 911. While the content of this app is periodically updated, medical information changes rapidly and therefore, some information may be out of date, and/or contain inaccuracies or typographical errors." = "This application (app) does not provide specific medical advice and does not endorse any medical or professional service obtained through information provided on this app or any links provided. It is intended for general informational purposes only. Use of this app does not replace medical consultation with a qualified health or medical professional to meet the health and medical needs of you or others. Never ignore professional medical advice in seeking treatment because of something that you have read on this app. If you think you may have a medical emergency, please dial 911. While the content of this app is periodically updated, medical information changes rapidly and therefore, some information may be out of date, and/or contain inaccuracies or typographical errors."; /* NEW */
+"This application (app) does not provide specific medical advice and does not endorse any medical or professional service obtained through information provided on this app or any links provided. It is intended for general informational purposes only. Use of this app does not replace medical consultation with a qualified health or medical professional to meet the health and medical needs of you or others. Never ignore professional medical advice in seeking treatment because of something that you have read on this app. If you think you may have a medical emergency, please dial 911. While the content of this app is periodically updated, medical information changes rapidly and therefore, some information may be out of date, and/or contain inaccuracies or typographical errors." = "Este aplicación móvil no provee consejos médicos específicos y no promociona cualquier servicio medico o profesional obtenido a través de información o enlaces proporcionadas en esta aplicación. Está diseñado para ser utilizado como información general. El uso de esta aplicación no reemplaza una consulta médica con un profesional de salud calificado para satisfacer sus necesidades de salud o las necesidades de salud de los demás. Nunca ignore el consejo médico profesional cuando esta buscando tratamiento debido a algo usted ha leído en esta aplicación móvil. Si usted piensa que tiene una emergencia, por favor marque los números 911. A pesar de que el contenido de esta aplicación se actualiza periódicamente, información medica se cambia rápidamente. Entonces, alguna información puede ser anticuado y/o contiene inexactitudes o errores de tipográfico."; /* NEW */
 
 /* No comment provided by engineer. */
-"Vaginal Ring" = "Vaginal Ring";
+"Vaginal Ring" = "El anillo Vaginal";
 
 /* No comment provided by engineer. */
-"Welcome \nto" = "Welcome \nto"; /* NEW */
+"Welcome \nto" = "Bienvenido \na"; /* NEW */
 
 /* No comment provided by engineer. */
-"What are barrier methods?" = "What are barrier methods?"; /* NEW */
+"What are barrier methods?" = "¿Cuáles son los métodos de barrera?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What are birth control pills?" = "What are birth control pills?"; /* NEW */
+"What are birth control pills?" = "¿Cuáles son Las pastillas anticonceptivas?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What are mini-pills? " = "What are mini-pills? "; /* NEW */
+"What are mini-pills? " = "¿Cuáles son pastillas miniatura? "; /* NEW */
 
 /* No comment provided by engineer. */
-"What can I expect when the IUD is inserted?" = "What can I expect when the IUD is inserted?"; /* NEW */
+"What can I expect when the IUD is inserted?" = "¿Qué puedo esperar cuando el DIU se inserta?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What do I do if I am late getting my shot?" = "What do I do if I am late getting my shot?"; /* NEW */
+"What do I do if I am late getting my shot?" = "¿Qué hacer si estoy recibiendo mi inyección tarde?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What do I do if the ring falls out?" = "What do I do if the ring falls out?"; /* NEW */
+"What do I do if the ring falls out?" = "¿Qué debo hacer si el anillo se cae?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is emergency birth control?" = "What is emergency birth control?"; /* NEW */
+"What is emergency birth control?" = "¿Cuál es el anticonceptivo de emergencia?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is it?" = "What is it?"; /* NEW */
+"What is it?" = "¿Qué es?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the birth control shot? " = "What is the birth control shot? "; /* NEW */
+"What is the birth control shot? " = "¿Cuál es la inyección anticonceptiva?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the patch?" = "What is the patch?"; /* NEW */
+"What is the patch?" = "¿Cuál es el parche?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the possibility of getting pregnant while having an implant?" = "What is the possibility of getting pregnant while having an implant?"; /* NEW */
+"What is the possibility of getting pregnant while having an implant?" = "¿Cuál es la posibilidad de quedar embarazada teniendo un implante?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the possibility of getting pregnant while having an IUD?" = "What is the possibility of getting pregnant while having an IUD?"; /* NEW */
+"What is the possibility of getting pregnant while having an IUD?" = "¿Cuál es la posibilidad de quedar embarazada teniendo el DIU?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the possibility of getting pregnant while using barrier methods?" = "What is the possibility of getting pregnant while using barrier methods?"; /* NEW */
+"What is the possibility of getting pregnant while using barrier methods?" = "¿Qué es la posibilidad de quedar embarazada mientras usar métodos de barrera?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the possibility of getting pregnant while using emergency birth control?" = "What is the possibility of getting pregnant while using emergency birth control?"; /* NEW */
+"What is the possibility of getting pregnant while using emergency birth control?" = "¿Cuál es la posibilidad de quedar embarazada durante el uso de anticonceptivos de emergencia?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the possibility of getting pregnant while using the birth control shot?" = "What is the possibility of getting pregnant while using the birth control shot?"; /* NEW */
+"What is the possibility of getting pregnant while using the birth control shot?" = "¿Cuál es la posibilidad de quedar embarazada mientras usando la inyección anticonceptivo?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the possibility of getting pregnant while using the mini-pill?" = "What is the possibility of getting pregnant while using the mini-pill?"; /* NEW */
+"What is the possibility of getting pregnant while using the mini-pill?" = "¿Cuál es la posibilidad de quedar embarazada mientras está usando la pastilla miniatura?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the possibility of getting pregnant while using the patch?" = "What is the possibility of getting pregnant while using the patch?"; /* NEW */
+"What is the possibility of getting pregnant while using the patch?" = "¿Cuál es la posibilidad de quedar embarazada mientras está usando el parche?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the possibility of getting pregnant while using the pill?" = "What is the possibility of getting pregnant while using the pill?"; /* NEW */
+"What is the possibility of getting pregnant while using the pill?" = "¿Cuál es la posibilidad de quedar embarazada mientras utiliza la píldora?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the possibility of getting pregnant while using the ring?" = "What is the possibility of getting pregnant while using the ring?"; /* NEW */
+"What is the possibility of getting pregnant while using the ring?" = "¿Cuál es la posibilidad de quedar embarazada mientras está usando el anillo?"; /* NEW */
 
 /* No comment provided by engineer. */
-"What is the ring? " = "What is the ring? "; /* NEW */
+"What is the ring? " = "¿Cuál es el anillo?"; /* NEW */
 
 /* No comment provided by engineer. */
-"Which barrier methods protect me from sexually transmitted infections (STIs)?" = "Which barrier methods protect me from sexually transmitted infections (STIs)?"; /* NEW */
+"Which barrier methods protect me from sexually transmitted infections (STIs)?" = "¿Cuales métodos de barrera me protegen de las infecciones de transmisión sexual?"; /* NEW */
 
 /* Race */
-"White" = "White";
+"White" = "Caucásico/a";
 
 /* No comment provided by engineer. */
-"Would it bother you to have an implant put just under your skin?" = "Would it bother you to have an implant put just under your skin?";
+"Would it bother you to have an implant put just under your skin?" = "¿Le molesta tener un implante puesto debajo de su piel?";
 
 /* No comment provided by engineer. */
-"Would you be opposed to having some side effects such as spotting during the initial few months after beginning a new method of birth control?" = "Would you be opposed to having some side effects such as spotting during the initial few months after beginning a new method of birth control?";
+"Would you be opposed to having some side effects such as spotting during the initial few months after beginning a new method of birth control?" = "¿Usted se opone a tener algunos efectos secundarios como manchado durante los primeros meses después del inicio de un nuevo método de anticoncepción?";
 
 /* No comment provided by engineer. */
-"Would you be willing to put your fingers inside your vagina to insert your birth control?" = "Would you be willing to put your fingers inside your vagina to insert your birth control?";
+"Would you be willing to put your fingers inside your vagina to insert your birth control?" = "¿Estaría dispuesto a poner los dedos dentro de su vagina para insertar el control de la natalidad?";
 
 /* No comment provided by engineer. */
-"Would you it bother you to get an injection (shot) every 3 months?" = "Would it bother you to get an injection (shot) every 3 months?";
+"Would you it bother you to get an injection (shot) every 3 months?" = "¿Le molesta conseguir una inyección cada 3 meses?";
 
 /* No comment provided by engineer. */
-"Would you like to provide us with some basic data to help improve our app?" = "Would you like to provide us with some basic data to help improve our app?";
+"Would you like to provide us with some basic data to help improve our app?" = "¿Quiere nos proporcionar algunos datos básicos para ayudar a mejorar nuestra aplicación móvil?";
 
 /* LARC More Info Label */
-"Would you like to see what forms of birth control will work for you, including LARCs?" = "Would you like to see what forms of birth control will work for you, including LARCs?";
+"Would you like to see what forms of birth control will work for you, including LARCs?" = "¿Quiere ver qué formas de anticoncepción funcionará para usted, incluyendo LARCs?";
 
 /* No comment provided by engineer. */
-"Would you remember to take a pill at the same time everyday?" = "Would you remember to take a pill at the same time everyday?";
+"Would you remember to take a pill at the same time everyday?" = "¿Le acuerda de tomar una pastilla al mismo tiempo todos los días?";
 
 /* LARC More Info YES Button
    Medical Assitance Answer */
-"Yes" = "Yes";
+"Yes" = "Sí";
 
 /* Age */
-"Younger than 15" = "Younger than 15";
+"Younger than 15" = "Menor de 15 años";
 
 /* No comment provided by engineer. */
-"Your chosen forms of birth control are: " = "Your chosen forms of birth control are: ";
+"Your chosen forms of birth control are: " = "Sus formas solicitadas de anticoncepción son: ";
 
 /* Results Exit */
-"Your email address will not be saved and the methods selected for you will not be connected to any identifying information." = "Your email address will not be saved and the methods selected for you will not be connected to any identifying information.";
+"Your email address will not be saved and the methods selected for you will not be connected to any identifying information." = "No se guardará su dirección de correo electrónico y los métodos seleccionados para usted no se conectará a cualquier información de identificación.";
 
 /* No comment provided by engineer. */
-"Your response will not be associated with any identifying information" = "Your response will not be associated with any identifying information";
+"Your response will not be associated with any identifying information" = "Su respuesta no se asociará con ninguna información de identificación.";
 
 /* No comment provided by engineer. */
-"Your results have been sent." = "Your results have been sent.";
+"Your results have been sent." = "Los resultados han sido enviados.";
 
 /* No comment provided by engineer. */
-"￼Have you had weight reduction surgery that shortens the length of your small intestine?" = "￼Have you had weight reduction surgery that shortens the length of your small intestine?";
-
+"￼Have you had weight reduction surgery that shortens the length of your small intestine?" = "￼¿Ha tenido cirugía de reducción de peso que se acorta la longitud del intestina delgado?";

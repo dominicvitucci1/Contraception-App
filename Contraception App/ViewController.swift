@@ -41,7 +41,7 @@ class ViewController: BaseViewController {
 //        welcomeLabel.text = NSLocalizedString("Welcome \nto", comment: "")
 //        getStartedLabel.text = NSLocalizedString("Press \"Get Started\" to begin.", comment: "")
 //        getStartedButton.titleLabel?.text = NSLocalizedString("Get Started", comment: "")
-//        disclaimerButton.titleLabel?.text = NSLocalizedString("THIS APP DOES NOT PROVIDE MEDICAL ADVICE.  For additional information, please see our full disclaimer.", comment: "")
+        disclaimerButton.titleLabel?.text = NSLocalizedString("THIS APP DOES NOT PROVIDE MEDICAL ADVICE.  For additional information, please see our full disclaimer.", comment: "")
         
         PFUser.logOut()
 
