@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "languageWillChange:", name: "LANGUAGE_WILL_CHANGE", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AppDelegate.languageWillChange(_:)), name: "LANGUAGE_WILL_CHANGE", object: nil)
         
         let targetLang = NSUserDefaults.standardUserDefaults().objectForKey("selectedLanguage") as? String
         

@@ -200,7 +200,7 @@ class EmailViewController: UIViewController {
         
         
         
-        PFCloud.callFunctionInBackground("sendMail", withParameters: ["text": messageText, "toEmail": toEmail, "name": toName]) {
+        PFCloud.callFunctionInBackground("sendEmailTwo", withParameters: ["text": messageText, "toEmail": toEmail, "name": toName]) {
             (response: AnyObject?, error: NSError?) -> Void in
             let responseString = response as? String
             print(responseString)

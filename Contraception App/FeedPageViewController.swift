@@ -583,7 +583,7 @@ class FeedPageViewController: UIViewController, UITableViewDataSource, UITableVi
         yesButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         yesButton.backgroundColor = UIColor(red: 0/255.0, green: 204/255.0, blue: 51/255.0, alpha: 1.0)
         yesButton.frame = CGRectMake(self.scrollView.contentSize.width, self.scrollView.contentSize.height, 160, 80)
-        yesButton.addTarget(self, action: "yesPressed:", forControlEvents: .TouchUpInside)
+        yesButton.addTarget(self, action: #selector(FeedPageViewController.yesPressed(_:)), forControlEvents: .TouchUpInside)
         self.scrollView.addSubview(yesButton)
         
     }
@@ -595,7 +595,7 @@ class FeedPageViewController: UIViewController, UITableViewDataSource, UITableVi
         noButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         noButton.backgroundColor = UIColor(red: 251/255.0, green: 6/255.0, blue: 6/255.0, alpha: 1.0)
         noButton.frame = CGRectMake(self.scrollView.contentSize.width, self.scrollView.contentSize.height, 160, 80)
-        noButton.addTarget(self, action: "noPressed:", forControlEvents: .TouchUpInside)
+        noButton.addTarget(self, action: #selector(FeedPageViewController.noPressed(_:)), forControlEvents: .TouchUpInside)
         self.scrollView.addSubview(noButton)
  
     }
